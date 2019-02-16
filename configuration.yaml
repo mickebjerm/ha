@@ -76,6 +76,10 @@ homekit:
       - light
       - media_player
 
+tellduslive:
+  update_interval: 5
+  
+
 # Verisure
 verisure:
   username: !secret verisure_username
