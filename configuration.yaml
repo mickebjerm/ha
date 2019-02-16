@@ -1,0 +1,94 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: !secret my_home
+  # Location required to calculate the time the sun rises and sets
+  latitude: !secret latitude
+  longitude: !secret longitude
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 0
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: !secret time_zone
+  # Customization file
+  customize: !include_dir_merge_list customize/
+  customize_glob: !include_dir_merge_list customize_glob/
+
+# Show links to resources in log and frontend
+introduction:
+
+# Enables the frontend
+frontend:
+   themes:  !include_dir_merge_list themes/
+
+# Enables configuration UI
+config:
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+# http:
+#   base_url: example.duckdns.org:8123
+
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook:
+
+# Enables a map showing the location of tracked devices
+map:
+
+# Track the sun
+sun:
+
+# IOS
+ios:
+
+# Sensors
+sensor:
+  # Weather prediction
+  - platform: yr
+
+# Text to speech
+tts:
+  - platform: google
+
+# Cloud
+cloud:
+
+homekit:
+  filter:
+    include_domains:
+      - light
+      - media_player
+
+# Verisure
+verisure:
+  username: !secret verisure_username
+  password: !secret verisure_password
+  alarm: 0
+  hygrometers: 0
+  smartplugs: 0
+  thermometers: 0
+  mouse: 0
+  door_window: 0
+
+
+sensor: !include_dir_merge_list sensors/
+group:  !include_dir_merge_list groups/
+automation: !include_dir_merge_list automations/
+script:  !include_dir_merge_list scripts/

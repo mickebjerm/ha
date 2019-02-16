@@ -1,0 +1,13 @@
+*
+!automations/
+!groups/
+!input/
+!sensors/
+!customize/
+!customize_glob/
+!packages/
+!themes/
+!*.yaml
+!.gitignore
+secrets.yaml
+known_devices.yaml

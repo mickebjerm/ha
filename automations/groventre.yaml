@@ -1,0 +1,12 @@
+- alias: "Locking door"
+  trigger:
+    - platform: state
+      entity_id: lock.groventre
+      to: 'unlocked'
+  action:
+    - delay:
+        minutes: "2"
+    - service: lock.lock
+      data:
+        entity_id: lock.groventre
+        code: !secret verisure_code
