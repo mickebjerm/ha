@@ -51,7 +51,8 @@ ios:
 
 # Apple tv
 apple_tv:
-  - start_off: true
+  - host: *
+    start_off: true
 
 # Sensors
 sensor:
