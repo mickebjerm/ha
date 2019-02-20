@@ -5,8 +5,8 @@
 !sensors/
 !customize/
 !customize_glob/
-!shell_command
-!commands
+!shell_command/
+!commands/
 !packages/
 !themes/
 !*.yaml
