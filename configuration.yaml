@@ -49,11 +49,6 @@ sun:
 # IOS
 ios:
 
-# Apple tv
-apple_tv:
-  - host: *
-    start_off: true
-
 # Sensors
 sensor:
   # Weather prediction
