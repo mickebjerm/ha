@@ -33,6 +33,10 @@ discovery:
   ignore:
   - apple_tv
 
+
+#system health
+system_health:
+
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
 
