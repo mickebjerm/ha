@@ -6,8 +6,7 @@
 !customize/
 !customize_glob/
 !shell_command/
-!shell_script/
-!shell_binary/
+!commands/
 !scripts/
 !themes/
 !lovelace
