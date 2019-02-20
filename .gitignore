@@ -6,9 +6,12 @@
 !customize/
 !customize_glob/
 !shell_command/
-!commands/
-!packages/
+!shell_script/
+!shell_binary/
+!scripts/
 !themes/
+!lovelace
+lovelace/*
 !*.yaml
 !.gitignore
 secrets.yaml

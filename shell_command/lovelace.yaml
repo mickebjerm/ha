@@ -1,1 +1,1 @@
-lovelace_gen: 'python ~/commands/lovelace-gen.py > ~/lovelace-gen.log'
+lovelace_gen: 'python ~/command/lovelace-gen.py > ~/lovelace-gen.log'
