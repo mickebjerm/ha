@@ -5,7 +5,7 @@
 !sensors/
 !customize/
 !customize_glob/
-!shell_commands
+!shell_command
 !commands
 !packages/
 !themes/
