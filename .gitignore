@@ -9,9 +9,9 @@
 !commands/
 !scripts/
 !themes/
-!lovelace
-lovelace/*
+!lovelace/
 !*.yaml
 !.gitignore
 secrets.yaml
 known_devices.yaml
+ui-lovelace.yaml
