@@ -1,0 +1,4 @@
+sqlite_web:
+  title: SQLite Web
+  icon: mdi:database
+  url: http://hassio.local:6210
