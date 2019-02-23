@@ -10,6 +10,7 @@
 !scripts/
 !themes/
 !lovelace/
+!panel_iframe/
 !*.yaml
 !.gitignore
 secrets.yaml
