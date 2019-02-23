@@ -1,0 +1,9 @@
+sqlite_web:
+  title: SQLite Web
+  icon: mdi:database
+  url: http://hassio.local:6210
+
+router:
+  title: Router
+  icon: mdi:router
+  url: http://router.local

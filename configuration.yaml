@@ -93,4 +93,4 @@ verisure:
 group:  !include_dir_merge_list groups/
 automation: !include_dir_merge_list automations/
 script:  !include_dir_merge_list scripts/
-panel_iframe: !include_dir_merge_list panel_iframe/
+panel_iframe: !include panel_iframe.yaml
