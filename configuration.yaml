@@ -74,7 +74,7 @@ homekit:
       - media_player
 
 tellduslive:
-  update_interval: 5
+  scan_interval: 5
 
 
 # Verisure
