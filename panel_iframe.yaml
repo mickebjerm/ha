@@ -5,5 +5,5 @@ sqlite_web:
 
 router:
   title: Router
-  icon: mdi:router
+  icon: mdi:linux
   url: http://router.local
