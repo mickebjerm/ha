@@ -67,8 +67,6 @@ tts:
 # Cloud
 cloud:
 
-light:
-
 homekit:
   filter:
     include_domains:
