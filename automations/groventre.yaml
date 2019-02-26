@@ -3,6 +3,10 @@
     - platform: state
       entity_id: lock.groventre
       to: 'unlocked'
+  condition:
+    condition: state
+    entity_id: binary_sensor.window_door_sensor
+    state: 'closed'
   action:
     - delay:
         minutes: "2"
