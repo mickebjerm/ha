@@ -76,6 +76,15 @@ homekit:
 tellduslive:
   scan_interval: 5
 
+influxdb:
+  host: !secret influx_host 
+  port: !secret influx_port
+  database: !secret influx_db
+  username: !secret influx_user
+  password: !secret influx_pass
+  max_retries: 3
+  default_measurement: state
+
 
 # Verisure
 verisure:
