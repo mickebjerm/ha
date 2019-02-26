@@ -6,7 +6,7 @@
   condition:
     condition: state
     entity_id: binary_sensor.window_door_sensor
-    state: 'closed'
+    state: 'off'
   action:
     - delay:
         minutes: "2"
