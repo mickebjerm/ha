@@ -1,0 +1,38 @@
+- alias: "Lampor på"
+  initial_state: 'off'
+  trigger:
+    - platform: time
+      at: '15:30'
+  action:
+    - service: homeassistant.turn_on
+      entity_id: group.window_lights
+
+
+- alias: "Lampor tonåringar av"
+  initial_state: 'on'
+  trigger:
+    - platform: time
+      at: '21:30'
+  action:
+    - service: homeassistant.turn_off
+      entity_id: group.teenage_lights
+
+
+- alias: "Lampor barn av"
+  initial_state: 'on'
+  trigger:
+    - platform: time
+      at: '20:00'
+  action:
+    - service: homeassistant.turn_off
+      entity_id: switch.ellen
+
+
+- alias: "Lampor vuxna av"
+  initial_state: 'on'
+  trigger:
+    - platform: time
+      at: '23:59'
+  action:
+    - service: homeassistant.turn_off
+      entity_id: group.other_lights
