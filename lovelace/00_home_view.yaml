@@ -10,12 +10,9 @@ cards:
           title: Internet
           show_header_toggle: false
           entities:
-          - entity: input_number.internet_start_hour
-            name: Starta timme
-          - entity: input_number.internet_stop_hour
-            name: Stäng timme
-          - entity: input_number.internet_stop_mins
-            name: Stäng minut
+            - input_number.internet_start_hour
+            - input_number.internet_stop_hour
+            - input_number.internet_stop_mins
           - type: weather-forecast
         - type: weather-forecast
           title: SMHI
