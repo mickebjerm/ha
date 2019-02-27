@@ -4,6 +4,9 @@ path: temps
 cards:
   - type: vertical-stack
     cards:
+      - type: weather-forecast
+          title: SMHI
+          entity: weather.smhi_sundsvall
       - title: Utomhus
         type: entities
         show_header_toggle: false

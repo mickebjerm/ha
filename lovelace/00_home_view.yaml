@@ -16,9 +16,6 @@ cards:
             - input_number.internet_start_mins
             - input_number.internet_stop_hour
             - input_number.internet_stop_mins
-        - type: weather-forecast
-          title: SMHI
-          entity: weather.smhi_sundsvall
     - type: horizontal-stack
       cards:
         - type: custom:monster-card

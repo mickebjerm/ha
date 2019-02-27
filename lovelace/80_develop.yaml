@@ -1,5 +1,6 @@
 title: Settings
 path: settings
+icon: mdi:settings
 cards:
   - type: entities
     title: Configuration
