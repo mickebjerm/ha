@@ -8,6 +8,7 @@
         {% if states.input_number.internet_start_mins.state|round(0)|string|length == 1 %} {% set time = time|string + '0' %} {% endif %}
         {% set time = time|string + states.input_number.internet_start_mins.state|round(0)|string %}
         {{ time }}
+
     internet_stoptime:
       friendly_name: 'Internet stopp'
       value_template: >-
@@ -16,6 +17,7 @@
         {% if states.input_number.internet_stop_mins.state|round(0)|string|length == 1 %} {% set time2 = time2|string + '0' %} {% endif %}
         {% set time2 = time2|string + states.input_number.internet_stop_mins.state|round(0)|string %}
         {{ time2 }}
+        
 - platform: time_date
   display_options:
     - 'time'
