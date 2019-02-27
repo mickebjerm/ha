@@ -11,3 +11,9 @@ cards:
         icon: mdi:refresh
         action_name: "Run"
         service_data: {}
+      - type: call-service
+        name: Test shellcommand
+        service: shell_command.test
+        icon: mdi:refresh
+        action_name: "Run"
+        service_data: {}
