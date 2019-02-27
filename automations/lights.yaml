@@ -2,8 +2,8 @@
   initial_state: true
   trigger:
    - platform: sun
-        event: sunset
-        offset: '-01:30:00'
+     event: sunset
+     offset: '-01:30:00'
   action:
     - service: homeassistant.turn_on
       entity_id: group.window_lights
