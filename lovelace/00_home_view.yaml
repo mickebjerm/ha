@@ -19,23 +19,17 @@ cards:
     - type: horizontal-stack
       cards:
         - type: media-control
-          show_empty: false
-          card:
-            type: entities
-            show_header_toggle: false
-            title: Sonos
-            entities:
-              - media_player.kok
-              - media_player.vardagsrum_2
-              - media_player.gymmet
+        show_header_toggle: false
+        title: Sonos
+        entities:
+          - media_player.kok
+          - media_player.vardagsrum_2
+          - media_player.gymmet
     - type: horizontal-stack
       cards:
         - type: media-control
-          show_empty: false
-          card:
-            type: entities
-            show_header_toggle: false
-            title: Apple TV
-            entities:
-              - media_player.sovrum
-              - media_player.vardagsrum
+        show_header_toggle: false
+        title: Apple TV
+        entities:
+          - media_player.sovrum
+          - media_player.vardagsrum
