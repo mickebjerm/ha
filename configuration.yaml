@@ -105,6 +105,5 @@ panel_iframe: !include panel_iframe.yaml
 
 shell_command:
   lovelace_gen: 'python /config/commands/lovelace-gen.py > /config/lovelace-gen.log'
-  firewall_kids_stop: ''
-  firewall_kids_start: ''
-  test: 'echo hej >> test'
+  firewall_kids_stop: 'echo "STOPPING: $(date)" >> /config/firewall-kids.log'
+  firewall_kids_start: 'echo "STARTING: $(date)" >> /config/firewall-kids.log'

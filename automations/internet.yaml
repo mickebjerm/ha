@@ -1,0 +1,14 @@
+- alias: "Internet aktivera"
+  trigger: 
+    platform: template
+    value_template: '{{ states.sensor.internet_starttime.state == states.sensor.time.state }}'
+  action:
+    - service: shell_command.firewall_kids_start
+
+
+- alias: "Internet deaktivera"
+  trigger:
+    platform: template
+    value_template: '{{ states.sensor.internet_stoptime.state == states.sensor.time.state }}'
+  action:
+    - service: shell_command.firewall_kids_stop
