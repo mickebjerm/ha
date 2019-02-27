@@ -13,7 +13,7 @@ cards:
             - group.window_lights
         - type: weather-forecast
           title: SMHI
-          entity: weather.weather.smhi_sundsvall
+          entity: weather.smhi_sundsvall
     - type: horizontal-stack
       cards:
         - type: custom:monster-card
