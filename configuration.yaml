@@ -11,7 +11,7 @@ homeassistant:
   customize_glob: !include_dir_merge_named customize_glob/
 
 # Show links to resources in log and frontend
-introduction:
+#introduction:
 
 # Enables the frontend
 frontend:
