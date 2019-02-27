@@ -10,50 +10,35 @@ cards:
         - entity: switch.allrum
           icon: mdi:lightbulb
           name: Allrummet
-        - entity: input_number.elias_hrs
-        - entity: input_number.elias_mins
         - type: divider
         - entity: switch.elias
           icon: mdi:lightbulb
           name: Elias
-        - entity: input_number.elias_hrs
-        - entity: input_number.elias_mins
         - type: divider
         - entity: switch.julius
           icon: mdi:lightbulb
           name: Julius & Oscar
-        - entity: input_number.julius_hrs
-        - entity: input_number.julius_mins
       - title: Nedervåningen
         type: entities
         entities:
         - entity: switch.koket
           icon: mdi:lightbulb
-        - entity: input_number.kok_hrs
-        - entity: input_number.kok_mins
         - type: divider
         - entity: switch.hallen
           icon: mdi:lightbulb
-        - entity: input_number.hallen_hrs
-        - entity: input_number.hallen_mins
         - type: divider
         - entity: switch.william
           icon: mdi:lightbulb
-        - entity: input_number.william_hrs
-        - entity: input_number.william_mins
         - type: divider
         - entity: switch.sovrum
           icon: mdi:lightbulb
-        - entity: input_number.sovrum_hrs
-        - entity: input_number.sovrum_mins
         - type: divider
         - entity: switch.ellen
           icon: mdi:lightbulb
-        - entity: input_number.ellen_hrs
-        - entity: input_number.ellen_mins
         - type: divider
         - entity: switch.vardagsrum
           icon: mdi:lightbulb
-        - entity: input_number.vardagsrum_hrs
-        - entity: input_number.vardagsrum_mins
+        - type: divider
+        - entity: switch.gymmet
+          icon: mdi:lightbulb
         - type: divider

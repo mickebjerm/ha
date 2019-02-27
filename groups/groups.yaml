@@ -1,5 +1,6 @@
 window_lights:
-  name: Window lights
+  name: Fönsterlampor
+  icon: mdi:lightbulb
   entities:
     - switch.kok
     - switch.vardagsrum
@@ -13,7 +14,8 @@ window_lights:
 
 
 teenage_lights:
-  name: Window lights teenage
+  name: Fönsterlampor tonåringar
+  icon: mdi:lightbulb
   entities:
     - switch.william
     - switch.julius
@@ -21,8 +23,16 @@ teenage_lights:
     - switch.allrum
 
 
+kids_lights:
+  name: Fönsterlampor barn
+  icon: mdi:lightbulb
+  entities:
+    - switch.ellen
+
+
 other_lights:
-  name: Window lights other
+  name: Fönsterlampor övriga
+  icon: mdi:lightbulb
   entities:
     - switch.sovrum
     - switch.vardagsrum

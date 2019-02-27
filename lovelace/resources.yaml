@@ -1,0 +1,14 @@
+- url: !file /local/loven/card-tools/card-tools.js?v=1.0
+  type: js
+- url: !file /local/loven/card-modder/card-modder.js?v=0.3
+  type: js
+- url: !file /local/loven/fold-entity-row/fold-entity-row.js?v=1.0
+  type: js
+- url: !file /local/loven/popup-card/popup-card.js?v=1.0
+  type: js
+- url: !file /local/loven/slider-entity-row/slider-entity-row.js?v=1.0
+  type: js
+- url: !file /local/loven/auto-entities/auto-entities.js?v=1.0
+  type: js
+- url: !file /local/custom-lovelace/monster-card/monster-card.js?v=0.2.3
+  type: js

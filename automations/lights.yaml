@@ -57,7 +57,7 @@
       - fri
   action:
     - service: homeassistant.turn_off
-      entity_id: switch.ellen
+      entity_id: group.kids_lights
 
 
 - alias: "Lampor barn av vardagar"
@@ -72,7 +72,7 @@
       - sun
   action:
     - service: homeassistant.turn_off
-      entity_id: switch.ellen
+      entity_id: group.kids_lights
 
     
 
