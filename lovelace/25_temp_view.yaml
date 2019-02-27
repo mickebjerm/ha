@@ -5,7 +5,8 @@ cards:
   - type: vertical-stack
     cards:
       - title: Övervåningen
-        type: entities   
+        type: entities
+        show_header_toggle: false 
         entities:
         - entity: sensor.elias_temperature
           name: Elias
