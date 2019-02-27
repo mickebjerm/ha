@@ -6,20 +6,20 @@ internet_start_hour:
   max: 23
   step: 1
 
-internet_start_mins:
-  name: Internet start minut
-  icon: mdi:timer
-  initial: 0
-  min: 0
-  max: 59
-  step: 1
-
 internet_stop_hour:
   name: Internet stopp timme
   icon: mdi:timer
   initial: 21
   min: 0
   max: 23
+  step: 1
+
+internet_start_mins:
+  name: Internet start minut
+  icon: mdi:timer
+  initial: 0
+  min: 0
+  max: 59
   step: 1
 
 

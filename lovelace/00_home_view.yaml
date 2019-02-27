@@ -12,6 +12,7 @@ cards:
           entities:
             - input_number.internet_start_hour
             - input_number.internet_stop_hour
+            - input_number.internet_stop_hour
             - input_number.internet_stop_mins
         - type: weather-forecast
           title: SMHI
