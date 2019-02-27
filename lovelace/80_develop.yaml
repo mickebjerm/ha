@@ -12,8 +12,14 @@ cards:
         action_name: "Run"
         service_data: {}
       - type: call-service
-        name: Test shellcommand
-        service: shell_command.test
+        name: Stoppa internet
+        service: shell_command.firewall_kids_stop
+        icon: mdi:refresh
+        action_name: "Run"
+        service_data: {}
+      - type: call-service
+        name: Starta internet
+        service: shell_command.firewall_kids_start
         icon: mdi:refresh
         action_name: "Run"
         service_data: {}

@@ -10,11 +10,9 @@ cards:
         - entity: switch.allrum
           icon: mdi:lightbulb
           name: Allrummet
-        - type: divider
         - entity: switch.elias
           icon: mdi:lightbulb
           name: Elias
-        - type: divider
         - entity: switch.julius
           icon: mdi:lightbulb
           name: Julius & Oscar
@@ -23,22 +21,15 @@ cards:
         entities:
         - entity: switch.koket
           icon: mdi:lightbulb
-        - type: divider
         - entity: switch.hallen
           icon: mdi:lightbulb
-        - type: divider
         - entity: switch.william
           icon: mdi:lightbulb
-        - type: divider
         - entity: switch.sovrum
           icon: mdi:lightbulb
-        - type: divider
         - entity: switch.ellen
           icon: mdi:lightbulb
-        - type: divider
         - entity: switch.vardagsrum
           icon: mdi:lightbulb
-        - type: divider
         - entity: switch.gymmet
           icon: mdi:lightbulb
-        - type: divider
