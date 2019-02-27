@@ -1,1 +1,1 @@
-lovelace_gen: 'python /usr/share/hassio/homeassistant/command/lovelace-gen.py > /usr/share/hassio/homeassistant/lovelace-gen.log'
+lovelace_gen: 'python /usr/share/hassio/homeassistant/commands/lovelace-gen.py > /usr/share/hassio/homeassistant/lovelace-gen.log'

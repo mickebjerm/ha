@@ -20,7 +20,9 @@ def get_input_dir(inp):
             return '/config/lovelace'
         if os.path.exists(os.path.join('lovelace/', MAIN_FILE)):
             return 'lovelace/'
-
+        if os.path.exists(os.path.join('/usr/share/hassio/homeassistant/lovelace', MAIN_FILE)):
+            return '/usr/share/hassio/homeassistant/lovelace'
+            
     if os.path.exists(os.path.join(inp, MAIN_FILE)):
         return inp
     print("Input file main.yaml not found.", file=sys.stderr)
