@@ -60,7 +60,7 @@
       entity_id: group.kids_lights
 
 
-- alias: "Lampor barn av vardagar"
+- alias: "Lampor barn av helger"
   initial_state: true
   trigger:
     - platform: time
