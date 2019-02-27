@@ -33,6 +33,8 @@ discovery:
 #  ignore:
 #  - apple_tv
 
+lovelace:
+  mode: yaml
 
 #system health
 system_health:
