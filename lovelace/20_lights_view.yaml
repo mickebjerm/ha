@@ -32,4 +32,8 @@ cards:
         - entity: switch.vardagsrum
           icon: mdi:lightbulb
         - entity: switch.gymmet
-          icon: mdi:lightbulb
+          icon: mdi:
+      - title: test
+        type: entities
+        entities:
+        - entity: group.window_lights
