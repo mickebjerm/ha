@@ -1,151 +1,32 @@
 internet_start_hour:
-  name: Start hour
+  name: Internet start timme
   icon: mdi:timer
   initial: 07
   min: 0
   max: 23
   step: 1
 
+internet_start_mins:
+  name: Internet start minut
+  icon: mdi:timer
+  initial: 0
+  min: 0
+  max: 59
+  step: 1
+
 internet_stop_hour:
-  name: Stop hour
-  icon: mdi:timer
-  initial: 22
-  min: 0
-  max: 23
-  step: 1
-
-internet_stop_mins:
-  name: Stop minutes
-  icon: mdi:timer
-  initial: 55
-  min: 0
-  max: 59
-  step: 1
-
-ellen_hrs:
-  name: Timmar
-  icon: mdi:timer
-  initial: 20
-  min: 0
-  max: 23
-  step: 1
-
-ellen_mins:
-  name: Minuter
-  icon: mdi:timer
-  initial: 10
-  min: 0
-  max: 59
-  step: 1
-
-julius_hrs:
-  name: Timmar
+  name: Internet stopp timme
   icon: mdi:timer
   initial: 21
   min: 0
   max: 23
   step: 1
 
-julius_mins:
-  name: Minuter
-  icon: mdi:timer
-  initial: 10
-  min: 0
-  max: 59
-  step: 1
 
-elias_hrs:
-  name: Timmar
-  icon: mdi:timer
-  initial: 22
-  min: 0
-  max: 23
-  step: 1
-
-elias_mins:
-  name: Minuter
-  icon: mdi:timer
-  initial: 10
-  min: 0
-  max: 59
-  step: 1
-
-william_hrs:
-  name: Timmar
-  icon: mdi:timer
-  initial: 22
-  min: 0
-  max: 23
-  step: 1
-
-william_mins:
-  name: Minuter
-  icon: mdi:timer
-  initial: 10
-  min: 0
-  max: 59
-  step: 1
-
-sovrum_hrs:
-  name: Timmar
-  icon: mdi:timer
-  initial: 23
-  min: 0
-  max: 23
-  step: 1
-
-sovrum_mins:
-  name: Minuter
+internet_stop_mins:
+  name: Internet stopp minut
   icon: mdi:timer
   initial: 30
-  min: 0
-  max: 59
-  step: 1
-
-kok_hrs:
-  name: Timmar
-  icon: mdi:timer
-  initial: 23
-  min: 0
-  max: 23
-  step: 1
-
-kok_mins:
-  name: Minuter
-  icon: mdi:timer
-  initial: 50
-  min: 0
-  max: 59
-  step: 1
-
-hallen_hrs:
-  name: Timmar
-  icon: mdi:timer
-  initial: 23
-  min: 0
-  max: 23
-  step: 1
-
-hallen_mins:
-  name: Minuter
-  icon: mdi:timer
-  initial: 59
-  min: 0
-  max: 59
-  step: 1
-
-vardagsrum_hrs:
-  name: Timmar
-  icon: mdi:timer
-  initial: 23
-  min: 0
-  max: 23
-  step: 1
-
-vardagsrum_mins:
-  name: Minuter
-  icon: mdi:timer
-  initial: 59
   min: 0
   max: 59
   step: 1
