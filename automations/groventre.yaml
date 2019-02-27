@@ -1,4 +1,5 @@
-- alias: "Locking door"
+- alias: "Låsa groventre"
+  initial_state: true
   trigger:
     - platform: state
       entity_id: lock.groventre
