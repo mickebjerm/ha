@@ -10,6 +10,8 @@ cards:
           title: Internet
           show_header_toggle: false
           entities:
+            - sensor.internet_starttime
+            - sensor.internet_stoptime
             - input_number.internet_start_hour
             - input_number.internet_start_mins
             - input_number.internet_stop_hour
