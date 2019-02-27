@@ -17,6 +17,7 @@ cards:
           - entity: input_number.internet_stop_mins
             name: Stäng minut
           - type: weather-forecast
+        - type: weather-forecast
           title: SMHI
           entity: weather.smhi_sundsvall
     - type: horizontal-stack
