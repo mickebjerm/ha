@@ -9,7 +9,7 @@ cards:
         - type: entities
           title: Internet
           show_header_toggle: false
-          - entities:
+          entities:
           - entity: input_number.internet_start_hour
             name: Starta timme
           - entity: input_number.internet_stop_hour
