@@ -7,21 +7,13 @@ cards:
     - type: horizontal-stack
       cards:
         - type: entities
-          title: motorvarmare
+          title: Lampor
           show_header_toggle: false
           entities:
-            - sensor.heater_departuretime
-            - sensor.heater_activationtime
-            - sensor.heater_forecast
-            - input_number.heater_hour
-            - input_number.heater_minute
-            - input_number.heater_delay
-            - input_number.heater_maxmin
-            - input_boolean.workdays_only
-            - switch.switch_engine_heater
+            - group.window_lights
         - type: weather-forecast
           title: SMHI
-          entity: weather.smhi_home
+          entity: weather.weather.smhi_sundsvall
     - type: horizontal-stack
       cards:
         - type: custom:monster-card
