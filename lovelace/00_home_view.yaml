@@ -7,11 +7,16 @@ cards:
     - type: horizontal-stack
       cards:
         - type: entities
-          title: Lampor
+          title: Internet
           show_header_toggle: false
-          entities:
-            - group.window_lights
-        - type: weather-forecast
+          - entities:
+            - entity: input_number.internet_start_hour
+              name: Starta timme
+            - entity: input_number.internet_stop_hour
+              name: Stäng timme
+            - entity: input_number.internet_stop_mins
+              name: Stäng minut
+            - type: weather-forecast
           title: SMHI
           entity: weather.smhi_sundsvall
     - type: horizontal-stack
