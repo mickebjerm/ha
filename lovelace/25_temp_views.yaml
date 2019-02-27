@@ -1,0 +1,30 @@
+title: Temps
+icon: mdi:thermometer
+path: temps
+cards:
+  - type: vertical-stack
+    cards:
+      - title: Övervåningen
+        type: entities   
+        entities:
+        - entity: sensor.elias_temperature
+          name: Elias
+        - entity: sensor.allrum_uppe_temperature
+          name: Allrum
+        - entity: sensor.julius_temperature
+          name: Julius & Oscar
+      - title: Nedervåningen
+        type: entities
+        entities:
+        - entity: sensor.utomhus_temperature
+          name: Baksidan
+        - entity: sensor.utomhus_humidity
+          name: Baksidan
+        - entity: sensor.utomhus_g2_temperature
+          name: Grannen
+        - entity: sensor.temp1
+          name: Sovrum
+        - entity: sensor.temp1_2
+          name: Sovrum
+        - entity: sensor.temp1_3
+          name: Sovrum

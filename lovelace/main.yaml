@@ -4,6 +4,7 @@ title: Home
 views:
     - !include 00_home_view.yaml
     - !include 20_lights_view.yaml
+    - !include 22_temp_view.yaml
     - !include 30_automations.yaml
     - !include 80_develop.yaml
     - !include everything.yaml

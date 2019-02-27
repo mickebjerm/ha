@@ -1,5 +1,5 @@
 title: Lights
-icon: mdi:lightbulb-on
+icon: mdi:thermometer
 path: lights
 cards:
   - type: vertical-stack
