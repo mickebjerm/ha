@@ -4,7 +4,7 @@
       friendly_name: 'Internet start'
       value_template: >-
         {% if states.input_number.internet_start_hour.state|round(0)|string|length == 1 %} {% set time = 0 %} {% endif %}
-        {% set time = time|string + states.iinput_number.internet_start_hour.state|round(0)|string + ':' %}
+        {% set time = time|string + states.input_number.internet_start_hour.state|round(0)|string + ':' %}
         {% if states.input_number.internet_start_mins.state|round(0)|string|length == 1 %} {% set time = time|string + '0' %} {% endif %}
         {% set time = time|string + states.input_number.internet_start_mins.state|round(0)|string %}
         {{ time }}
@@ -15,7 +15,7 @@
         {% set time = time|string + states.input_number.internet_stop_hour.state|round(0)|string + ':' %}
         {% if states.input_number.internet_stop_mins.state|round(0)|string|length == 1 %} {% set time = time|string + '0' %} {% endif %}
         {% set time = time|string + states.input_number.internet_stop_mins.state|round(0)|string %}
-        {{ (as_timestamp(now().strftime("%Y-%m-%d") + ' ' + time) - atime) | timestamp_custom("%H:%M")|string }}
+        {{ time }}
 - platform: time_date
   display_options:
     - 'time'
