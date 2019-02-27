@@ -4,6 +4,16 @@ path: temps
 cards:
   - type: vertical-stack
     cards:
+      - title: Utomhus
+        type: entities
+        show_header_toggle: false
+        entities:
+        - entity: sensor.utomhus_temperature
+          name: Baksidan
+        - entity: sensor.utomhus_humidity
+          name: Baksidan
+        - entity: sensor.utomhus_g2_temperature
+          name: Grannen
       - title: Övervåningen
         type: entities
         show_header_toggle: false 
@@ -18,12 +28,10 @@ cards:
         type: entities
         show_header_toggle: false
         entities:
-        - entity: sensor.utomhus_temperature
-          name: Baksidan
+        - entity: sensor.vardagsrum_temperature
+          name: Vardagsrum
         - entity: sensor.utomhus_humidity
-          name: Baksidan
-        - entity: sensor.utomhus_g2_temperature
-          name: Grannen
+          name: Vardagsrum
         - entity: sensor.temp1
           name: Sovrum
         - entity: sensor.temp1_2
