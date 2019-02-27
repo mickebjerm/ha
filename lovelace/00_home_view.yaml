@@ -4,7 +4,7 @@ path: home
 cards:
   - type: vertical-stack
     cards:
-    - type: horizontal-stack
+    - type: vertical-stack
       cards:
         - type: entities
           title: Internet
@@ -16,7 +16,7 @@ cards:
             - input_number.internet_start_mins
             - input_number.internet_stop_hour
             - input_number.internet_stop_mins
-        - type: horizontal-stack
+        - type: vertical-stack
           cards:
             - type: custom:monster-card
               show_empty: false
