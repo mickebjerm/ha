@@ -1,5 +1,5 @@
 internet_start_hour:
-  name: Internet start timme
+  name: Start timme
   icon: mdi:timer
   initial: 07
   min: 0
@@ -8,7 +8,7 @@ internet_start_hour:
 
 
 internet_start_mins:
-  name: Internet start minut
+  name: Start minut
   icon: mdi:timer
   initial: 0
   min: 0
@@ -16,7 +16,7 @@ internet_start_mins:
   step: 1
 
 internet_stop_hour:
-  name: Internet stopp timme
+  name: Stop timme
   icon: mdi:timer
   initial: 21
   min: 0
@@ -24,7 +24,7 @@ internet_stop_hour:
   step: 1
 
 internet_stop_mins:
-  name: Internet stopp minut
+  name: Stop minut
   icon: mdi:timer
   initial: 30
   min: 0
