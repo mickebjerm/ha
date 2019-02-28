@@ -30,132 +30,50 @@ internet_stop_mins:
   max: 59
   step: 1
 
-ellen_hour:	
-  name: Timmar
+other_lights_stop_hour:
+  name: Timme
   icon: mdi:timer
-  initial: 20
+  initial: 23
   min: 0
   max: 23
   step: 1
 
-ellen_mins:
-  name: Minuter
+other_lights_stop_mins:
+  name: Minut
   icon: mdi:timer
-  initial: 10
+  initial: 55
   min: 0
   max: 59
   step: 1
 
-
-julius_hour:
-  name: Timmar
+teenage_lights_stop_hour:
+  name: Timme
   icon: mdi:timer
   initial: 21
   min: 0
   max: 23
   step: 1
 
-
-julius_mins:
-  name: Minuter
-  icon: mdi:timer
-  initial: 10
-  min: 0
-  max: 59
-  step: 1
-
-elias_hour:
-  name: Timmar
-  icon: mdi:timer
-  initial: 22
-  min: 0
-  max: 23
-  step: 1
-
-elias_mins:
-  name: Minuter
-  icon: mdi:timer
-  initial: 10
-  min: 0
-  max: 59
-  step: 1
-
-william_hour:
-  name: Timmar
-  icon: mdi:timer
-  initial: 22
-  min: 0
-  max: 23
-  step: 1
-
-william_mins:
-  name: Minuter
-  icon: mdi:timer	
-  initial: 10	
-  min: 0	
-  max: 59	
-  step: 1	
-
-sovrum_hour:	
-  name: Timmar	
-  icon: mdi:timer	
-  initial: 23	
-  min: 0	
-  max: 23	
-  step: 1	
-
-sovrum_mins:	
-  name: Minuter	
+teenage_lights_stop_mins:
+  name: Minut
   icon: mdi:timer
   initial: 30
   min: 0
   max: 59
   step: 1
 
-kok_hour:	
-  name: Timmar	
-  icon: mdi:timer	
-  initial: 23	
-  min: 0	
-  max: 23	
-  step: 1	
+kids_lights_stop_hour:
+  name: Timme
+  icon: mdi:timer
+  initial: 20
+  min: 0
+  max: 23
+  step: 1
 
-kok_mins:	
-  name: Minuter	
-  icon: mdi:timer	
-  initial: 50	
-  min: 0	
-  max: 59	
-  step: 1	
-
-hallen_hour:	
-  name: Timmar	
-  icon: mdi:timer	
-  initial: 23	
-  min: 0	
-  max: 23	
-  step: 1	
-
-hallen_mins:	
-  name: Minuter	
-  icon: mdi:timer	
-  initial: 59	
-  min: 0	
-  max: 59	
-  step: 1	
-
-vardagsrum_hour:	
-  name: Timmar	
-  icon: mdi:timer	
-  initial: 23	
-  min: 0	
-  max: 23	
-  step: 1	
-
-vardagsrum_mins:	
-  name: Minuter	
-  icon: mdi:timer	
-  initial: 59	
-  min: 0	
-  max: 59	
+kids_lights_stop_mins:
+  name: Minut
+  icon: mdi:timer
+  initial: 00
+  min: 0
+  max: 59
   step: 1
