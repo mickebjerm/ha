@@ -23,9 +23,15 @@ cards:
         entities:
         - entity: sensor.elias_temperature
           name: Elias
+        - entity: sensor.elias_humidity
+          name: Elias
         - entity: sensor.allrum_uppe_temperature
           name: Allrum
+        - entity: sensor.allrum_uppe_humidity
+          name: Allrum
         - entity: sensor.julius_temperature
+          name: Julius & Oscar
+        - entity: sensor.julius_humidity
           name: Julius & Oscar
       - title: Nedervåningen
         type: entities
