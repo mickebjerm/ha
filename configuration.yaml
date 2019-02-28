@@ -107,3 +107,5 @@ shell_command:
   lovelace_gen: 'python /config/commands/lovelace-gen.py > /config/lovelace-gen.log'
   firewall_kids_stop: 'echo "STOPPING: $(date)" >> /config/firewall-kids.log'
   firewall_kids_start: 'echo "STARTING: $(date)" >> /config/firewall-kids.log'
+  test1: 'ip firewall filter enable numbers=14'
+  test2: 'ip firewall filter disable numbers=14'
