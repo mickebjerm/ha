@@ -35,6 +35,7 @@ cards:
           icon: mdi:lightbulb
       - title: Lampor tonåringar
         type: entities
+        show_header_toggle: false
         entities:
         - entity: sensor.teenage_lights
           name: Tid för släckning
@@ -42,6 +43,7 @@ cards:
         - entity: input_number.teenage_lights_stop_mins
       - title: Lampor barn
         type: entities
+        show_header_toggle: false
         entities:
         - entity: sensor.kids_lights
           name: Tid för släckning
@@ -49,6 +51,7 @@ cards:
         - entity: input_number.kids_lights_stop_mins
       - title: Lampor övrigt
         type: entities
+        show_header_toggle: false
         entities:
         - entity: sensor.other_lights
           name: Tid för släckning
