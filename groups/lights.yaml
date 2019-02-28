@@ -13,7 +13,6 @@ window_lights:
     - switch.sovrum
     - switch.allrum
 
-
 teenage_lights:
   name: Fönsterlampor tonåringar
   icon: mdi:lightbulb
@@ -24,14 +23,12 @@ teenage_lights:
     - switch.elias
     - switch.allrum
 
-
 kids_lights:
   view: yes
   name: Fönsterlampor barn
   icon: mdi:lightbulb
   entities:
     - switch.ellen
-
 
 other_lights:
   name: Fönsterlampor övriga
