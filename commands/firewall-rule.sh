@@ -14,7 +14,7 @@ if [ "$1" == "firewall" ]; then
         fi
     else 
         echo "INFO: [${2} rule:${3}] [${DATE}] " >> /config/firewall-kids.log
-        ssh ${SSH_USER}@${SSH_HOST} -- "ip firewall filter ${2} numbers=${3}"
+        ssh ${SSH_USER}@${SSH_HOST} -- "ip firewall filter ${2} numbers=${3}" >> /config/firewall-kids.log
         exit 0
     fi
 else
