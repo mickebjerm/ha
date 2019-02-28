@@ -26,4 +26,4 @@ deconz:
 unifi:
   title: Unifi
   icon: mdi:wifi
-  url: https://hassio.local:8443
+  url: http://hassio.local:8443
