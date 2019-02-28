@@ -105,5 +105,5 @@ panel_iframe: !include panel_iframe.yaml
 
 shell_command:
   lovelace_gen: 'python /config/commands/lovelace-gen.py > /config/lovelace-gen.log'
-  firewall_kids_stop: 'sh /config/commands/firewall-rule.sh firewall disable 14'
-  firewall_kids_start: 'sh /config/commands/firewall-rule.sh firewall enable 14'
+  firewall_kids_stop: 'sh /config/commands/firewall-rule.sh firewall enable 14'
+  firewall_kids_start: 'sh /config/commands/firewall-rule.sh firewall disable 14'
