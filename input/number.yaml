@@ -6,7 +6,6 @@ internet_start_hour:
   max: 23
   step: 1
 
-
 internet_start_mins:
   name: Start minut
   icon: mdi:timer
@@ -31,21 +30,20 @@ internet_stop_mins:
   max: 59
   step: 1
 
-
 ellen_hour:	
-  name: Timmar	
-  icon: mdi:timer	
-  initial: 20	
-  min: 0	
-  max: 23	
-  step: 1	
+  name: Timmar
+  icon: mdi:timer
+  initial: 20
+  min: 0
+  max: 23
+  step: 1
 
-ellen_mins:	
-  name: Minuter	
+ellen_mins:
+  name: Minuter
   icon: mdi:timer
   initial: 10
   min: 0
-  max: 59	
+  max: 59
   step: 1
 
 
@@ -58,37 +56,37 @@ julius_hour:
   step: 1
 
 
-julius_mins:	
-  name: Minuter	
-  icon: mdi:timer	
-  initial: 10	
-  min: 0	
-  max: 59	
-  step: 1	
+julius_mins:
+  name: Minuter
+  icon: mdi:timer
+  initial: 10
+  min: 0
+  max: 59
+  step: 1
 
-elias_hour:	
-  name: Timmar	
-  icon: mdi:timer	
-  initial: 22	
-  min: 0	
-  max: 23	
-  step: 1	
+elias_hour:
+  name: Timmar
+  icon: mdi:timer
+  initial: 22
+  min: 0
+  max: 23
+  step: 1
 
-elias_mins:	
-  name: Minuter	
-  icon: mdi:timer	
-  initial: 10	
-  min: 0	
-  max: 59	
-  step: 1	
+elias_mins:
+  name: Minuter
+  icon: mdi:timer
+  initial: 10
+  min: 0
+  max: 59
+  step: 1
 
-william_hour:	
-  name: Timmar	
-  icon: mdi:timer	
-  initial: 22	
-  min: 0	
-  max: 23	
-  step: 1	
+william_hour:
+  name: Timmar
+  icon: mdi:timer
+  initial: 22
+  min: 0
+  max: 23
+  step: 1
 
 william_mins:
   name: Minuter
