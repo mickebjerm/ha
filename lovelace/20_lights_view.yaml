@@ -33,3 +33,24 @@ cards:
           icon: mdi:lightbulb
         - entity: switch.gymmet
           icon: mdi:lightbulb
+      - title: Lampor tonåringar
+        type: entities
+        entities:
+        - entity: sensor.teenage_lights
+          name: Tid för släckning
+        - entity: input_number.teenage_lights_stop_hour
+        - entity: input_number.teenage_lights_stop_mins
+      - title: Lampor barn
+        type: entities
+        entities:
+        - entity: sensor.kids_lights
+          name: Tid för släckning
+        - entity: input_number.kids_lights_stop_hour
+        - entity: input_number.kids_lights_stop_mins
+      - title: Lampor övrigt
+        type: entities
+        entities:
+        - entity: sensor.other_lights
+          name: Tid för släckning
+        - entity: input_number.other_lights_stop_hour
+        - entity: input_number.other_lights_stop_mins
