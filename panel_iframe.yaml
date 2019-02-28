@@ -22,3 +22,8 @@ deconz:
   title: DeConz
   icon: mdi:zigbee
   url: http://hassio.local:9880
+
+unifi:
+  title: Unifi
+  icon: mdi:wifi
+  url: https://hassio.local:8443
