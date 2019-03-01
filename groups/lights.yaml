@@ -1,7 +1,8 @@
 window_lights:
   name: Fönsterlampor
   entities:
-    - switch.kok
+    - switch.koket
+    - switch.hallen
     - switch.vardagsrum
     - switch.gymmet
     - switch.william
@@ -29,5 +30,6 @@ other_lights:
   entities:
     - switch.sovrum
     - switch.vardagsrum
-    - switch.kok
+    - switch.koket
     - switch.gymmet
+    - switch.hallen
