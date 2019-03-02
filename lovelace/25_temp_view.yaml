@@ -39,7 +39,7 @@ cards:
         entities:
         - entity: sensor.kok_temperature
           name: Köket
-        - entity: sensor.kok_temperature
+        - entity: sensor.kok_humidity
           name: Köket
         - entity: sensor.vardagsrum_temperature
           name: Vardagsrum
