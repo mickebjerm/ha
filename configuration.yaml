@@ -94,6 +94,7 @@ verisure:
   mouse: 0
   door_window: 0
 
+device_tracker: !include device_tracker.yaml
 
 sensor: !include_dir_merge_list sensors/
 group: !include_dir_merge_named groups/
