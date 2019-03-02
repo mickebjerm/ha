@@ -70,9 +70,6 @@ homekit:
       - light
       - media_player
 
-tellduslive:
-  scan_interval: 5
-
 influxdb:
   host: !secret influx_host 
   port: !secret influx_port
