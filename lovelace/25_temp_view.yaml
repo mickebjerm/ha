@@ -37,9 +37,9 @@ cards:
         type: entities
         show_header_toggle: false
         entities:
-        - entity: sensor.koket_temperature
+        - entity: sensor.kok_temperature
           name: Köket
-        - entity: sensor.koket_temperature
+        - entity: sensor.kok_temperature
           name: Köket
         - entity: sensor.vardagsrum_temperature
           name: Vardagsrum
