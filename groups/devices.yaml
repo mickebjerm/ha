@@ -1,0 +1,5 @@
+iphones_wifi:
+  name: Iphones wifi
+  entities:
+    - device_tracker.emmahalniphone7
+    - device_tracker.micke_iphone7_2
