@@ -2,5 +2,5 @@
   host: !secret unifi_host
   username: !secret unifi_user
   password: !secret unifi_pass
-  ssid_filter:
-    - 'CRASH'
+  verify_ssl: false
+  detection_time: 60
