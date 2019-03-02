@@ -10,12 +10,18 @@ cards:
           title: Internet
           show_header_toggle: false
           entities:
-            - sensor.internet_starttime
-            - sensor.internet_stoptime
-            - input_number.internet_start_hour
-            - input_number.internet_start_mins
-            - input_number.internet_stop_hour
-            - input_number.internet_stop_mins
+          - entity: sensor.internet_starttime
+            icon: mdi:clock-start
+          - entity: sensor.internet_stoptime
+            icon: mdi:clock-end
+          - entity: input_number.internet_start_hour
+            icon: mdi:timer
+          - entity: input_number.internet_start_mins
+            icon: mdi:timer
+          - entity: input_number.internet_stop_hour
+            icon: mdi:timer-off
+          - entity: input_number.internet_stop_mins
+            icon: mdi:timer-off
         - type: vertical-stack
           cards:
             - type: custom:monster-card
