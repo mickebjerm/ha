@@ -1,0 +1,37 @@
+title: Tests
+path: Test
+cards:
+  - type: vertical-stack
+    cards:
+      - title: Internet
+        type: entities
+        show_header_toggle: false 
+        entities:
+        - entity: switch.allrum
+          icon: mdi:lightbulb
+          name: Allrummet
+        - entity: switch.elias
+          icon: mdi:lightbulb
+          name: Elias
+        - entity: switch.julius
+          icon: mdi:lightbulb
+          name: Julius & Oscar
+        - entity: sensor.internet_starttime
+          icon: mdi:clock-start
+        - entity: ensor.internet_stoptime
+          icon: mdi:clock-end
+        - entity: input_number.internet_start_hour
+          icon: mdi:timer
+        - entity: input_number.internet_start_mins
+          icon: mdi:timer
+        - entity: input_number.internet_stop_hour
+          icon: mdi:timer-off
+        - entity: input_number.internet_stop_mins
+          icon: mdi:timer-off
+      - title: Mediaspelare
+        type: entities
+        show_header_toggle: false
+        filter:
+          include:
+            - entity_id: 'media_player.*'
+              type: media-control
