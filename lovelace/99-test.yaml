@@ -28,15 +28,3 @@ cards:
           icon: mdi:timer-off
         - entity: input_number.internet_stop_mins
           icon: mdi:timer-off
-        - type: vertical-stack
-          cards:
-            - type: custom:monster-card
-              show_empty: false
-              card:
-                type: entities
-                show_header_toggle: false
-                title: Media Players
-              filter:
-                include:
-                  - entity_id: 'media_player.*'
-                    type: media-control
