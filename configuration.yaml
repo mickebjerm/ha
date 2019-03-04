@@ -64,6 +64,21 @@ tts:
 # Cloud
 cloud:
 
+
+notify:
+  - name: pushbullet
+    platform: pushbullet
+    api_key: !secret pushbullet_key
+
+logger:
+  default: info
+  logs:
+    homeassistant.components.device_tracker: warn
+    homeassistant.components.sensor: warn
+    homeassistant.components.sensor.scrape: info
+    homeassistant.component.media_player: info
+    homeassistant.components.unifi: error
+
 #homekit:
 #  filter:
 #    include_domains:
