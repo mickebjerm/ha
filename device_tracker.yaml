@@ -5,13 +5,3 @@
   verify_ssl: false
   detection_time: 60
   track_new_devices: false
-  monitored_conditions: 
-    - ip
-    - last_seen
-    - latest_assoc_time
-    - name
-    - powersave_enabled
-    - signal
-    - tx_power
-    - uptime
-    - user_id
