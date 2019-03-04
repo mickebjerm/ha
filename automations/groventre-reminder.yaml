@@ -1,0 +1,20 @@
+
+- alias: "Groventre påminnelse"
+  trigger:
+    - platform: state
+      entity_id: device_tracker.micke_iphone7_2
+      to: 'not_home'
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: binary_sensor.window_door_sensor
+        state: 'off'
+      - condition: state
+        entity_id: lock.groventre
+        state: 'unlocked'
+  action:
+    service: notify.pushbullet
+    data:
+      message: 'Dörren ej låst!'
+      title: 'Groventre'
