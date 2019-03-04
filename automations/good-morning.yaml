@@ -23,7 +23,7 @@
       to: 'not_home'
   condition:
     - condition: time
-      before: '09:00'
+      after: '08:00'
       weekday:
         - mon
         - tue
