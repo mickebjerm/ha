@@ -16,5 +16,5 @@
   action:
     service: notify.pushbullet
     data:
-      message: 'Dörren ej låst!'
-      title: 'Groventre'
+      message: 'Lås dörren för tusan!!'
+      title: 'Groventre - olåst'
