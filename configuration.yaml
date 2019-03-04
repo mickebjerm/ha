@@ -64,11 +64,11 @@ tts:
 # Cloud
 cloud:
 
-homekit:
-  filter:
-    include_domains:
-      - light
-      - media_player
+#homekit:
+#  filter:
+#    include_domains:
+#      - light
+#      - media_player
 
 influxdb:
   host: !secret influx_host 
