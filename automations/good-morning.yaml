@@ -24,6 +24,7 @@
   condition:
     - condition: time
       after: '08:00'
+      before: '09:00'
       weekday:
         - mon
         - tue
