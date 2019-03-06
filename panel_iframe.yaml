@@ -22,3 +22,9 @@ deconz:
   title: DeConz
   icon: mdi:zigbee
   url: http://hassio.local:9880
+
+
+logging:
+  title: Logging
+  icon: mdi:card-text-outline
+  url: http://hassio.local:4277
