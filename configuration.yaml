@@ -78,6 +78,9 @@ logger:
     homeassistant.components.sensor.scrape: info
     homeassistant.component.media_player: info
     homeassistant.components.unifi: error
+    pydeconz: debug
+    homeassistant.components.deconz: debug
+
 
 #homekit:
 #  filter:
