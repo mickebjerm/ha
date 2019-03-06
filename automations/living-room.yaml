@@ -1,0 +1,10 @@
+
+- alias: "Vardagsrum TV - stäng av sonos"
+  trigger:
+    - platform: state
+      entity_id: remote.vardagsrum
+      to: 'on'
+  action:
+    - service: media_player.media_play_pause
+      data:
+        entity_id: media_player.vardagsrum_2"
