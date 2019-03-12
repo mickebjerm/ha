@@ -17,6 +17,7 @@
 
 
 - alias: 'Godmorgon - av'
+  initial_state: true
   trigger:
     - platform: state
       entity_id: device_tracker.micke_iphone7_2

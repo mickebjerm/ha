@@ -1,30 +1,13 @@
 title: Tests
+icon: mdi:wifi
 path: Test
 cards:
-  - type: vertical-stack
-    cards:
-      - title: Internet
-        type: entities
-        show_header_toggle: false 
-        entities:
-        - entity: sensor.internet_starttime
-          icon: mdi:clock-start
-        - entity: sensor.internet_stoptime
-          icon: mdi:clock-end
-        - entity: input_number.internet_start_hour
-          icon: mdi:timer
-        - entity: input_number.internet_start_mins
-          icon: mdi:timer
-        - entity: input_number.internet_stop_hour
-          icon: mdi:timer-off
-        - entity: input_number.internet_stop_mins
-          icon: mdi:timer-off
-      - title: Mediaspelare
-        type: entities
-        entities:
-        - entity_id: 'media_player.koket'
-          type: media-control
-        - entity_id: 'media_player.vardagsrum'
-          type: media-control
-        - entity_id: 'media_player.gymmet'
-          type: media-control
+  - type: custom:monster-card
+    show_empty: false
+    card:
+      type: entities
+      show_header_toggle: false
+      title: Devices
+    filter:
+      include:
+        - entity_id: 'device_tracker.*'

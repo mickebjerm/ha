@@ -106,6 +106,7 @@ influxdb:
 verisure:
   username: !secret verisure_username
   password: !secret verisure_password
+  giid: !secret verisure_giid
   alarm: 0
   hygrometers: 0
   smartplugs: 0
