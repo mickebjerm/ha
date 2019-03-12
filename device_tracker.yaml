@@ -20,4 +20,5 @@
   host: !secret mikrotik_host
   username: !secret mikrotik_user
   password: !secret mikrotik_pass
+  track_new_devices: true
   method: wireless
