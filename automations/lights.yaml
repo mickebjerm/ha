@@ -1,4 +1,5 @@
-- alias: "Lampor på"
+- id: lamps-on
+  alias: "Lamps - on"
   initial_state: true
   trigger:
    - platform: sun
@@ -12,7 +13,8 @@
       entity_id: group.window_lights
 
 
-- alias: "Lampor av övrigt"
+- id: lamps-off-other
+  alias: "Lamps other - off"
   initial_state: true
   trigger:
     platform: template
@@ -22,7 +24,8 @@
       entity_id: group.other_lights
 
 
-- alias: "Lampor av tonåringar"
+- id: lamps-off-teenage
+  alias: "Lamps teenage - off"
   initial_state: true
   trigger:
     platform: template
@@ -32,7 +35,8 @@
       entity_id: group.teenage_lights
 
 
-- alias: "Lampor av barn"
+- id: lamps-kids-off
+  alias: "Lamps kids - off"
   initial_state: true
   trigger:
     platform: template

@@ -1,4 +1,5 @@
-- alias: "Godmorgon - på"
+- id: goodmorning-on
+  alias: "Goodmorning - on"
   initial_state: true
   trigger:
     - platform: time
@@ -16,7 +17,8 @@
       entity_id: group.window_lights
 
 
-- alias: 'Godmorgon - av'
+- id: goodmorning-off
+  alias: 'Goodmorning - off'
   initial_state: true
   trigger:
     - platform: state

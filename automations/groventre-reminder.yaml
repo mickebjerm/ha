@@ -1,5 +1,6 @@
 
-- alias: "Groventre påminnelse"
+- id: reminder-groventre
+  alias: "Groventre reminder"
   trigger:
     - platform: state
       entity_id: device_tracker.micke_iphone7_2

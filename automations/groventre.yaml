@@ -1,4 +1,5 @@
-- alias: "Låsa groventre"
+- id: lock-groventre
+  alias: "Locking groventre"
   initial_state: true
   trigger:
     - platform: state
