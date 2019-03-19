@@ -85,6 +85,7 @@ logger:
     homeassistant.components.deconz: error
     homeassistant.components.lock: debug
     homeassistant.components.automation: debug
+    homeassistant.components.verisure: debug
 
 #homekit:
 #  filter:
