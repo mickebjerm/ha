@@ -21,7 +21,7 @@ grafana:
 deconz:
   title: DeConz
   icon: mdi:zigbee
-  url: http://hassio.local:9880
+  url: http://hassio.local:8080
 
 
 logging:
