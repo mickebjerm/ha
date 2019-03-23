@@ -38,10 +38,9 @@
         entity_id: lock.groventre
         state: 'unlocked'
   action:
-    action:
     - delay:
         minutes: "2"
-    service: notify.pushbullet
-    data:
-      message: 'Lås dörren för tusan!!'
-      title: 'Groventre - olåst'
+    - service: notify.pushbullet
+      data:
+        message: 'Lås dörren för tusan!!'
+        title: 'Groventre - olåst'
