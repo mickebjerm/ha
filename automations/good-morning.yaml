@@ -26,7 +26,6 @@
       to: 'not_home'
   condition:
     - condition: time
-      after: '08:00'
       before: '09:00'
       weekday:
         - mon
@@ -35,5 +34,7 @@
         - thu
         - fri
   action:
+    - delay:
+        minutes: "10"
     - service: homeassistant.turn_off
       entity_id: group.window_lights

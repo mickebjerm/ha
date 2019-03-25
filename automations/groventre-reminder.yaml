@@ -19,28 +19,3 @@
     data:
       message: 'Lås dörren för tusan!!'
       title: 'Groventre - olåst'
-
-
-
-- id: test-reminder-groventre
-  alias: "Groventre reminder TEST"
-  trigger:
-    - platform: state
-      entity_id: binary_sensor.window_door_sensor
-      to: 'on'
-  condition:
-    condition: and
-    conditions:
-      - condition: state
-        entity_id: binary_sensor.window_door_sensor
-        state: 'off'
-      - condition: state
-        entity_id: lock.groventre
-        state: 'unlocked'
-  action:
-    - delay:
-        minutes: "2"
-    - service: notify.pushbullet
-      data:
-        message: 'Lås dörren för tusan!!'
-        title: 'Groventre - olåst'
