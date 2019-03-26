@@ -18,7 +18,7 @@ if [ "$1" == "firewall" ]; then
         ssh -o stricthostkeychecking=no -i ${SSH_KEY} ${SSH_USER}@${SSH_HOST} -- "ip firewall filter ${2} numbers=${3}" >> /config/firewall-kids.log
         exit 0
     fi
-elif  [ "$1" == "status" ]; then
+elif [ "$1" == "status" ]; then
     echo "INFO: [status rule:${3}] [${DATE}] " >> /config/firewall-kids.log
     STATUS=`ssh -o stricthostkeychecking=no -i ${SSH_KEY} ${SSH_USER}@${SSH_HOST} -- "ip firewall filter print " | grep ^${3} | awk '{print $2}'`
     if [ "$STATUS" == "X" ]; then
