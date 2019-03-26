@@ -1,5 +1,4 @@
 title: Home
-panel: true
 path: homes
 cards:
   - type: vertical-stack
