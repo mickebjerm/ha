@@ -10,6 +10,9 @@ cards:
           title: Internet
           show_header_toggle: false
           entities:
+          - entity: sensor.internet
+            name: Status
+            icon: mdi:wifi
           - entity: sensor.internet_starttime
             icon: mdi:clock-start
           - entity: sensor.internet_stoptime
