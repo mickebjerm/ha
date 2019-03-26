@@ -19,6 +19,6 @@
         {{ time2 }}
 
 
- - platform: command_line
-    name: Internet
-    command: "sh /config/commands/firewall-rule.sh status 11"
+- platform: command_line
+  name: Internet
+  command: "sh /config/commands/firewall-rule.sh status 11"
