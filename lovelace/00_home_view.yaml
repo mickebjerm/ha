@@ -1,41 +1,37 @@
 title: Home
 panel: true
-path: home
+path: homes
 cards:
   - type: vertical-stack
     cards:
-    - type: vertical-stack
-      cards:
-        - type: entities
-          title: Internet
-          show_header_toggle: false
-          entities:
-          - entity: sensor.internet
-            name: Status
-            icon: mdi:wifi
-          - entity: sensor.internet_starttime
-            icon: mdi:clock-start
-          - entity: sensor.internet_stoptime
-            icon: mdi:clock-end
-          - entity: input_number.internet_start_hour
-            icon: mdi:timer
-          - entity: input_number.internet_start_mins
-            icon: mdi:timer
-          - entity: input_number.internet_stop_hour
-            icon: mdi:timer-off
-          - entity: input_number.internet_stop_mins
-            icon: mdi:timer-off
-        - type: vertical-stack
-          cards:
-            - type: custom:monster-card
-              show_empty: false
-              card:
-                type: entities
-                show_header_toggle: false
-                title: Media Players
-              filter:
-                include:
-                  - entity_id: 'media_player.*'
-                    type: media-control
-
-      
+      - title: Internet
+        type: entities   
+        entities:
+        - entity: sensor.internet
+          name: Status
+          icon: mdi:wifi
+        - entity: sensor.internet_starttime
+          icon: mdi:clock-start
+        - entity: sensor.internet_stoptime
+          icon: mdi:clock-end
+        - entity: input_number.internet_start_hour
+          icon: mdi:timer
+        - entity: input_number.internet_start_mins
+          icon: mdi:timer
+        - entity: input_number.internet_stop_hour
+          icon: mdi:timer-off
+        - entity: input_number.internet_stop_mins
+          icon: mdi:timer-off
+      - title: Mediaspelare
+        type: entities
+        entities:
+        - entity: media_player.gymmet
+          icon: mdi:music
+        - entity: media_player.kok
+          icon: mdi:music
+        - entity: media_player.vardagsrum_2
+          icon: mdi:music
+        - entity: media_player.sovrum
+          icon: mdi:apple
+        - entity: media_player.vardagsrum
+          icon: mdi:apple
