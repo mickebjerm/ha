@@ -1,9 +1,12 @@
 title: Home
+panel: true
+icon: mdi:home-outline
 path: homes
 cards:
   - type: vertical-stack
     cards:
       - title: Internet
+        show_header_toggle: false
         type: entities   
         entities:
         - entity: sensor.internet
@@ -22,6 +25,7 @@ cards:
         - entity: input_number.internet_stop_mins
           icon: mdi:timer-off
       - title: Mediaspelare
+        show_header_toggle: false
         type: entities
         entities:
         - entity: media_player.gymmet
