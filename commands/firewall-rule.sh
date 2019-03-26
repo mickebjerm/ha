@@ -22,9 +22,9 @@ elif [ "$1" == "status" ]; then
     echo "INFO: [status rule:${2}] [${DATE}] " >> /config/firewall-kids.log
     STATUS=`ssh -o stricthostkeychecking=no -i ${SSH_KEY} ${SSH_USER}@${SSH_HOST} -- "ip firewall filter print " | grep ^${2} | awk '{print $2}'`
     if [ "$STATUS" == "X" ]; then
-        echo "off"
+        echo "on"
     else
-        echo "on" 
+        echo "off" 
     fi
 else
     echo "ERROR: [firewall] [${DATE}]" >> /config/firewall-kids.log
