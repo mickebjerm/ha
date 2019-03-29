@@ -21,4 +21,4 @@
 
 - platform: command_line
   name: Internet
-  command: "sh /config/commands/firewall-rule.sh status 11"
+  command: "sh /config/commands/firewall-rule.sh status 12"
