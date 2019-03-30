@@ -2,6 +2,10 @@ title: Home
 panel: true
 icon: mdi:home-outline
 path: home
+views:
+- badges:
+  - sensor.internet
+  - lock.groventre
 cards:
   - type: vertical-stack
     cards:
