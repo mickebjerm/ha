@@ -1,6 +1,9 @@
 title: Home
 icon: mdi:home-outline
 path: home
+views:
+- badges:
+  - sensor.internet
 cards:
   - type: vertical-stack
     cards:
