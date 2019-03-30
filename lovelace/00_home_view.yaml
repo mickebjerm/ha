@@ -1,14 +1,14 @@
 title: Home
-panel: true
 icon: mdi:home-outline
 path: home
-views:
-- badges:
-  - sensor.internet
-  - lock.groventre
 cards:
   - type: vertical-stack
     cards:
+      - title: Dörrar
+        show_header_toggle: false
+        type: entities
+        - entity: lock.groventre
+          name: Groventre
       - title: Internet
         show_header_toggle: false
         type: entities   
