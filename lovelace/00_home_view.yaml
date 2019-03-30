@@ -6,7 +6,7 @@ cards:
     cards:
       - title: Dörrar
         show_header_toggle: false
-        type: entities
+        type: entities   
         entities:
         - entity: lock.groventre
           name: Groventre
