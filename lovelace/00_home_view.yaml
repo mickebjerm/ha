@@ -41,5 +41,7 @@ cards:
           icon: mdi:music
         - entity: media_player.sovrum
           icon: mdi:apple
+          name: Sovrum
         - entity: media_player.vardagsrum
           icon: mdi:apple
+          name: Vardagsrum
