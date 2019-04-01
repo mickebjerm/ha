@@ -16,3 +16,19 @@
       data:
         entity_id: lock.groventre
         code: !secret verisure_code
+
+
+- id: unlock-groventre
+  alias: 'Unlocking groventre'
+  initial_state: true
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      id: groventre
+      event: 1002
+  action:
+    - service: lock.unlock
+      data:
+        entity_id: lock.groventre
+        code: !secret verisure_code
