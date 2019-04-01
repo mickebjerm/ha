@@ -81,11 +81,11 @@ logger:
     homeassistant.components.sensor.scrape: info
     homeassistant.component.media_player: info
     homeassistant.components.unifi: error
-    pydeconz: debug
-    homeassistant.components.deconz: debug
-    homeassistant.components.lock: debug
-    homeassistant.components.automation: debug
-    homeassistant.components.verisure: debug
+    pydeconz: error
+    homeassistant.components.deconz: error
+    homeassistant.components.lock: error
+    homeassistant.components.automation: error
+    homeassistant.components.verisure: error
 
 #homekit:
 #  filter:
