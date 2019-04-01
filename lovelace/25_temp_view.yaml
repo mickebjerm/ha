@@ -51,3 +51,9 @@ cards:
           name: Sovrum
         - entity: sensor.temp1_3
           name: Sovrum
+        - entity: sensor.temperature_6
+          name: Gymmet
+        - entity: sensor.humidity_7
+          name: Gymmet
+        - entity: sensor.pressure_8
+          name: Gymmet
