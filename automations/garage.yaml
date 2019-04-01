@@ -1,0 +1,27 @@
+- id: garage-motion-off
+  alias: "Garage motion - on"
+  initial_state: true  
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.presence_10
+      to: 'on'
+  action:
+    service: notify.pushbullet
+    data:
+      message: 'Garage motion on'
+      title: 'Garage - motion on'
+
+- id: garage-motion-off
+  alias: "Garage motion - off"
+  initial_state: true
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.presence_10
+      to: 'off'
+      for:
+        minutes: 5
+  action:
+    service: notify.pushbullet
+    data:
+      message: 'Garage motion off'
+      title: 'Garage - motion off'
