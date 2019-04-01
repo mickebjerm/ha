@@ -7,7 +7,7 @@
      offset: '-01:30:00'
   condition:
     condition: time
-    before: '18:00'
+    before: '20:00'
   action:
     - service: homeassistant.turn_on
       entity_id: group.window_lights
