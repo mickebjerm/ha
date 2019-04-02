@@ -58,7 +58,7 @@ sun:
 ios:
 
 # Apple_tv
-apple_tv: !include apple_tv.yaml
+#apple_tv: !include apple_tv.yaml
 
 # Text to speech
 tts:
