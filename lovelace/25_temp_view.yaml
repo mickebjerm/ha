@@ -37,6 +37,8 @@ cards:
         type: entities
         show_header_toggle: false
         entities:
+        - entity: sensor.temp_groventre
+          name: Groventre
         - entity: sensor.kok_temperature
           name: Köket
         - entity: sensor.kok_humidity
@@ -57,3 +59,5 @@ cards:
           name: Gymmet
         - entity: sensor.pressure_8
           name: Gymmet
+        - entity: sensor.temp_garage
+          name: Garage
