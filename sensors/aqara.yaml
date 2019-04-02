@@ -1,0 +1,7 @@
+- platform: command_line
+  name: temp_garage
+  command: "sh /config/commands/aqara_deconz.sh 11"
+
+- platform: command_line
+  name: temp_groventre
+  command: "sh /config/commands/aqara_deconz.sh 5"
