@@ -1,7 +1,7 @@
-  - host: 192.168.1.28
-    login_id: !secret apple_tv_login_id
-    name: ATV_Vardagsrum
-    start_off: true
+#  - host: 192.168.1.28
+#    login_id: !secret apple_tv_login_id
+#    name: ATV_Vardagsrum
+#    start_off: true
   - host: 192.168.1.29
     login_id: !secret apple_tv_login_id
     name: ATV_Sovrum
