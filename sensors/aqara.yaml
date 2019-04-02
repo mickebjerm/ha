@@ -2,8 +2,10 @@
   name: temp_garage
   command: "sh /config/commands/aqara_deconz.sh 11"
   unit_of_measurement: "°C"
-
+  value_template: '{{ value | multiply(0.01) | round(1) }}'
+  
 - platform: command_line
   name: temp_groventre
   command: "sh /config/commands/aqara_deconz.sh 5"
   unit_of_measurement: "°C"
+  value_template: '{{ value | multiply(0.01) | round(1) }}'
