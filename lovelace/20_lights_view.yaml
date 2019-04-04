@@ -26,6 +26,10 @@ cards:
         - entity: switch.william
           icon: mdi:lightbulb
         - entity: switch.sovrum
+          name: Sovrum fönster
+          icon: mdi:lightbulb
+        - entity: light.sovrum_tak
+          name: Sovrum tak
           icon: mdi:lightbulb
         - entity: switch.ellen
           icon: mdi:lightbulb

@@ -33,3 +33,8 @@ other_lights:
     - switch.koket
     - switch.gymmet
     - switch.hallen
+
+other_not_window_lights:
+  name: Lampor övriga
+  entities:
+    - light.sovrum_tak
