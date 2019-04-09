@@ -28,7 +28,9 @@ cards:
         - entity: switch.sovrum
           name: Sovrum fönster
           icon: mdi:lightbulb
-        - entity: light.sovrum_tak
+        - type: custom:slider-entity-row
+          entity: light.sovrum_tak
+          toggle: true
           name: Sovrum tak
           icon: mdi:lightbulb
         - entity: switch.ellen
