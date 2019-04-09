@@ -16,7 +16,7 @@ cards:
         icon: mdi:lamp
       - type: section
         label: Köket
-      - entity: switch.kok
+      - entity: switch.koket
         name: Fönster
         icon: mdi:lamp
       - type: section
