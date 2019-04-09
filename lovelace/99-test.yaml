@@ -9,7 +9,7 @@ cards:
       - type: custom:slider-entity-row
         entity: light.sovrum_tak
         name: Tak
-        icon: mdi:mdi-ceiling-light
+        icon: mdi:ceiling-light
         toggle: true
       - entity: switch.sovrum
         name: Fönster
