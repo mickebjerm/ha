@@ -15,6 +15,16 @@ cards:
         name: Fönster
         icon: mdi:lamp
       - type: section
+        label: William
+      - entity: switch.william
+        name: Fönster
+        icon: mdi:lamp
+      - type: section
+        label: Ellen
+      - entity: switch.ellen
+        name: Fönster
+        icon: mdi:lamp
+      - type: section
         label: Köket
       - entity: switch.koket
         name: Fönster
