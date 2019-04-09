@@ -6,8 +6,11 @@ cards:
     entities:
       - type: section
         label: Sovrum
-      - type: section
-        label: "toggle: true"
       - type: custom:slider-entity-row
         entity: light.sovrum_tak
+        name: Tak
+        icon: mdi:mdi-ceiling-light
         toggle: true
+      - entity: switch.sovrum
+        name: Fönster
+        icon: mdi:lamp
