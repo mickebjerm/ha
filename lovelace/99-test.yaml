@@ -1,5 +1,4 @@
-title: Lights
-icon: mdi:lightbulb-on
+title: Test
 cards:
   - type: entities
     title: Lampor
@@ -10,5 +9,5 @@ cards:
       - type: section
         label: "toggle: true"
       - type: custom:slider-entity-row
-        entity: light.bed_light
+        entity: light.sovrum_tak
         toggle: true
