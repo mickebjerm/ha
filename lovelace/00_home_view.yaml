@@ -33,12 +33,15 @@ cards:
         show_header_toggle: false
         type: entities
         entities:
+        - entity: media_player.kok
         - type: custom:slider-entity-row
           entity: media_player.kok
           full_row: true
-        - entity: media_player.gymmet
-          icon: mdi:music
-        - entity: media_player.kok
-          icon: mdi:music
         - entity: media_player.vardagsrum_2
-          icon: mdi:music
+        - type: custom:slider-entity-row
+          entity: media_player.vardagsrum_2
+          full_row: true
+        - entity: media_player.gymmet
+        - type: custom:slider-entity-row
+          entity: media_player.gymmet
+          full_row: true
