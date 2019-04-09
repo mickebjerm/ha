@@ -1,8 +1,21 @@
 title: Test
 cards:
   - type: entities
-    title: Lampor
-    show_header_toggle: false
+    title: Övervåningen
+    show_header_toggle: true
+    entities:
+      - entity: switch.allrum
+        icon: mdi:lamp
+        name: Allrummet
+      - entity: switch.elias
+        icon: mdi:lamp
+        name: Elias
+      - entity: switch.julius
+        icon: mdi:lamp
+        name: Julius & Oscar
+  - type: entities
+    title: Nedervåningen
+    show_header_toggle: true
     entities:
       - type: section
         label: Sovrum
