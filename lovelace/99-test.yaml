@@ -53,3 +53,12 @@ cards:
       - entity: switch.vardagsrum
         name: Fönster
         icon: mdi:lamp
+      - type: section
+        label: Gymmet
+      - entity: switch.gymmet
+        name: Fönster
+        icon: mdi:lamp
+      - type: section
+        label: Garage
+      - entity: binary_sensor.presence_10
+        name: Rörelse
