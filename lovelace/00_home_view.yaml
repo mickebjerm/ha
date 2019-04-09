@@ -33,6 +33,9 @@ cards:
         show_header_toggle: false
         type: entities
         entities:
+        - type: custom:slider-entity-row
+          entity: media_player.kok
+          full_row: true
         - entity: media_player.gymmet
           icon: mdi:music
         - entity: media_player.kok
