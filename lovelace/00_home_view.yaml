@@ -1,47 +1,45 @@
 title: Home
 icon: mdi:home-outline
 path: home
-cards:
-  - type: vertical-stack
-    cards:
-      - title: Dörrar
-        show_header_toggle: false
-        type: entities   
-        entities:
-        - entity: lock.groventre
-          name: Groventre
-      - title: Internet
-        show_header_toggle: false
-        type: entities   
-        entities:
-        - entity: sensor.internet
-          name: Status
-          icon: mdi:wifi
-        - entity: sensor.internet_starttime
-          icon: mdi:clock-start
-        - entity: sensor.internet_stoptime
-          icon: mdi:clock-end
-        - entity: input_number.internet_start_hour
-          icon: mdi:timer
-        - entity: input_number.internet_start_mins
-          icon: mdi:timer
-        - entity: input_number.internet_stop_hour
-          icon: mdi:timer-off
-        - entity: input_number.internet_stop_mins
-          icon: mdi:timer-off
-      - title: Mediaspelare
-        show_header_toggle: false
-        type: entities
-        entities:
-        - entity: media_player.kok
-        - type: custom:slider-entity-row
-          entity: media_player.kok
-          full_row: true
-        - entity: media_player.vardagsrum_2
-        - type: custom:slider-entity-row
-          entity: media_player.vardagsrum_2
-          full_row: true
-        - entity: media_player.gymmet
-        - type: custom:slider-entity-row
-          entity: media_player.gymmet
-          full_row: true
+  cards:
+    - title: Dörrar
+      show_header_toggle: false
+      type: entities   
+      entities:
+      - entity: lock.groventre
+        name: Groventre
+    - title: Internet
+      show_header_toggle: false
+      type: entities   
+      entities:
+      - entity: sensor.internet
+        name: Status
+        icon: mdi:wifi
+      - entity: sensor.internet_starttime
+        icon: mdi:clock-start
+      - entity: sensor.internet_stoptime
+        icon: mdi:clock-end
+      - entity: input_number.internet_start_hour
+        icon: mdi:timer
+      - entity: input_number.internet_start_mins
+        icon: mdi:timer
+      - entity: input_number.internet_stop_hour
+        icon: mdi:timer-off
+      - entity: input_number.internet_stop_mins
+        icon: mdi:timer-off
+    - title: Mediaspelare
+      show_header_toggle: false
+      type: entities
+      entities:
+      - entity: media_player.kok
+      - type: custom:slider-entity-row
+        entity: media_player.kok
+        full_row: true
+      - entity: media_player.vardagsrum_2
+      - type: custom:slider-entity-row
+        entity: media_player.vardagsrum_2
+        full_row: true
+      - entity: media_player.gymmet
+      - type: custom:slider-entity-row
+        entity: media_player.gymmet
+        full_row: true
