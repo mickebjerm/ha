@@ -4,15 +4,21 @@ cards:
     title: Övervåningen
     show_header_toggle: true
     entities:
+      - type: section
+        label: Allrum
       - entity: switch.allrum
         icon: mdi:lamp
-        name: Allrummet
+        name: Fönster
+      - type: section
+        label: Elias
       - entity: switch.elias
         icon: mdi:lamp
-        name: Elias
+        name: Fönster
+      - type: section
+        label: Julius & Oscar
       - entity: switch.julius
         icon: mdi:lamp
-        name: Julius & Oscar
+        name: Fönster
   - type: entities
     title: Nedervåningen
     show_header_toggle: true
