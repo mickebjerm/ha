@@ -14,3 +14,13 @@ cards:
       - entity: switch.sovrum
         name: Fönster
         icon: mdi:lamp
+      - type: section
+        label: Köket
+      - entity: switch.kok
+        name: Fönster
+        icon: mdi:lamp
+      - type: section
+        label: Vardagsrum
+      - entity: switch.vardagsrum
+        name: Fönster
+        icon: mdi:lamp
