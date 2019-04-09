@@ -7,5 +7,6 @@ views:
     - !include 25_temp_view.yaml
     - !include 30_automations.yaml
     - !include 80_develop.yaml
+    - !include 90_device_view.yaml
     - !include 99-test.yaml
     - !include everything.yaml

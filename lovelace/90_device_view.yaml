@@ -1,0 +1,13 @@
+title: Tests
+icon: mdi:wifi
+path: Test
+cards:
+  - type: custom:monster-card
+    show_empty: false
+    card:
+      type: entities
+      show_header_toggle: false
+      title: Devices
+    filter:
+      include:
+        - entity_id: 'device_tracker.*'

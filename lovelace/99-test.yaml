@@ -1,13 +1,14 @@
-title: Tests
-icon: mdi:wifi
-path: Test
+title: Lights
+icon: mdi:lightbulb-on
 cards:
-  - type: custom:monster-card
-    show_empty: false
-    card:
-      type: entities
-      show_header_toggle: false
-      title: Devices
-    filter:
-      include:
-        - entity_id: 'device_tracker.*'
+  - type: entities
+    title: Lampor
+    show_header_toggle: false
+    entities:
+      - type: section
+        label: Sovrum
+      - type: section
+        label: "toggle: true"
+      - type: custom:slider-entity-row
+        entity: light.bed_light
+        toggle: true
