@@ -9,16 +9,28 @@ cards:
       - entity: switch.allrum
         icon: mdi:lamp
         name: Fönster
+      - entity: sensor.allrum_uppe_temperature
+        name: Luftfuktighet
+      - entity: sensor.allrum_uppe_humidity
+        name: Allrum
       - type: section
         label: Elias
       - entity: switch.elias
         icon: mdi:lamp
         name: Fönster
+      - entity: sensor.elias_temperature
+        name: Temperatur
+      - entity: sensor.elias_humidity
+        name: Luftfuktighet
       - type: section
         label: Julius & Oscar
       - entity: switch.julius
         icon: mdi:lamp
         name: Fönster
+      - entity: sensor.julius_temperature
+        name: Temperatur
+      - entity: sensor.julius_humidity
+        name: Luftfuktighet
   - type: entities
     title: Nedervåningen
     show_header_toggle: true
