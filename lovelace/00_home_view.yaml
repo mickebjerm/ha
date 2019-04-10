@@ -35,6 +35,7 @@ cards:
         entities:
         - type: custom:mini-media-player
           entity: media_player.kok
+          group: true
           hide:
             power: true
             icon: true
