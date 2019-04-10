@@ -34,13 +34,17 @@ cards:
         type: entities
         entities:
         - type: custom:mini-media-player
-          entity: media_player.kok
-          full_row: true
-        - entity: media_player.vardagsrum_2
-        - type: custom:slider-entity-row
-          entity: media_player.vardagsrum_2
-          full_row: true
-        - entity: media_player.gymmet
-        - type: custom:slider-entity-row
-          entity: media_player.gymmet
-          full_row: true
+          entity: media_player.sonos_office
+          hide:
+            power: true
+            icon: true
+            source: true
+          sonos:
+            show_group_count: true
+            entities:
+              - entity_id: media_player.kok
+                name: Sonos Köket
+              - entity_id: media_player.vardagsrum_2
+                name: Sonos Vardagsrum
+              - entity_id: media_player.gymmet
+                name: Sonos Gymmet
