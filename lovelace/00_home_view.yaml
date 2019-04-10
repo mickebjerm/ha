@@ -33,8 +33,7 @@ cards:
         show_header_toggle: false
         type: entities
         entities:
-        - entity: media_player.kok
-        - type: custom:slider-entity-row
+        - type: custom:mini-media-player
           entity: media_player.kok
           full_row: true
         - entity: media_player.vardagsrum_2
