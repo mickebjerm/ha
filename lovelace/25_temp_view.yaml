@@ -2,62 +2,60 @@ title: Temps
 icon: mdi:thermometer
 path: temps
 cards:
-  - type: vertical-stack
-    cards:
-      - type: weather-forecast
-        title: SMHI
-        entity: weather.smhi_sundsvall
-      - title: Utomhus
-        type: entities
-        show_header_toggle: false
-        entities:
-        - entity: sensor.utomhus_temperature
-          name: Baksidan
-        - entity: sensor.utomhus_humidity
-          name: Baksidan
-        - entity: sensor.utomhus_g2_temperature
-          name: Grannen
-      - title: Övervåningen
-        type: entities
-        show_header_toggle: false 
-        entities:
-        - entity: sensor.elias_temperature
-          name: Elias
-        - entity: sensor.elias_humidity
-          name: Elias
-        - entity: sensor.allrum_uppe_temperature
-          name: Allrum
-        - entity: sensor.allrum_uppe_humidity
-          name: Allrum
-        - entity: sensor.julius_temperature
-          name: Julius & Oscar
-        - entity: sensor.julius_humidity
-          name: Julius & Oscar
-      - title: Nedervåningen
-        type: entities
-        show_header_toggle: false
-        entities:
-        - entity: sensor.temp_groventre
-          name: Groventre
-        - entity: sensor.kok_temperature
-          name: Köket
-        - entity: sensor.kok_humidity
-          name: Köket
-        - entity: sensor.vardagsrum_temperature
-          name: Vardagsrum
-        - entity: sensor.vardagsrum_humidity
-          name: Vardagsrum
-        - entity: sensor.temp1
-          name: Sovrum
-        - entity: sensor.temp1_2
-          name: Sovrum
-        - entity: sensor.temp1_3
-          name: Sovrum
-        - entity: sensor.temperature_6
-          name: Gymmet
-        - entity: sensor.humidity_7
-          name: Gymmet
-        - entity: sensor.pressure_8
-          name: Gymmet
-        - entity: sensor.temp_garage
-          name: Garage
+  - type: weather-forecast
+    title: SMHI
+    entity: weather.smhi_sundsvall
+  - title: Utomhus
+    type: entities
+    show_header_toggle: false
+    entities:
+    - entity: sensor.utomhus_temperature
+      name: Baksidan
+    - entity: sensor.utomhus_humidity
+      name: Baksidan
+    - entity: sensor.utomhus_g2_temperature
+      name: Grannen
+  - title: Övervåningen
+    type: entities
+    show_header_toggle: false 
+    entities:
+    - entity: sensor.elias_temperature
+      name: Elias
+    - entity: sensor.elias_humidity
+      name: Elias
+    - entity: sensor.allrum_uppe_temperature
+      name: Allrum
+    - entity: sensor.allrum_uppe_humidity
+      name: Allrum
+    - entity: sensor.julius_temperature
+      name: Julius & Oscar
+    - entity: sensor.julius_humidity
+      name: Julius & Oscar
+  - title: Nedervåningen
+    type: entities
+    show_header_toggle: false
+    entities:
+    - entity: sensor.temp_groventre
+      name: Groventre
+    - entity: sensor.kok_temperature
+      name: Köket
+    - entity: sensor.kok_humidity
+      name: Köket
+    - entity: sensor.vardagsrum_temperature
+      name: Vardagsrum
+    - entity: sensor.vardagsrum_humidity
+      name: Vardagsrum
+    - entity: sensor.temp1
+      name: Sovrum
+    - entity: sensor.temp1_2
+      name: Sovrum
+    - entity: sensor.temp1_3
+      name: Sovrum
+    - entity: sensor.temperature_6
+      name: Gymmet
+    - entity: sensor.humidity_7
+      name: Gymmet
+    - entity: sensor.pressure_8
+      name: Gymmet
+    - entity: sensor.temp_garage
+      name: Garage

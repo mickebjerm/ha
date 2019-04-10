@@ -2,64 +2,38 @@ title: Lights
 icon: mdi:lightbulb-on
 path: lights
 cards:
-  - type: vertical-stack
-    cards:
-      - title: Övervåningen
-        type: entities   
-        entities:
-        - entity: switch.allrum
-          icon: mdi:lightbulb
-          name: Allrummet
-        - entity: switch.elias
-          icon: mdi:lightbulb
-          name: Elias
-        - entity: switch.julius
-          icon: mdi:lightbulb
-          name: Julius & Oscar
-      - title: Nedervåningen
-        type: entities
-        entities:
-        - entity: switch.koket
-          icon: mdi:lightbulb
-        - entity: switch.hallen
-          icon: mdi:lightbulb
-        - entity: switch.william
-          icon: mdi:lightbulb
-        - entity: switch.sovrum
-          name: Sovrum fönster
-          icon: mdi:lightbulb
-        - type: custom:slider-entity-row
-          entity: light.sovrum_tak
-          toggle: true
-          name: Sovrum tak
-          icon: mdi:lightbulb
-        - entity: switch.ellen
-          icon: mdi:lightbulb
-        - entity: switch.vardagsrum
-          icon: mdi:lightbulb
-        - entity: switch.gymmet
-          icon: mdi:lightbulb
-      - title: Lampor tonåringar
-        type: entities
-        show_header_toggle: false
-        entities:
-        - entity: sensor.teenage_lights
-          name: Tid för släckning
-        - entity: input_number.teenage_lights_stop_hour
-        - entity: input_number.teenage_lights_stop_mins
-      - title: Lampor barn
-        type: entities
-        show_header_toggle: false
-        entities:
-        - entity: sensor.kids_lights
-          name: Tid för släckning
-        - entity: input_number.kids_lights_stop_hour
-        - entity: input_number.kids_lights_stop_mins
-      - title: Lampor övrigt
-        type: entities
-        show_header_toggle: false
-        entities:
-        - entity: sensor.other_lights
-          name: Tid för släckning
-        - entity: input_number.other_lights_stop_hour
-        - entity: input_number.other_lights_stop_mins
+  - title: Övervåningen
+    type: entities   
+    entities:
+    - entity: switch.allrum
+      icon: mdi:lightbulb
+      name: Allrummet
+    - entity: switch.elias
+      icon: mdi:lightbulb
+      name: Elias
+    - entity: switch.julius
+      icon: mdi:lightbulb
+      name: Julius & Oscar
+  - title: Nedervåningen
+    type: entities
+    entities:
+    - entity: switch.koket
+      icon: mdi:lightbulb
+    - entity: switch.hallen
+      icon: mdi:lightbulb
+    - entity: switch.william
+      icon: mdi:lightbulb
+    - entity: switch.sovrum
+      name: Sovrum fönster
+      icon: mdi:lightbulb
+    - type: custom:slider-entity-row
+      entity: light.sovrum_tak
+      toggle: true
+      name: Sovrum tak
+      icon: mdi:lightbulb
+    - entity: switch.ellen
+      icon: mdi:lightbulb
+    - entity: switch.vardagsrum
+      icon: mdi:lightbulb
+    - entity: switch.gymmet
+      icon: mdi:lightbulb
