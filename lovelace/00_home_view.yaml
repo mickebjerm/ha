@@ -33,6 +33,8 @@ cards:
         show_header_toggle: false
         type: entities
         entities:
+        - type: section
+          label: Sonos
         - type: custom:mini-media-player
           entity: media_player.kok
           group: true
@@ -44,8 +46,12 @@ cards:
             show_group_count: true
             entities:
               - entity_id: media_player.kok
-                name: Sonos Köket
+                name: Köket
               - entity_id: media_player.vardagsrum_2
-                name: Sonos Vardagsrum
+                name: Vardagsrum
               - entity_id: media_player.gymmet
-                name: Sonos Gymmet
+                name: Gymmet
+        - type: section
+          label: Apple TV
+        - type: custom:mini-media-player
+          entity: media_player.sovrum
