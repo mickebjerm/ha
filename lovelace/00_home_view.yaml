@@ -55,3 +55,7 @@ cards:
           label: Apple TV
         - type: custom:mini-media-player
           entity: media_player.sovrum
+          group: true
+        - type: custom:mini-media-player
+          entity: media_player.vardagsrum
+          group: true
