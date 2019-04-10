@@ -10,9 +10,9 @@ cards:
         icon: mdi:lamp
         name: Fönster
       - entity: sensor.allrum_uppe_temperature
-        name: Luftfuktighet
+        name: Temperatur
       - entity: sensor.allrum_uppe_humidity
-        name: Allrum
+        name: Luftfuktighet
       - type: section
         label: Elias
       - entity: switch.elias
@@ -45,6 +45,12 @@ cards:
       - entity: switch.sovrum
         name: Fönster
         icon: mdi:lamp
+      - entity: sensor.temp1
+        name: Temperatur
+      - entity: sensor.temp1_2
+        name: Luftfuktighet
+      - entity: sensor.temp1_3
+        name: Lufttryck
       - type: section
         label: William
       - entity: switch.william
@@ -60,17 +66,39 @@ cards:
       - entity: switch.koket
         name: Fönster
         icon: mdi:lamp
+      - entity: sensor.kok_temperature
+        name: Temperatur
+      - entity: sensor.kok_humidity
+        name: Luftfuktighet
       - type: section
         label: Vardagsrum
       - entity: switch.vardagsrum
         name: Fönster
         icon: mdi:lamp
+      - entity: sensor.vardagsrum_temperature
+        name: Temperatur
+      - entity: sensor.vardagsrum_humidity
+        name: Luftfuktighet
       - type: section
         label: Gymmet
       - entity: switch.gymmet
         name: Fönster
         icon: mdi:lamp
+      - entity: sensor.temperature_6
+        name: Temperatur
+      - entity: sensor.humidity_7
+        name: Luftfuktighet
+      - entity: sensor.pressure_8
+        name: Lufttryck
+      - type: section
+        label: Groventre
+      - entity: lock.groventre
+        name: Dörr
+      - entity: sensor.temp_groventre
+        name: Temperatur
       - type: section
         label: Garage
       - entity: binary_sensor.presence_10
         name: Rörelse
+      - entity: sensor.temp_garage
+        name: Temperatur
