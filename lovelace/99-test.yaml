@@ -79,6 +79,10 @@ cards:
         name: Temperatur
       - entity: sensor.vardagsrum_humidity
         name: Luftfuktighet
+  - type: entities
+    title: Garage/Gym
+    show_header_toggle: true
+    entities:
       - type: section
         label: Gymmet
       - entity: switch.gymmet
