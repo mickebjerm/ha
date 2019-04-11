@@ -1,4 +1,7 @@
 - platform: pollenniva
   sensors:
     - city: Sundsvall
-      state: Bjork
+      days_to_track: 3
+      allergens: 
+        - Björk
+        - Gräs
