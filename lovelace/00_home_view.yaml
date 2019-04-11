@@ -39,7 +39,7 @@ cards:
       hide:
         power: true
         icon: true
-        source: true
+        source: false
       sonos:
         show_group_count: true
         entities:
