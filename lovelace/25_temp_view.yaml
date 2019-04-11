@@ -6,7 +6,7 @@ cards:
     title: SMHI
     entity: weather.smhi_sundsvall
   - type: custom:pollenkoll-card
-    title: false
+    title: Pollen Sundsvall
     city: Sundsvall
     compact: true
     allergens:
