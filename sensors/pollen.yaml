@@ -1,0 +1,4 @@
+- platform: pollenkoll
+  sensors:
+    - city: Sundsvall
+      state: Bjork
