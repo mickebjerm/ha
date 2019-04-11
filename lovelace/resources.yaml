@@ -14,5 +14,5 @@
   type: js
 - url: /local/kalkih-media-player/mini-media-player-bundle.js?v=1.0.3
   type: module
-- url: /local/isabella-pollen/pollenkoll-card.js
+- url: /local/pollenkoll-card/pollenkoll-card.js
   type: js
