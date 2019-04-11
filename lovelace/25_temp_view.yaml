@@ -5,6 +5,14 @@ cards:
   - type: weather-forecast
     title: SMHI
     entity: weather.smhi_sundsvall
+  - type: custom:pollenkoll-card
+    title: false
+    city: Stockholm
+    compact: true
+    allergens:
+      - Al
+      - Björk
+      - Gräs
   - title: Utomhus
     type: entities
     show_header_toggle: false
