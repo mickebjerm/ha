@@ -7,7 +7,7 @@ cards:
     entity: weather.smhi_sundsvall
   - type: custom:pollenkoll-card
     title: false
-    city: Stockholm
+    city: Sundsvall
     compact: true
     allergens:
       - Al
