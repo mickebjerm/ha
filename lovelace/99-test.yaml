@@ -102,6 +102,9 @@ cards:
         name: Temperatur
       - type: section
         label: Garage
+      - entity: switch.everspring_an179_in_wall_on_off_module_switch
+        name: Tak
+        icon: mdi:ceiling-light
       - entity: binary_sensor.presence_10
         name: Rörelse
       - entity: sensor.temp_garage
