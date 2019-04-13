@@ -6,11 +6,12 @@
       entity_id: binary_sensor.presence_10
       to: 'on'
   action:
-    service: notify.pushbullet
-    data:
-      message: 'Garage motion on'
-      title: 'Garage - motion on'
+    - service: homeassistant.turn_on
+      entity_id: switch.everspring_an179_in_wall_on_off_module_switch
 
+
+
+ 
 - id: garage-motion-off
   alias: "Garage motion - off"
   initial_state: true
@@ -21,7 +22,5 @@
       for:
         minutes: 5
   action:
-    service: notify.pushbullet
-    data:
-      message: 'Garage motion off'
-      title: 'Garage - motion off'
+    - service: homeassistant.turn_off
+      entity_id: switch.everspring_an179_in_wall_on_off_module_switch
