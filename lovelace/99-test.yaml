@@ -96,8 +96,10 @@ cards:
         name: Lufttryck
       - type: section
         label: Groventre
-      - entity: lock.groventre
+      - entity: binary_sensor.window_door_sensor
         name: Dörr
+      - entity: lock.groventre
+        name: Dörrlås
       - entity: sensor.temp_groventre
         name: Temperatur
       - type: section
