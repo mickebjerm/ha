@@ -8,11 +8,6 @@ router:
   icon: mdi:linux
   url: http://router.local
 
-influx:
-  title: InfluxDB
-  icon: mdi:chart-areaspline
-  url: http://hassio.local:8888
-
 grafana:
   title: Grafana
   icon: mdi:chart-bar
@@ -22,9 +17,3 @@ deconz:
   title: DeConz
   icon: mdi:zigbee
   url: http://hassio.local:8080
-
-
-logging:
-  title: Logging
-  icon: mdi:card-text-outline
-  url: http://hassio.local:4277
