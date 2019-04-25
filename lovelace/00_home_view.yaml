@@ -42,7 +42,7 @@ cards:
         source: false
       sonos:
         show_group_count: true
-        sync_volumesync_volume: true
+        sync_volume: true
         entities:
           - entity_id: media_player.kok
             name: Köket
