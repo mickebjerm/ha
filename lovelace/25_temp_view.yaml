@@ -13,6 +13,7 @@ cards:
       - Al
       - Björk
       - Gräs
+      - Sälg / vide
   - title: Utomhus
     type: entities
     show_header_toggle: false
