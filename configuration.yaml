@@ -144,3 +144,4 @@ shell_command:
   firewall_kids_stop: 'sh /config/commands/firewall-rule.sh firewall enable 12'
   firewall_kids_start: 'sh /config/commands/firewall-rule.sh firewall disable 12'
   firewall: 'sh /config/commands/firewall-rule.sh  "{{ fw_command }}" "{{ fw_rule }}"'
+  
