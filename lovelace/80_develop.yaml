@@ -24,6 +24,14 @@ cards:
         icon: mdi:refresh
         action_name: "Run"
         service_data: {}
+      - type: call-service
+        name: stoppa julius internet
+        service: shell_command.firewall
+        icon: mdi:refresh
+        action_name: "Run"
+        service_data: 
+          fw_command: "firewall enable" 
+          fw_rule: "9"
   - title: Lampor tonåringar
     type: entities
     show_header_toggle: false
