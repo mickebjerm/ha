@@ -142,7 +142,7 @@ panel_iframe: !include panel_iframe.yaml
 speedtestdotnet:
   server_id: 21028
   scan_interval:
-    minutes: 3
+    hours: 8
 
 shell_command:
   lovelace_gen: 'python /config/commands/lovelace-gen.py > /config/lovelace-gen.log'
