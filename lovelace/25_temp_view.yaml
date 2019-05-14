@@ -18,6 +18,12 @@ cards:
     type: entities
     show_header_toggle: false
     entities:
+    - entity: sensor.temperature_15
+      name: Framsidan
+    - entity: sensor.humidity_16
+      name: Framsidan
+    - entity: sensor.pressure_17
+      name: Framsidan
     - entity: sensor.utomhus_temperature
       name: Baksidan
     - entity: sensor.utomhus_humidity
@@ -60,6 +66,12 @@ cards:
       name: Sovrum
     - entity: sensor.temp1_3
       name: Sovrum
+    - entity: sensor.temperature_11
+      name: Ellen
+    - entity: sensor.humidity_13
+      name: Ellen
+    - entity: sensor.pressure_14
+      name: Ellen
     - entity: sensor.temperature_6
       name: Gymmet
     - entity: sensor.humidity_7
