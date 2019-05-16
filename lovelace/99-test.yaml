@@ -78,6 +78,8 @@ cards:
       - entity: switch.koket
         name: Fönster
         icon: mdi:lamp
+      - entity: sensor.diskwasher_energy
+        name: Diskmaskin
       - entity: sensor.kok_temperature
         name: Temperatur
       - entity: sensor.kok_humidity
