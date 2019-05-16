@@ -62,9 +62,9 @@ cards:
       name: Vardagsrum
     - entity: sensor.temp1
       name: Sovrum
-    - entity: sensor.temp1_2
-      name: Sovrum
     - entity: sensor.temp1_3
+      name: Sovrum
+    - entity: sensor.temp1_2
       name: Sovrum
     - entity: sensor.temperature_11
       name: Ellen
@@ -72,7 +72,13 @@ cards:
       name: Ellen
     - entity: sensor.pressure_14
       name: Ellen
-    - entity: sensor.temperature_6
+    - entity: sensor.temperature_11
+      name: William
+    - entity: sensor.humidity_19
+      name: William
+    - entity: sensor.pressure_20
+      name: William
+    - entity: sensor.temperature_18
       name: Gymmet
     - entity: sensor.humidity_7
       name: Gymmet
