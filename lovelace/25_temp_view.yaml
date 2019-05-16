@@ -78,7 +78,7 @@ cards:
       name: William
     - entity: sensor.pressure_20
       name: William
-    - entity: sensor.temperature_7
+    - entity: sensor.temperature_6
       name: Gymmet
     - entity: sensor.humidity_7
       name: Gymmet
