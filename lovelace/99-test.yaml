@@ -56,11 +56,23 @@ cards:
       - entity: switch.william
         name: Fönster
         icon: mdi:lamp
+      - entity: sensor.temperature_18
+        name: Temperatur
+      - entity: sensor.humidity_19
+        name: Luftfuktighet
+      - entity: sensor.pressure_20
+        name: Lufttryck
       - type: section
         label: Ellen
       - entity: switch.ellen
         name: Fönster
         icon: mdi:lamp
+      - entity: sensor.temperature_11
+        name: Temperatur
+      - entity: sensor.humidity_13
+        name: Luftfuktighet
+      - entity: sensor.pressure_14
+        name: Lufttryck
       - type: section
         label: Köket
       - entity: switch.koket
