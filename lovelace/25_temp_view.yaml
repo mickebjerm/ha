@@ -72,13 +72,13 @@ cards:
       name: Ellen
     - entity: sensor.pressure_14
       name: Ellen
-    - entity: sensor.temperature_11
+    - entity: sensor.temperature_18
       name: William
     - entity: sensor.humidity_19
       name: William
     - entity: sensor.pressure_20
       name: William
-    - entity: sensor.temperature_18
+    - entity: sensor.temperature_7
       name: Gymmet
     - entity: sensor.humidity_7
       name: Gymmet
