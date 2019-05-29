@@ -107,6 +107,14 @@ cards:
     show_header_toggle: true
     entities:
       - type: section
+        label: Dusch/bastu
+      - entity: sensor.temperature_21
+        name: Temperatur
+      - entity: sensor.humidity_22
+        name: Luftfuktighet
+      - entity: sensor.pressure_23
+        name: Lufttryck
+      - type: section
         label: Gymmet
       - entity: switch.gymmet
         name: Fönster

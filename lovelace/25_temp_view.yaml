@@ -78,6 +78,12 @@ cards:
       name: William
     - entity: sensor.pressure_20
       name: William
+    - entity: sensor.temperature_21
+      name: Dusch/bastu
+    - entity: sensor.humidity_22
+      name: Dusch/bastu
+    - entity: sensor.pressure_23
+      name: Dusch/bastu
     - entity: sensor.temperature_6
       name: Gymmet
     - entity: sensor.humidity_7
