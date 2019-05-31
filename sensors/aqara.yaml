@@ -9,3 +9,9 @@
   resource: !secret aqara_garage
   value_template: '{{ value_json.config.temperature |  multiply(0.01) | round(1) }}'
   unit_of_measurement: "°C"
+
+- platform: rest
+  name: temp_huvudentre
+  resource: !secret aqara_huvudentre
+  value_template: '{{ value_json.config.temperature |  multiply(0.01) | round(1) }}'
+  unit_of_measurement: "°C"

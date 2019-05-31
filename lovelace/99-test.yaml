@@ -77,6 +77,8 @@ cards:
         label: Hallen
       - entity: binary_sensor.openclose_24
         name: Dörr
+      - entity: sensor.temp_huvudentre
+        name: Temperatur
       - entity: switch.hallen
         name: Bordslampa
         icon: mdi:lamp
