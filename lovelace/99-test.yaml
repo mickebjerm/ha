@@ -75,6 +75,8 @@ cards:
         name: Lufttryck
       - type: section
         label: Hallen
+      - entity: binary_sensor.openclose_24
+        name: Dörr
       - entity: switch.hallen
         name: Bordslampa
         icon: mdi:lamp
