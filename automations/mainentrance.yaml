@@ -1,0 +1,13 @@
+
+- id: reminder-mainentrance
+  alias: "Mainentrance reminder"
+  initial_state: true
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.openclose_24
+      to: 'off'
+  action:
+    service: notify.pushbullet
+    data:
+      message: 'Glöm inte att låsa!!'
+      title: 'Huvudentren'
