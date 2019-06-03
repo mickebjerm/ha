@@ -1,4 +1,3 @@
-
 - id: reminder-mainentrance
   alias: "Mainentrance reminder"
   initial_state: true
