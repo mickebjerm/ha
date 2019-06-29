@@ -140,7 +140,7 @@ cards:
         name: Dörrlås
       - entity: sensor.temp_groventre
         name: Temperatur
-      - entity: light_matforrad_tak
+      - entity: light.matforrad_tak
         name: Matförrådet
         icon: mdi:ceiling-light
         toggle: true
