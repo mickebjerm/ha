@@ -1,0 +1,26 @@
+- id: groventre-matf-on
+  alias: "Matförråd - on"
+  initial_state: true  
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.openclose_25
+      to: 'on'
+  action:
+    - service: homeassistant.turn_on
+      entity_id: light.matforrad_tak
+
+
+
+ 
+- id: groventre-matf-off
+  alias: "Matförråd - off"
+  initial_state: true
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.openclose_25
+      to: 'off'
+      for:
+        minutes: 2
+  action:
+    - service: homeassistant.turn_off
+      entity_id: light.matforrad_tak
