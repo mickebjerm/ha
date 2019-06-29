@@ -140,8 +140,14 @@ cards:
         name: Dörrlås
       - entity: sensor.temp_groventre
         name: Temperatur
+      - entity: light_matforrad_tak
+        name: Matförrådet
+        icon: mdi:ceiling-light
+        toggle: true
       - type: section
         label: Garage
+      - entity: binary_sensor.garageporten
+        name: Garageporten
       - entity: switch.everspring_an179_in_wall_on_off_module_switch
         name: Tak
         icon: mdi:ceiling-light
