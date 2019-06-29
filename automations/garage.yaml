@@ -24,3 +24,20 @@
   action:
     - service: homeassistant.turn_off
       entity_id: switch.everspring_an179_in_wall_on_off_module_switch
+
+
+
+- id: reminder-garage
+  alias: "Garage reminder"
+  initial_state: true
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.garageporten
+      to: 'on'
+      for:
+        minutes: 20
+  action:
+    service: notify.pushbullet
+    data:
+      message: 'Glöm inte stänga porten!!'
+      title: 'Garaget'
