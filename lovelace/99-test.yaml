@@ -149,6 +149,7 @@ cards:
         label: Garage
       - entity: binary_sensor.garageporten
         name: Garageporten
+        icon: mdi:garage
       - entity: switch.everspring_an179_in_wall_on_off_module_switch
         name: Tak
         icon: mdi:ceiling-light
