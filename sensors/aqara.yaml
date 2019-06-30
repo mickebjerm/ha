@@ -15,3 +15,15 @@
   resource: !secret aqara_huvudentre
   value_template: '{{ value_json.config.temperature |  multiply(0.01) | round(1) }}'
   unit_of_measurement: "°C"
+
+- platform: rest
+  name: temp_garageporten
+  resource: !secret aqara_garagporten
+  value_template: '{{ value_json.config.temperature |  multiply(0.01) | round(1) }}'
+  unit_of_measurement: "°C"
+
+- platform: rest
+  name: temp_matforrad
+  resource: !secret aqara_matforrod
+  value_template: '{{ value_json.config.temperature |  multiply(0.01) | round(1) }}'
+  unit_of_measurement: "°C"
