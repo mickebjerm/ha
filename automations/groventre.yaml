@@ -32,3 +32,57 @@
       data:
         entity_id: lock.groventre
         code: !secret verisure_code
+
+
+
+
+
+- id: reminder-groventre
+  alias: "Groventre reminder"
+  trigger:
+    - platform: state
+      entity_id: device_tracker.micke_iphone7_2
+      to: 'not_home'
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: binary_sensor.window_door_sensor
+        state: 'off'
+      - condition: state
+        entity_id: lock.groventre
+        state: 'unlocked'
+  action:
+    service: notify.pushbullet
+    data:
+      message: 'Lås dörren för tusan!!'
+      title: 'Groventre - olåst'
+
+
+
+
+
+- id: groventre-matf-on
+  alias: "Foodlight - on"
+  initial_state: true  
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.openclose_25
+      to: 'on'
+  action:
+    - service: homeassistant.turn_on
+      entity_id: light.matforrad_tak
+
+
+- id: groventre-matf-off
+  alias: "Foodlight - off"
+  initial_state: true
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.openclose_25
+      to: 'off'
+      for:
+        minutes: 2
+  action:
+    - service: homeassistant.turn_off
+      entity_id: light.matforrad_tak
