@@ -97,7 +97,7 @@ cards:
         icon: mdi:dishwasher
         name: Diskmaskin kWh
       - entity: sensor.aeon_labs_zw075_smart_switch_gen5_power
-        icon: mdi: dishwasher
+        icon: mdi:dishwasher
         name: Diskmaskin
       - entity: sensor.kok_temperature
         name: Temperatur
