@@ -11,6 +11,7 @@ window_lights:
     - switch.elias
     - switch.sovrum
     - switch.allrum
+    - switch.light_2
 
 teenage_lights:
   name: Fönsterlampor tonåringar
@@ -33,6 +34,7 @@ other_lights:
     - switch.koket
     - switch.gymmet
     - switch.hallen
+    - switch.light_2
 
 other_not_window_lights:
   name: Lampor övriga

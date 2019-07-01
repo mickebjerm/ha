@@ -49,7 +49,7 @@ history:
 logbook:
 
 recorder:
-  purge_keep_days: 5
+  purge_keep_days: 3
   purge_interval: 1
   #purge_days: 2
   exclude:
