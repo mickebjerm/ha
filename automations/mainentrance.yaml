@@ -5,6 +5,8 @@
     - platform: state
       entity_id: binary_sensor.openclose_24
       to: 'off'
+      for:
+        seconds: 45
   action:
     service: notify.pushbullet
     data:

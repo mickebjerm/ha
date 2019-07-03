@@ -82,7 +82,7 @@
       entity_id: binary_sensor.openclose_25
       to: 'off'
       for:
-        minutes: 2
+        seconds: 30
   action:
     - service: homeassistant.turn_off
       entity_id: light.matforrad_tak
