@@ -40,3 +40,4 @@ other_not_window_lights:
   name: Lampor övriga
   entities:
     - light.sovrum_tak
+    - switch.light_2
