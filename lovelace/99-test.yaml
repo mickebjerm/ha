@@ -82,8 +82,6 @@ cards:
       - entity: binary_sensor.openclose_24
         name: Dörr
         icon: mdi:door
-      - entity: sensor.temp_huvudentre
-        name: Temperatur
       - entity: switch.hallen
         name: Bordslampa
         icon: mdi:lamp
@@ -93,6 +91,8 @@ cards:
       - entity: sensor.aeon_labs_zw075_smart_switch_gen5_power_2
         name: Datacentret 
         icon: mdi:server-network
+      - entity: sensor.temp_huvudentre
+        name: Temperatur
       - type: section
         label: Tvättstugan
       - entity: switch.light_2
@@ -121,13 +121,13 @@ cards:
       - entity: switch.vardagsrum
         name: Fönster
         icon: mdi:lamp
+      - entity: binary_sensor.openclose_27
+        name: Altandörr
+        icon: mdi:door
       - entity: sensor.vardagsrum_temperature
         name: Temperatur
       - entity: sensor.vardagsrum_humidity
         name: Luftfuktighet
-      - entity: binary_sensor.openclose_27
-        name: Altandörr
-        icon: mdi:door
   - type: entities
     title: Garage/Gym
     show_header_toggle: true
