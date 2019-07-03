@@ -9,6 +9,7 @@ homeassistant:
   # Customization file
   customize: !include_dir_merge_named customize/
   customize_glob: !include_dir_merge_named customize_glob/
+  packages: !include_dir_named packages
 
 # Show links to resources in log and frontend
 #introduction:
