@@ -101,6 +101,8 @@ cards:
       - entity: binary_sensor.openclose_28
         name: Altandörr
         icon: mdi:door
+      - entity: sensor.temp_tvattstuga
+        name: Temperatur
       - type: section
         label: Köket
       - entity: switch.koket
