@@ -1,0 +1,28 @@
+group:
+  alarm_devices_sensors:
+    name: Alarm devices
+    entities:
+      - binary_sensor.openclose_27
+      - binary_sensor.openclose_28
+      - binary_sensor.openclose_24
+      - binary_sensor.window_door_sensor
+      - binary_sensor.garageporten
+
+
+automation:
+  - id: alarm
+    alias: "Send alarms"
+    initial_state: true
+    trigger:
+      - platform: state
+        entity_id: device_tracker.micke_iphone7_2
+        to: 'not_home'
+    condition:
+      - condition: state
+        entity_id: group.alarm_devices_sensors
+        state: 'on'
+    action:
+      - service: notify.pushbullet
+        data:
+          message: 'Kolla dörrarna/garaget'
+          title: 'Alarm'
