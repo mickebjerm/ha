@@ -32,7 +32,7 @@ cards:
       - entity: sensor.julius_humidity
         name: Luftfuktighet
   - type: entities
-    title: Nedervåningen
+    title: Nedervåningen sovrum
     show_header_toggle: true
     entities:
       - type: section
@@ -73,6 +73,10 @@ cards:
         name: Luftfuktighet
       - entity: sensor.pressure_14
         name: Lufttryck
+  - type: entities
+    title: Nedervåningen övrigt
+    show_header_toggle: true
+    entities:
       - type: section
         label: Hallen
       - entity: binary_sensor.openclose_24
@@ -88,6 +92,14 @@ cards:
       - entity: sensor.aeon_labs_zw075_smart_switch_gen5_power_2
         name: Datacentret 
         icon: mdi:server-network
+      - type: section
+        label: Tvättstugan
+      - entity: switch.light_2
+        name: Fönster
+        icon: mdi:lamp
+      - entity: binary_sensor.openclose_28
+        name: Altandörr
+        icon: mdi:door
       - type: section
         label: Köket
       - entity: switch.koket
@@ -112,6 +124,9 @@ cards:
         name: Temperatur
       - entity: sensor.vardagsrum_humidity
         name: Luftfuktighet
+      - entity: binary_sensor.openclose_27
+        name: Altandörr
+        icon: mdi:door
   - type: entities
     title: Garage/Gym
     show_header_toggle: true
