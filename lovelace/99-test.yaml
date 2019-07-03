@@ -81,6 +81,7 @@ cards:
         label: Hallen
       - entity: binary_sensor.openclose_24
         name: Dörr
+        icon: mdi:door
       - entity: sensor.temp_huvudentre
         name: Temperatur
       - entity: switch.hallen
@@ -154,6 +155,7 @@ cards:
         label: Groventre
       - entity: binary_sensor.window_door_sensor
         name: Dörr
+        icon: mdi:door
       - entity: lock.groventre
         name: Dörrlås
       - entity: sensor.temp_groventre
