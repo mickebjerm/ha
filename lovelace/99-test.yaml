@@ -91,8 +91,6 @@ cards:
       - entity: sensor.aeon_labs_zw075_smart_switch_gen5_power_2
         name: Datacentret 
         icon: mdi:server-network
-      - entity: sensor.temp_huvudentre
-        name: Temperatur
       - type: section
         label: Tvättstugan
       - entity: switch.light_2
@@ -101,8 +99,6 @@ cards:
       - entity: binary_sensor.openclose_28
         name: Altandörr
         icon: mdi:door
-      - entity: sensor.temp_tvattstuga
-        name: Temperatur
       - type: section
         label: Köket
       - entity: switch.koket
@@ -160,13 +156,13 @@ cards:
         icon: mdi:door
       - entity: lock.groventre
         name: Dörrlås
-      - entity: sensor.temp_groventre
-        name: Temperatur
       - type: custom:slider-entity-row
         entity: light.matforrad_tak
         name: Matförrådet
         icon: mdi:ceiling-light
         toggle: true
+      - entity: binary_sensor.openclose_25
+        name: Matförrådet dörr
       - type: section
         label: Garage
       - entity: binary_sensor.garageporten
@@ -177,5 +173,3 @@ cards:
         icon: mdi:ceiling-light
       - entity: binary_sensor.presence_10
         name: Rörelse
-      - entity: sensor.temp_garage
-        name: Temperatur
