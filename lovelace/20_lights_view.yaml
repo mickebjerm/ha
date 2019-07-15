@@ -40,6 +40,11 @@ cards:
       icon: mdi:lightbulb
     - entity: switch.gymmet
       icon: mdi:lightbulb
+    - type: custom:slider-entity-row
+      entity: light.matforrad_tak
+      name: Matförrådet
+      icon: mdi:ceiling-light
+      toggle: true
     - entity: switch.everspring_an179_in_wall_on_off_module_switch
       name: Garage
       icon: mdi:lightbulb
