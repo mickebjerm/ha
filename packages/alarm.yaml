@@ -26,3 +26,20 @@ automation:
         data:
           message: 'Kolla dörrarna/garaget'
           title: 'Alarm'
+
+
+automation:
+  - id: reminder-ovirt
+    alias: "Ovirt alarm"
+    initial_state: true
+    trigger:
+      - platform: state
+        entity_id: binary_sensor.garageporten
+        to: 'warning'
+        for:
+          seconds: 30
+    action:
+      service: notify.pushbullet
+      data:
+        message: 'Deboliar fungerar inte!'
+        title: 'Error'
