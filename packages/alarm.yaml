@@ -34,7 +34,7 @@ automation:
     initial_state: true
     trigger:
       - platform: state
-        entity_id: sensor.Ovirt
+        entity_id: sensor.ovirt
         to: 'warning'
     action:
       service: notify.pushbullet
