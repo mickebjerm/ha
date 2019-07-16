@@ -22,3 +22,8 @@
 - platform: command_line
   name: Internet
   command: "sh /config/commands/firewall-rule.sh status 12"
+
+
+- platform: command_line
+  name: Ovirt
+  command: "sh /config/commands/ovirt.sh"
