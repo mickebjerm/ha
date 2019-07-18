@@ -98,7 +98,7 @@ cards:
         icon: mdi:lamp
       - entity: binary_sensor.openclose_28
         name: Altandörr
-        icon: mdi:door
+        icon: mdi:glassdoor
       - type: section
         label: Köket
       - entity: switch.koket
@@ -121,7 +121,7 @@ cards:
         icon: mdi:lamp
       - entity: binary_sensor.openclose_27
         name: Altandörr
-        icon: mdi:door
+        icon: mdi:glassdoor
       - entity: sensor.vardagsrum_temperature
         name: Temperatur
       - entity: sensor.vardagsrum_humidity
@@ -163,6 +163,7 @@ cards:
         toggle: true
       - entity: binary_sensor.openclose_25
         name: Matförrådet dörr
+        icon: mdi:door
       - type: section
         label: Garage
       - entity: binary_sensor.garageporten
