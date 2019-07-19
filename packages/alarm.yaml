@@ -41,3 +41,33 @@ automation:
       data:
         message: 'Deboliar fungerar inte!'
         title: 'Error'
+
+
+automation:
+  - id: reminder-garage
+    alias: "Garage reminder"
+    initial_state: false
+    trigger:
+      - platform: state
+        entity_id: binary_sensor.garageporten
+        to: 'on'
+        for:
+          minutes: 20
+    action:
+      service: notify.pushbullet
+      data:
+        message: 'Glöm inte stänga porten!!'
+        title: 'Garaget'
+
+
+alert:
+  garage_door:
+    name: Garage is open
+    done_message: Garage is closed
+    entity_id: binary_sensor.garageporten
+    state: 'on'
+    repeat: 30
+    can_acknowledge: true
+    skip_first: true
+    notifiers:
+      - pushbullet
