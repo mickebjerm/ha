@@ -1,13 +1,3 @@
-sqlite_web:
-  title: SQLite Web
-  icon: mdi:database
-  url: http://hassio.local:6210
-
-router:
-  title: Router
-  icon: mdi:linux
-  url: http://router.local
-
 grafana:
   title: Grafana
   icon: mdi:chart-bar
