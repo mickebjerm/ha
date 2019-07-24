@@ -10,6 +10,8 @@ cards:
       name: Groventre
     - entity: cover.garagedoor
       name: Garageporten
+    - entity: switch.garage
+      name: Garageporten
   - title: Internet
     show_header_toggle: false
     type: entities   
