@@ -3,8 +3,8 @@ cover:
     covers:
       garagedoor:
         friendly_name: Garage Door
-        value_template: "{{ states('sensor.garageporten')|float >= 0 }}"
-        icon_template: "{% if states('sensor.garageporten')|float >= 0 %} mdi:garage-open {% else %} mdi:garage{% endif %}"
+        value_template: "{% if is_state('sensor.garageporten', 'on') %} open {% else %} close{% endif %}"
+        icon_template: "{% if is_state('sensor.garageporten', 'on') %} mdi:garage-open {% else %} mdi:garage{% endif %}"
         open_cover:
           - condition: state
             entity_id: binary_sensor.garageporten
