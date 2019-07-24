@@ -3,18 +3,18 @@ cover:
     covers:
       garagedoor:
         friendly_name: Garage Door
-        value_template: '{{ is_state("binary_sensor.garageporten", "off") }}'
-        icon_template: '{% if is_state("binary_sensor.garageporten", "off") %}mdi:garage-open{% else %}mdi:garage{% endif %}'
+        value_template: '{{ is_state("binary_sensor.garageporten", "on") }}'
+        icon_template: '{% if is_state("binary_sensor.garageporten", "on") %}mdi:garage-open{% else %}mdi:garage{% endif %}'
         open_cover:
           - condition: state
             entity_id: binary_sensor.garageporten
-            state: 'on'
+            state: 'off'
           - service: cover.open_cover
             entity_id: switch.qubino_goap_zmnhnd1_flush_1d_relay_switch
         close_cover:
           - condition: state
             entity_id: binary_sensor.garageporten
-            state: 'off'
+            state: 'on'
           - service: cover.close_cover
             entity_id: switch.qubino_goap_zmnhnd1_flush_1d_relay_switch
 
