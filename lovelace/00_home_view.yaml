@@ -8,6 +8,12 @@ cards:
     entities:
     - entity: lock.groventre
       name: Groventre
+  - title: Garage
+    show_header_toogle: false
+    type: entities
+    entities:
+    - entity: switch.qubino_goap_zmnhnd1_flush_1d_relay_switch
+      name: Garageport
   - title: Internet
     show_header_toggle: false
     type: entities   
