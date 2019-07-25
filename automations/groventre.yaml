@@ -25,7 +25,7 @@
     platform: event
     event_type: deconz_event
     event_data:
-      id: groventre
+      id: groventren
       event: 1002
   action:
     - service: lock.unlock
@@ -34,7 +34,19 @@
         code: !secret verisure_code
 
 
-
+- id: open-close-garage-groventre
+  alias: 'Open/Close Garage - Groventre'
+  initial_state: true
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      id: groventren
+      event: 2002
+  action:
+    - service: switch.turn_on
+      data:
+        entity_id: switch.qubino_goap_zmnhnd1_flush_1d_relay_switch
 
 
 - id: reminder-groventre

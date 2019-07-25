@@ -10,6 +10,19 @@
       entity_id: switch.everspring_an179_in_wall_on_off_module_switch
 
 
+- id: open-close-garage
+  alias: 'Open/Close Garage'
+  initial_state: true
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      id: garage
+      event: 1002
+  action:
+    - service: switch.turn_on
+      data:
+        entity_id: switch.qubino_goap_zmnhnd1_flush_1d_relay_switch
 
  
 - id: garage-motion-off
