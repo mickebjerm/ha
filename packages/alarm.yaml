@@ -6,8 +6,6 @@ group:
       - binary_sensor.openclose_28
       - binary_sensor.openclose_24
       - binary_sensor.window_door_sensor
-      - binary_sensor.garageporten
-
 
 automation:
   - id: alarm
@@ -23,6 +21,10 @@ automation:
         state: 'on'
     action:
       - service: notify.pushbullet
+        data:
+          message: 'Kolla dörrarna/garaget'
+          title: 'Alarm'
+      - service: notify.micke_iphone7
         data:
           message: 'Kolla dörrarna/garaget'
           title: 'Alarm'
