@@ -24,12 +24,6 @@ cards:
         icon: mdi:refresh
         action_name: "Run"
         service_data: {}
-      - type: call-service
-        name: Speedtest
-        service: speedtestdotnet.speedtest
-        icon: mdi:refresh
-        action_name: "Run"
-        service_data: {}
   - title: Lampor tonåringar
     type: entities
     show_header_toggle: false

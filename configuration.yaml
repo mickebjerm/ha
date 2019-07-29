@@ -140,10 +140,10 @@ script: !include_dir_merge_list scripts/
 panel_iframe: !include panel_iframe.yaml
 
 
-speedtestdotnet:
-  server_id: 21028
-  scan_interval:
-    hours: 8
+#speedtestdotnet:
+#  server_id: 21028
+#  scan_interval:
+#    hours: 8
 
 shell_command:
   lovelace_gen: 'python /config/commands/lovelace-gen.py > /config/lovelace-gen.log'

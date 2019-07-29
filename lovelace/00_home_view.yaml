@@ -29,14 +29,6 @@ cards:
       icon: mdi:timer-off
     - entity: input_number.internet_stop_mins
       icon: mdi:timer-off
-    - type: section
-      label: Speedtest
-    - entity: sensor.speedtest_download
-      name: Download
-    - entity: sensor.speedtest_upload
-      name: Upload
-    - entity: sensor.speedtest_ping
-      name: Ping
   - title: Mediaspelare
     show_header_toggle: false
     type: entities
