@@ -44,7 +44,7 @@
       id: groventren
       event: 2002
   action:
-    - service: switch.turn_on
+    - service: homeassistant.turn_on
       data:
         entity_id: switch.qubino_goap_zmnhnd1_flush_1d_relay_switch
 

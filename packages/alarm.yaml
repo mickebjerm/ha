@@ -24,7 +24,3 @@ automation:
         data:
           message: 'Kolla dörrarna/garaget'
           title: 'Alarm'
-      - service: notify.micke_iphone7
-        data:
-          message: 'Kolla dörrarna/garaget'
-          title: 'Alarm'

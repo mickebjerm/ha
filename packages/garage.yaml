@@ -9,13 +9,13 @@ cover:
           - condition: state
             entity_id: binary_sensor.garageporten
             state: 'off'
-          - service: switch.turn_on
+          - service: homeassistant.turn_on
             entity_id: switch.qubino_goap_zmnhnd1_flush_1d_relay_switch
         close_cover:
           - condition: state
             entity_id: binary_sensor.garageporten
             state: 'on'
-          - service: switch.turn_on
+          - service: homeassistant.turn_on
             entity_id: switch.qubino_goap_zmnhnd1_flush_1d_relay_switch
 
 
@@ -30,4 +30,3 @@ alert:
     skip_first: true
     notifiers:
       - pushbullet
-      - micke_iphone7
