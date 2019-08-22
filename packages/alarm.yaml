@@ -7,20 +7,51 @@ group:
       - binary_sensor.openclose_24
       - binary_sensor.window_door_sensor
 
-automation:
-  - id: alarm
-    alias: "Send alarms"
-    initial_state: true
-    trigger:
-      - platform: state
-        entity_id: device_tracker.micke_iphone7_2
-        to: 'not_home'
-    condition:
-      - condition: state
-        entity_id: group.alarm_devices_sensors
-        state: 'on'
-    action:
-      - service: notify.pushbullet
-        data:
-          message: 'Kolla dörrarna/garaget'
-          title: 'Alarm'
+
+alert:
+  livingroom_door:
+    name: Vardagsrum är öppet
+    done_message: Vardagsrum är stängt
+    entity_id: binary_sensor.openclose_27
+    state: 'on'
+    repeat: 2
+    can_acknowledge: true
+    skip_first: true
+    notifiers:
+      - ios_micke_iphone7
+
+alert:
+  laundry_door:
+    name: Tvättstugan är öppen
+    done_message: Tvättstugan är stängd
+    entity_id: binary_sensor.openclose_28
+    state: 'on'
+    repeat: 2
+    can_acknowledge: true
+    skip_first: true
+    notifiers:
+      - ios_micke_iphone7
+
+alert:
+  mainentre_door:
+    name: Huvudentren är öppen
+    done_message: Huvudentren är stängd
+    entity_id: binary_sensor.openclose_24
+    state: 'on'
+    repeat: 2
+    can_acknowledge: true
+    skip_first: true
+    notifiers:
+      - ios_micke_iphone7
+
+alert:
+  entre_door:
+    name: Groventren är öppen
+    done_message: Groventren är stängd
+    entity_id: binary_sensor.window_door_sensor
+    state: 'on'
+    repeat: 2
+    can_acknowledge: true
+    skip_first: true
+    notifiers:
+      - ios_micke_iphone7

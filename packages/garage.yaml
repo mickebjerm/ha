@@ -25,9 +25,9 @@ alert:
     done_message: Garage is closed
     entity_id: binary_sensor.garageporten
     state: 'on'
-    repeat: 3
+    repeat: 30
     can_acknowledge: true
-    skip_first: false
+    skip_first: true
     notifiers:
       - pushbullet
       - ios_micke_iphone7
