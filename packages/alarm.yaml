@@ -43,15 +43,3 @@ alert:
     skip_first: true
     notifiers:
       - ios_micke_iphone7
-
-alert:
-  entre_door:
-    name: Groventren är öppen
-    done_message: Groventren är stängd
-    entity_id: binary_sensor.window_door_sensor
-    state: 'on'
-    repeat: 2
-    can_acknowledge: true
-    skip_first: true
-    notifiers:
-      - ios_micke_iphone7
