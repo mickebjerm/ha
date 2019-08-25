@@ -49,31 +49,6 @@
         entity_id: switch.qubino_goap_zmnhnd1_flush_1d_relay_switch
 
 
-- id: reminder-groventre
-  alias: "Groventre reminder"
-  trigger:
-    - platform: state
-      entity_id: device_tracker.micke_iphone7_2
-      to: 'not_home'
-  condition:
-    condition: and
-    conditions:
-      - condition: state
-        entity_id: binary_sensor.window_door_sensor
-        state: 'off'
-      - condition: state
-        entity_id: lock.groventre
-        state: 'unlocked'
-  action:
-    service: notify.pushbullet
-    data:
-      message: 'Lås dörren för tusan!!'
-      title: 'Groventre - olåst'
-
-
-
-
-
 - id: groventre-matf-on
   alias: "Foodlight - on"
   initial_state: true  

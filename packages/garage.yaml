@@ -29,5 +29,4 @@ alert:
     can_acknowledge: true
     skip_first: true
     notifiers:
-      - pushbullet
       - ios_micke_iphone7
