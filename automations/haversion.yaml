@@ -8,7 +8,7 @@
         {% set ignore = ['unknown', 'unavailable', ''] %}
         {{ trigger.from_state.state not in ignore and trigger.to_state.state not in ignore and trigger.to_state.state != trigger.from_state.state }}
   action:
-    service: notify.pushbullet
+    service: notify.ios_micke_iphone7
     data:
       title: "New HA release"
       message: "version: {{ states.sensor.current_ha_version.state }}"

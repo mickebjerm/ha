@@ -22,11 +22,11 @@
   initial_state: true
   trigger:
     - platform: state
-      entity_id: device_tracker.micke_iphone7_2
+      entity_id: device_tracker.micke_iphone7
       to: 'not_home'
   condition:
     - condition: time
-      before: '09:00'
+      before: '09:30'
       weekday:
         - mon
         - tue
