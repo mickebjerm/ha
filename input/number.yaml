@@ -73,7 +73,7 @@ kids_lights_stop_hour:
 kids_lights_stop_mins:
   name: Minut
   icon: mdi:timer
-  initial: 00
+  initial: 30
   min: 30
   max: 59
   step: 1
