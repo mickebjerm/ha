@@ -49,7 +49,7 @@ other_lights_stop_mins:
 teenage_lights_stop_hour:
   name: Timme
   icon: mdi:timer
-  initial: 21
+  initial: 22
   min: 0
   max: 23
   step: 1
@@ -57,7 +57,7 @@ teenage_lights_stop_hour:
 teenage_lights_stop_mins:
   name: Minut
   icon: mdi:timer
-  initial: 30
+  initial: 0
   min: 0
   max: 59
   step: 1
@@ -74,6 +74,6 @@ kids_lights_stop_mins:
   name: Minut
   icon: mdi:timer
   initial: 00
-  min: 0
+  min: 30
   max: 59
   step: 1
