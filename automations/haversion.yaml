@@ -1,9 +1,10 @@
 - alias: Notify on new HA version
   trigger:
     platform: state
-    entity_id: sensor.current_ha_version
+    entity_id: sensor.aws_ha_version
   condition:
     - condition: template
+#      value_template: '{{ (states.sensor.current_ha_version.state != "") and (states.sensor.current_ha_version.state != "unavailable")}}'
       value_template: >
         {% set ignore = ['unknown', 'unavailable', ''] %}
         {{ trigger.from_state.state not in ignore and trigger.to_state.state not in ignore and trigger.to_state.state != trigger.from_state.state }}
@@ -11,4 +12,4 @@
     service: notify.ios_micke_iphone7
     data:
       title: "New HA release"
-      message: "version: {{ states.sensor.current_ha_version.state }}"
+      message: "version: {{ states.sensor.aws_ha_version.state }}"
