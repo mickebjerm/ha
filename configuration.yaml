@@ -133,6 +133,15 @@ verisure:
 device_tracker: !include device_tracker.yaml
 
 
+mikrotik:
+- host: !secret mikrotik_host
+  username: !secret mikrotik_user
+  password: !secret mikrotik_pass
+  method: wireless
+  login_method: plain
+  ssl: false
+  port: 8728
+
 sensor: !include_dir_merge_list sensors/
 group: !include_dir_merge_named groups/
 automation: !include_dir_merge_list automations/
