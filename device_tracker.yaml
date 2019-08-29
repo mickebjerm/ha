@@ -16,7 +16,7 @@
     - uptime
     - user_id
 
-- platform: mikrotik
+mikrotik:
   host: !secret mikrotik_host
   username: !secret mikrotik_user
   password: !secret mikrotik_pass
