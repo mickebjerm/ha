@@ -22,3 +22,4 @@
   password: !secret mikrotik_pass
   track_new_devices: true
   method: wireless
+  login_method: plain
