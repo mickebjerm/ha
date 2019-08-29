@@ -23,3 +23,5 @@
   track_new_devices: true
   method: wireless
   login_method: plain
+  ssl: false
+  port: 8728
