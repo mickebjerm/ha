@@ -14,7 +14,7 @@ alert:
     done_message: Vardagsrum är stängt
     entity_id: binary_sensor.openclose_27
     state: 'on'
-    repeat: 2
+    repeat: 20
     can_acknowledge: true
     skip_first: true
     notifiers:
@@ -26,7 +26,7 @@ alert:
     done_message: Tvättstugan är stängd
     entity_id: binary_sensor.openclose_28
     state: 'on'
-    repeat: 2
+    repeat: 20
     can_acknowledge: true
     skip_first: true
     notifiers:
@@ -38,7 +38,7 @@ alert:
     done_message: Huvudentren är stängd
     entity_id: binary_sensor.openclose_24
     state: 'on'
-    repeat: 2
+    repeat: 20
     can_acknowledge: true
     skip_first: true
     notifiers:
