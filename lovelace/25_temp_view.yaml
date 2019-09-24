@@ -20,13 +20,7 @@ cards:
     entities:
     - entity: sensor.temperature_15
       name: Framsidan
-    - entity: sensor.humidity_16
-      name: Framsidan
-    - entity: sensor.pressure_17
-      name: Framsidan
     - entity: sensor.utomhus_temperature
-      name: Baksidan
-    - entity: sensor.utomhus_humidity
       name: Baksidan
     - entity: sensor.utomhus_g2_temperature
       name: Grannen
