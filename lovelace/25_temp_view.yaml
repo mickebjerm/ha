@@ -24,6 +24,16 @@ cards:
       name: Baksidan
     - entity: sensor.utomhus_g2_temperature
       name: Grannen
+  - title: Utomhus LF
+    type: entities
+    show_header_toggle: false
+    entities:
+    - entity: sensor.humidity_16
+      name: Framsidan
+    - entity: sensor.pressure_17
+      name: Framsidan
+    - entity: sensor.utomhus_humidity
+      name: Baksidan
   - title: Övervåningen
     type: entities
     show_header_toggle: false 
@@ -33,6 +43,16 @@ cards:
     - entity: sensor.allrum_uppe_temperature
       name: Allrum
     - entity: sensor.julius_temperature
+      name: Julius & Oscar
+  - title: Övervåningen LF
+    type: entities
+    show_header_toggle: false 
+    entities:
+    - entity: sensor.elias_humidity
+      name: Elias
+    - entity: sensor.allrum_uppe_humidity
+      name: Allrum
+    - entity: sensor.julius_humidity
       name: Julius & Oscar
   - title: Nedervåningen
     type: entities
@@ -51,4 +71,34 @@ cards:
     - entity: sensor.temperature_21
       name: Dusch/bastu
     - entity: sensor.temperature_6
+      name: Gymmet
+  - title: Nedervåningen LF
+    type: entities
+    show_header_toggle: false
+    entities:
+    - entity: sensor.kok_humidity
+      name: Köket
+    - entity: sensor.vardagsrum_temperature
+      name: Vardagsrum
+    - entity: sensor.vardagsrum_humidity
+      name: Vardagsrum
+    - entity: sensor.temp1_3
+      name: Sovrum
+    - entity: sensor.temp1_2
+      name: Sovrum
+    - entity: sensor.humidity_13
+      name: Ellen
+    - entity: sensor.pressure_14
+      name: Ellen
+    - entity: sensor.humidity_19
+      name: William
+    - entity: sensor.pressure_20
+      name: William
+    - entity: sensor.humidity_22
+      name: Dusch/bastu
+    - entity: sensor.pressure_23
+      name: Dusch/bastu
+    - entity: sensor.humidity_7
+      name: Gymmet
+    - entity: sensor.pressure_8
       name: Gymmet
