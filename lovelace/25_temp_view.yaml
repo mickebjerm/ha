@@ -36,15 +36,9 @@ cards:
     entities:
     - entity: sensor.elias_temperature
       name: Elias
-    - entity: sensor.elias_humidity
-      name: Elias
     - entity: sensor.allrum_uppe_temperature
       name: Allrum
-    - entity: sensor.allrum_uppe_humidity
-      name: Allrum
     - entity: sensor.julius_temperature
-      name: Julius & Oscar
-    - entity: sensor.julius_humidity
       name: Julius & Oscar
   - title: Nedervåningen
     type: entities
@@ -52,39 +46,15 @@ cards:
     entities:
     - entity: sensor.kok_temperature
       name: Köket
-    - entity: sensor.kok_humidity
-      name: Köket
     - entity: sensor.vardagsrum_temperature
-      name: Vardagsrum
-    - entity: sensor.vardagsrum_humidity
       name: Vardagsrum
     - entity: sensor.temp1
       name: Sovrum
-    - entity: sensor.temp1_3
-      name: Sovrum
-    - entity: sensor.temp1_2
-      name: Sovrum
     - entity: sensor.temperature_11
-      name: Ellen
-    - entity: sensor.humidity_13
-      name: Ellen
-    - entity: sensor.pressure_14
       name: Ellen
     - entity: sensor.temperature_18
       name: William
-    - entity: sensor.humidity_19
-      name: William
-    - entity: sensor.pressure_20
-      name: William
     - entity: sensor.temperature_21
       name: Dusch/bastu
-    - entity: sensor.humidity_22
-      name: Dusch/bastu
-    - entity: sensor.pressure_23
-      name: Dusch/bastu
     - entity: sensor.temperature_6
-      name: Gymmet
-    - entity: sensor.humidity_7
-      name: Gymmet
-    - entity: sensor.pressure_8
       name: Gymmet
