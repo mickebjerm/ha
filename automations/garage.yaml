@@ -1,5 +1,5 @@
 - id: garage-motion-off
-  alias: "Garage motion - on"
+  alias: "[Garage] Motion On"
   initial_state: true  
   trigger:
     - platform: state
@@ -11,7 +11,7 @@
 
 
 - id: open-close-garage
-  alias: 'Open/Close Garage'
+  alias: "[Garage] Open/Close"
   initial_state: true
   trigger:
     platform: event
@@ -26,7 +26,7 @@
 
  
 - id: garage-motion-off
-  alias: "Garage motion - off"
+  alias: "[Garage] Motion Off"
   initial_state: true
   trigger:
     - platform: state
