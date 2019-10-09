@@ -11,3 +11,10 @@ cards:
     filter:
       include:
         - entity_id: 'automation.*'
+    card:
+      type: entities
+      show_header_toggle: false
+      title: Garage
+    filter:
+      include:
+        - entity_id: 'automation.garage*'
