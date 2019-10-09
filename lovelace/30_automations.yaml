@@ -20,3 +20,21 @@ cards:
     filter:
       include:
         - entity_id: 'automation.garage*'
+  - type: custom:monster-card
+    show_empty: false
+    card:
+      type: entities
+      show_header_toggle: false
+      title: Lights
+    filter:
+      include:
+        - entity_id: 'automation.lights*'
+  - type: custom:monster-card
+    show_empty: false
+    card:
+      type: entities
+      show_header_toggle: false
+      title: Other
+    filter:
+      include:
+        - entity_id: 'automation.other*'

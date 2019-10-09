@@ -1,5 +1,5 @@
 - id: lamps-on
-  alias: "Lamps - on"
+  alias: "[Lights] Lamps - on"
   initial_state: true
   trigger:
    - platform: sun
@@ -14,7 +14,7 @@
 
 
 - id: lamps-off-other
-  alias: "Lamps other - off"
+  alias: "[Lights] Lamps other - off"
   initial_state: true
   trigger:
     platform: template
@@ -25,7 +25,7 @@
 
 
 - id: lamps-off-teenage
-  alias: "Lamps teenage - off"
+  alias: "[Lights] Lamps teenage - off"
   initial_state: true
   trigger:
     platform: template
@@ -36,7 +36,7 @@
 
 
 - id: lamps-kids-off
-  alias: "Lamps kids - off"
+  alias: "[Lights] Lamps kids - off"
   initial_state: true
   trigger:
     platform: template

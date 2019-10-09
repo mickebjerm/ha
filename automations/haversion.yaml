@@ -1,4 +1,4 @@
-- alias: Notify on new HA version
+- alias: "[Other] Notify on new HA version"
   trigger:
     platform: state
     entity_id: sensor.aws_ha_version

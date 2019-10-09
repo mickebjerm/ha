@@ -1,5 +1,5 @@
 - id: goodmorning-on
-  alias: "Goodmorning - on"
+  alias: "[Lights] Goodmorning - on"
   initial_state: true
   trigger:
     - platform: time
@@ -18,7 +18,7 @@
 
 
 - id: goodmorning-off
-  alias: 'Goodmorning - off'
+  alias: '[Lights] Goodmorning - off'
   initial_state: true
   trigger:
     - platform: state

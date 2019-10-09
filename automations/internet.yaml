@@ -1,5 +1,5 @@
 - id: internet-activate
-  alias: "Internet - activate"
+  alias: "[Other] Internet - activate"
   trigger: 
     platform: template
     value_template: '{{ states.sensor.internet_starttime.state == states.sensor.time.state }}'
@@ -8,7 +8,7 @@
 
 
 - id: internet-deactivate 
-  alias: "Internet - deactivate"
+  alias: "[Other] Internet - deactivate"
   trigger:
     platform: template
     value_template: '{{ states.sensor.internet_stoptime.state == states.sensor.time.state }}'

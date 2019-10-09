@@ -1,5 +1,5 @@
 - id: lock-groventre
-  alias: "Locking groventre"
+  alias: "[Other] Locking groventre"
   initial_state: true
   trigger:
     - platform: state
@@ -19,7 +19,7 @@
 
 
 - id: unlock-groventre
-  alias: 'Unlocking groventre'
+  alias: '[Other] Unlocking groventre'
   initial_state: true
   trigger:
     platform: event
@@ -35,7 +35,7 @@
 
 
 - id: open-close-garage-groventre
-  alias: 'Open/Close Garage - Groventre'
+  alias: '[Garage] Open/Close Garage - Groventre'
   initial_state: true
   trigger:
     platform: event
@@ -50,7 +50,7 @@
 
 
 - id: groventre-matf-on
-  alias: "Foodlight - on"
+  alias: "[Lights] Foodlight - on"
   initial_state: true  
   trigger:
     - platform: state
@@ -62,7 +62,7 @@
 
 
 - id: groventre-matf-off
-  alias: "Foodlight - off"
+  alias: "[Lights] Foodlight - off"
   initial_state: true
   trigger:
     - platform: state

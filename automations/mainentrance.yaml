@@ -1,5 +1,5 @@
 - id: reminder-mainentrance
-  alias: "Mainentrance reminder"
+  alias: "[Other] Mainentrance reminder"
   initial_state: true
   trigger:
     - platform: state
