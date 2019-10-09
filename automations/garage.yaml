@@ -1,6 +1,5 @@
 - id: garage-motion-off
   alias: "[Garage] Motion On"
-  friendly_name: "Motion On"
   initial_state: true  
   trigger:
     - platform: state
