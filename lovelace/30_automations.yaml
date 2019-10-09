@@ -10,4 +10,4 @@ cards:
       title: Automations
     filter:
       include:
-        - entity_id: 'automation.garage*'
+        - entity_id: 'automation.*'
