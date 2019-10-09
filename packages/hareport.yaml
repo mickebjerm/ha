@@ -12,7 +12,7 @@ rest_command:
     verify_ssl: true
 
 automation:
-  - alias: "Report version on startup"
+  - alias: "[Other] Report version on startup"
     trigger:
       - platform: homeassistant
         event: start
