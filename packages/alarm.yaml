@@ -20,7 +20,6 @@ alert:
     notifiers:
       - ios_micke_iphone7
 
-alert:
   laundry_door:
     name: Tvättstugan är öppen
     done_message: Tvättstugan är stängd
@@ -32,7 +31,6 @@ alert:
     notifiers:
       - ios_micke_iphone7
 
-alert:
   mainentre_door:
     name: Huvudentren är öppen
     done_message: Huvudentren är stängd
