@@ -130,7 +130,7 @@ verisure:
   mouse: 0
   door_window: 0
 
-device_tracker: !include device_tracker.yaml
+#device_tracker: !include device_tracker.yaml
 
 
 mikrotik:
