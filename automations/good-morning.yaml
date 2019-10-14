@@ -22,7 +22,7 @@
   initial_state: true
   trigger:
     - platform: state
-      entity_id: device_tracker.micke_iphone7
+      entity_id: device_tracker.micke
       to: 'not_home'
   condition:
     - condition: time
