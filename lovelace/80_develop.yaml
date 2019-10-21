@@ -12,26 +12,30 @@ cards:
         icon: mdi:refresh
         action_name: "Run"
         service_data: {}
+      - type: section
+        label: Barnens internet
       - type: call-service
-        name: Stoppa barnens internet
+        name: Stoppa
         service: shell_command.firewall_kids_stop
         icon: mdi:refresh
         action_name: "Run"
         service_data: {}
       - type: call-service
-        name: Starta barnens internet
+        name: Starta
         service: shell_command.firewall_kids_start
         icon: mdi:refresh
         action_name: "Run"
         service_data: {}
+      - type: section
+        label: Internet
       - type: call-service
-        name: Stoppa internet
+        name: Stoppa
         service: shell_command.firewall_stop
         icon: mdi:refresh
         action_name: "Run"
         service_data: {}
       - type: call-service
-        name: Starta internet
+        name: Starta
         service: shell_command.firewall_start
         icon: mdi:refresh
         action_name: "Run"
