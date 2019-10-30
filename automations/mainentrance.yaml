@@ -8,6 +8,6 @@
       for:
         seconds: 45
   action:
-    service: ios_micke_iphone7notify.pushbullet
+    service: notify.ios_micke_iphone7
     data:
       message: 'Glöm inte att låsa huvudentren!!'
