@@ -82,6 +82,7 @@ tts:
 # Cloud
 cloud:
 
+mobile_app:
 
 notify:
   - name: pushbullet
