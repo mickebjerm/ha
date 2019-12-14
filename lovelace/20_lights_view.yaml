@@ -28,6 +28,7 @@ cards:
       icon: mdi:lightbulb
     - type: custom:slider-entity-row
       entity: light.sovrum_tak
+      initial: 10
       toggle: true
       name: Hallen byrå
       icon: mdi:lightbulb
