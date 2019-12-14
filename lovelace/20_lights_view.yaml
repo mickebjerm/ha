@@ -29,7 +29,7 @@ cards:
     - type: custom:slider-entity-row
       entity: light.sovrum_tak
       toggle: true
-      name: Hallen byrp
+      name: Hallen byrå
       icon: mdi:lightbulb
     - entity: switch.ellen
       icon: mdi:lightbulb
