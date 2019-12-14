@@ -12,6 +12,7 @@ window_lights:
     - switch.sovrum
     - switch.allrum
     - switch.light_2
+    - light.sovrum_tak
 
 teenage_lights:
   name: Fönsterlampor tonåringar

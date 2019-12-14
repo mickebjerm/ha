@@ -29,7 +29,7 @@ cards:
     - type: custom:slider-entity-row
       entity: light.sovrum_tak
       toggle: true
-      name: Sovrum tak
+      name: Hallen byrp
       icon: mdi:lightbulb
     - entity: switch.ellen
       icon: mdi:lightbulb

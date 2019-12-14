@@ -37,11 +37,6 @@ cards:
     entities:
       - type: section
         label: Sovrum
-      - type: custom:slider-entity-row
-        entity: light.sovrum_tak
-        name: Tak
-        icon: mdi:ceiling-light
-        toggle: true
       - entity: switch.sovrum
         name: Fönster
         icon: mdi:lamp
@@ -82,9 +77,11 @@ cards:
       - entity: binary_sensor.openclose_24
         name: Dörr
         icon: mdi:door
-      - entity: switch.hallen
+      - type: custom:slider-entity-row
+        entity: light.sovrum_tak
         name: Bordslampa
         icon: mdi:lamp
+        toggle: true
       - entity: sensor.aeon_labs_zw075_smart_switch_gen5_energy_2
         name: Datacentret kWh
         icon: mdi:server-network
