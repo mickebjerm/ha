@@ -182,3 +182,31 @@ cards:
         name: Rörelse hallen
       - entity: binary_sensor.presence_31
         name: Rörelse garage
+  - type: entities
+    title: Våtutrymmen
+    show_header_toggle: false
+    entities:
+      - type: section
+        label: Badrum nere
+      - entity: sensor.temperature_21
+        name: Temperatur
+      - entity: sensor.humidity_22
+        name: Luftfuktighet
+      - entity: sensor.pressure_23
+        name: Lufttryck
+      - type: section
+        label: Badrum uppe
+      - entity: sensor.temperature_21
+        name: Temperatur
+      - entity: sensor.humidity_22
+        name: Luftfuktighet
+      - entity: sensor.pressure_23
+        name: Lufttryck
+      - type: section
+        label: Bastu
+      - entity: sensor.temperature_21
+        name: Temperatur
+      - entity: sensor.humidity_22
+        name: Luftfuktighet
+      - entity: sensor.pressure_23
+        name: Lufttryck
