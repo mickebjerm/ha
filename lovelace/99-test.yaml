@@ -179,4 +179,6 @@ cards:
         name: Tak
         icon: mdi:ceiling-light
       - entity: binary_sensor.presence_10
-        name: Rörelse
+        name: Rörelse hallen
+      - entity: binary_sensor.presence_31
+        name: Rörelse garage
