@@ -1,9 +1,8 @@
 - id: start-elias-heater
   alias: "[Other] Start Elias heater"
   trigger:
-    platform: numeric_state
-    entity_id: sensor.elias_temperature
-    below: 20
+    - platform: template
+      value_template: "{% if states.sensor.elias_temperature.state | float < 21.0 %} true {% endif %}"
   action:
     service: homeassistant.turn_on
     entity_id: switch.aeon_labs_zw075_smart_switch_gen5_switch_3
@@ -11,9 +10,8 @@
 - id: stop-elias-heater
   alias: "[Other] Stop Elias heater"
   trigger:
-    platform: numeric_state
-    entity_id: sensor.elias_temperature
-    above: 21
+    - platform: template
+      value_template: "{% if states.sensor.elias_temperature.state | float > 21.5 %} true {% endif %}"
   action:
     service: homeassistant.turn_off
     entity_id: switch.aeon_labs_zw075_smart_switch_gen5_switch_3
