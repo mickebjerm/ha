@@ -1,14 +1,12 @@
-- id: garage-motion-off
+- id: garage-motion-on
   alias: "[Garage] Motion On"
   initial_state: true  
   trigger:
-    - platform: state
-      entity_id: binary_sensor.presence_10
-      to: 'on'
+    - platform: template
+      value_template: "{% if (states.binary_sensor.presence_10.state == 'on') or (states.binary_sensor.presence_31.state == 'on') %} true {% endif %}"
   action:
     - service: homeassistant.turn_on
       entity_id: switch.everspring_an179_in_wall_on_off_module_switch
-
 
 - id: open-close-garage
   alias: "[Garage] Open/Close"
@@ -29,9 +27,8 @@
   alias: "[Garage] Motion Off"
   initial_state: true
   trigger:
-    - platform: state
-      entity_id: binary_sensor.presence_10
-      to: 'off'
+    - platform: template
+      value_template: "{% if (states.binary_sensor.presence_10.state == 'off') or (states.binary_sensor.presence_31.state == 'off') %} true {% endif %}"
       for:
         minutes: 5
   action:
