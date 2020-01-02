@@ -36,6 +36,7 @@ other_lights:
     - switch.gymmet
     - switch.hallen
     - switch.light_2
+    - light.sovrum_tak
 
 other_not_window_lights:
   name: Lampor övriga
