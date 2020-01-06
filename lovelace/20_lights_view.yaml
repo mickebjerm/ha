@@ -51,4 +51,4 @@ cards:
       toggle: true
     - entity: switch.everspring_an179_in_wall_on_off_module_switch
       name: Garage
-      icon: mdi:lightbulb
+      icon: mdi:ceiling-light
