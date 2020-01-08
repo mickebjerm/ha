@@ -29,4 +29,4 @@ alert:
     can_acknowledge: true
     skip_first: true
     notifiers:
-      - ios_micke_iphone7
+      - mobile_app_micke_iphone

@@ -18,7 +18,7 @@ alert:
     can_acknowledge: true
     skip_first: true
     notifiers:
-      - ios_micke_iphone7
+      - mobile_app_micke_iphone
 
   laundry_door:
     name: Tvättstugan är öppen
@@ -29,7 +29,7 @@ alert:
     can_acknowledge: true
     skip_first: true
     notifiers:
-      - ios_micke_iphone7
+      - mobile_app_micke_iphone
 
   mainentre_door:
     name: Huvudentren är öppen
@@ -40,4 +40,4 @@ alert:
     can_acknowledge: true
     skip_first: true
     notifiers:
-      - ios_micke_iphone7
+      - mobile_app_micke_iphone
