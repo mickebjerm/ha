@@ -9,7 +9,7 @@
         {% set ignore = ['unknown', 'unavailable', ''] %}
         {{ trigger.from_state.state not in ignore and trigger.to_state.state not in ignore and trigger.to_state.state != trigger.from_state.state }}
   action:
-    service: notify.ios_micke_iphone7
+    service: notify.mobile_app_micke_iphone
     data:
       title: "New HA release"
       message: "version: {{ states.sensor.aws_ha_version.state }}"
