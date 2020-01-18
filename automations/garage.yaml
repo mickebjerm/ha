@@ -28,9 +28,7 @@
   initial_state: true
   trigger:
     - platform: template
-      value_template: "{% if (states.binary_sensor.presence_10.state == 'off') or (states.binary_sensor.presence_31.state == 'off') %} true {% endif %}"
-      for:
-        minutes: 5
+      value_template: "{% if (states.binary_sensor.presence_10.state == 'off') and (states.binary_sensor.presence_31.state == 'off') %} true {% endif %}"
   action:
     - service: homeassistant.turn_off
       entity_id: switch.everspring_an179_in_wall_on_off_module_switch
