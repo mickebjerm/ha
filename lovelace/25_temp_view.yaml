@@ -5,15 +5,6 @@ cards:
   - type: weather-forecast
     title: SMHI
     entity: weather.smhi_sundsvall
-  - type: custom:pollenkoll-card
-    title: Pollen Sundsvall
-    city: Sundsvall
-    compact: true
-    allergens:
-      - Al
-      - Björk
-      - Gräs
-      - "Sälg / Vide"
   - title: Utomhus
     type: entities
     show_header_toggle: false
