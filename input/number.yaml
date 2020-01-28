@@ -25,7 +25,7 @@ internet_stop_hour:
 internet_stop_mins:
   name: Stop minut
   icon: mdi:timer
-  initial: 50
+  initial: 59
   min: 0
   max: 59
   step: 1
