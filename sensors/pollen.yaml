@@ -1,9 +1,0 @@
-- platform: pollenniva
-  sensors:
-    - city: Sundsvall
-      days_to_track: 3
-      allergens: 
-        - Al
-        - Björk
-        - Gräs
-        - "Sälg / Vide"
