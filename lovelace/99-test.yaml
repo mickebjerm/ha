@@ -9,6 +9,7 @@ cards:
       - entity: switch.allrum
         icon: mdi:lamp
         name: Fönster
+        state_color: yellow
       - entity: sensor.allrum_uppe_temperature
         name: Temperatur
       - entity: sensor.allrum_uppe_humidity
@@ -18,9 +19,11 @@ cards:
       - entity: switch.elias
         icon: mdi:lamp
         name: Fönster
+        state_color: yellow
       - entity: switch.aeon_labs_zw075_smart_switch_gen5_switch_3
         icon: mdi:radiator
         name: Element
+        state_color: yellow
       - entity: sensor.aeon_labs_zw075_smart_switch_gen5_energy_3
         name: Element kWh
         icon: mdi:server-network
@@ -36,6 +39,7 @@ cards:
       - entity: switch.julius
         icon: mdi:lamp
         name: Fönster
+        state_color: yellow
       - entity: sensor.julius_temperature
         name: Temperatur
       - entity: sensor.julius_humidity
@@ -49,6 +53,7 @@ cards:
       - entity: switch.sovrum
         name: Fönster
         icon: mdi:lamp
+        state_color: yellow
       - entity: sensor.temp1
         name: Temperatur
       - entity: sensor.temp1_3
@@ -60,6 +65,7 @@ cards:
       - entity: switch.william
         name: Fönster
         icon: mdi:lamp
+        state_color: yellow
       - entity: sensor.temperature_18
         name: Temperatur
       - entity: sensor.humidity_19
@@ -71,6 +77,7 @@ cards:
       - entity: switch.ellen
         name: Fönster
         icon: mdi:lamp
+        state_color: yellow
       - entity: sensor.temperature_11
         name: Temperatur
       - entity: sensor.humidity_13
@@ -86,6 +93,7 @@ cards:
       - entity: binary_sensor.openclose_24
         name: Dörr
         icon: mdi:door
+        state_color: yellow
       - type: custom:slider-entity-row
         entity: light.sovrum_tak
         name: Bordslampa
@@ -102,14 +110,17 @@ cards:
       - entity: switch.light_2
         name: Fönster
         icon: mdi:lamp
+        state_color: yellow
       - entity: binary_sensor.openclose_28
         name: Altandörr
         icon: mdi:glassdoor
+        state_color: yellow
       - type: section
         label: Köket
       - entity: switch.koket
         name: Fönster
         icon: mdi:lamp
+        state_color: yellow
       - entity: sensor.aeon_labs_zw075_smart_switch_gen5_energy
         icon: mdi:dishwasher
         name: Diskmaskin kWh
@@ -125,9 +136,11 @@ cards:
       - entity: switch.vardagsrum
         name: Fönster
         icon: mdi:lamp
+        state_color: yellow
       - entity: binary_sensor.openclose_27
         name: Altandörr
         icon: mdi:glassdoor
+        state_color: yellow
       - entity: sensor.vardagsrum_temperature
         name: Temperatur
       - entity: sensor.vardagsrum_humidity
@@ -149,6 +162,7 @@ cards:
       - entity: switch.gymmet
         name: Fönster
         icon: mdi:lamp
+        state_color: yellow
       - entity: sensor.temperature_6
         name: Temperatur
       - entity: sensor.humidity_7
@@ -160,6 +174,7 @@ cards:
       - entity: binary_sensor.window_door_sensor
         name: Dörr
         icon: mdi:door
+        state_color: yellow
       - entity: lock.groventre
         name: Dörrlås
       - type: custom:slider-entity-row
@@ -170,6 +185,7 @@ cards:
       - entity: binary_sensor.openclose_25
         name: Matförrådet dörr
         icon: mdi:door
+        state_color: yellow
       - type: section
         label: Garage
       - entity: binary_sensor.garageporten
