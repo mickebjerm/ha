@@ -135,13 +135,15 @@ verisure:
 
 
 mikrotik:
-- host: !secret mikrotik_host
+- name: Mikrotik
+  host: !secret mikrotik_host
   username: !secret mikrotik_user
   password: !secret mikrotik_pass
-  method: wireless
-  login_method: plain
-  ssl: false
+  verify_ssl: false
   port: 8728
+  arp_ping: true
+  force_dhcp: true
+  detection_time: 60
 
 sensor: !include_dir_merge_list sensors/
 group: !include_dir_merge_named groups/
