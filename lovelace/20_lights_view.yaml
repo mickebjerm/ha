@@ -12,21 +12,27 @@ cards:
     - entity: switch.elias
       icon: mdi:lightbulb
       name: Elias
+      state_color: yellow
     - entity: switch.julius
       icon: mdi:lightbulb
       name: Julius & Oscar
+      state_color: yellow
   - title: Nedervåningen
     type: entities
     entities:
     - entity: switch.koket
       icon: mdi:lightbulb
+      state_color: yellow
     - entity: switch.hallen
       icon: mdi:lightbulb
+      state_color: yellow
     - entity: switch.william
       icon: mdi:lightbulb
+      state_color: yellow
     - entity: switch.sovrum
       name: Sovrum fönster
       icon: mdi:lightbulb
+      state_color: yellow
     - type: custom:slider-entity-row
       entity: light.sovrum_tak
       input_number: 10
@@ -35,13 +41,17 @@ cards:
       icon: mdi:lightbulb
     - entity: switch.ellen
       icon: mdi:lightbulb
+      state_color: yellow
     - entity: switch.vardagsrum
       icon: mdi:lightbulb
+      state_color: yellow
     - entity: switch.light_2
       name: Tvättstugan
       icon: mdi:lightbulb
+      state_color: yellow
     - entity: switch.gymmet
       icon: mdi:lightbulb
+      state_color: yellow
   - title: Övrigt
     type: entities
     entities:
@@ -53,3 +63,4 @@ cards:
     - entity: switch.everspring_an179_in_wall_on_off_module_switch
       name: Garage
       icon: mdi:ceiling-light
+      state_color: yellow
