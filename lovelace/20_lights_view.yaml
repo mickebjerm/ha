@@ -8,6 +8,7 @@ cards:
     - entity: switch.allrum
       icon: mdi:lightbulb
       name: Allrummet
+      state_color: yellow
     - entity: switch.elias
       icon: mdi:lightbulb
       name: Elias
