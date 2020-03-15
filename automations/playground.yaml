@@ -25,3 +25,32 @@
     - service: media_player.media_pause
       data:
         entity_id: media_player.kok
+
+
+- id: volume-up-sonos
+  alias: '[Sonos] Volume UP'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      id: tradfri_switch
+      event: 1001
+  action:
+    - service: media_player.volume_up
+      data:
+        entity_id: media_player.kok
+
+- id: volume-down-sonos
+  alias: '[Sonos] Volume DOWN'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      id: tradfri_switch
+      event: 2001
+  action:
+    - service: media_player.volume_down
+      data:
+        entity_id: media_player.kok
