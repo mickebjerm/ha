@@ -13,6 +13,12 @@ cards:
       icon: mdi:lightbulb
       name: Elias
       state_color: yellow
+    - type: custom:slider-entity-row
+      entity: group.julius_lights
+      input_number: 70
+      toggle: true
+      name: Julius & Oscar
+      icon: mdi:lightbulb
     - entity: switch.julius
       icon: mdi:lightbulb
       name: Julius & Oscar
