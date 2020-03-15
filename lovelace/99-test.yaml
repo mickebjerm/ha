@@ -36,10 +36,18 @@ cards:
         name: Luftfuktighet
       - type: section
         label: Julius & Oscar
-      - entity: switch.julius
-        icon: mdi:lamp
-        name: Fönster
-        state_color: yellow
+      - type: custom:slider-entity-row
+        entity: light.oscar_fonster
+        input_number: 70
+        toggle: true
+        name: Oscar Fönster
+        icon: mdi:lightbulb
+      - type: custom:slider-entity-row
+        entity: light.julius_fonster
+        input_number: 70
+        toggle: true
+        name: Julius Fönster
+        icon: mdi:lightbulb
       - entity: sensor.julius_temperature
         name: Temperatur
       - entity: sensor.julius_humidity
