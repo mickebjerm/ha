@@ -41,13 +41,13 @@ cards:
         input_number: 70
         toggle: true
         name: Oscar Fönster
-        icon: mdi:lightbulb
+        icon: mdi:lamp
       - type: custom:slider-entity-row
         entity: light.julius_fonster
         input_number: 70
         toggle: true
         name: Julius Fönster
-        icon: mdi:lightbulb
+        icon: mdi:lamp
       - entity: sensor.julius_temperature
         name: Temperatur
       - entity: sensor.julius_humidity
