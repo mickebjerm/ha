@@ -134,16 +134,16 @@ verisure:
 #device_tracker: !include device_tracker.yaml
 
 
-mikrotik:
-- name: Mikrotik
-  host: !secret mikrotik_host
-  username: !secret mikrotik_user
-  password: !secret mikrotik_pass
-  verify_ssl: false
-  port: 8728
-  arp_ping: true
-  force_dhcp: true
-  detection_time: 60
+# mikrotik:
+# - name: Mikrotik
+#   host: !secret mikrotik_host
+#   username: !secret mikrotik_user
+#   password: !secret mikrotik_pass
+#   verify_ssl: false
+#   port: 8728
+#   arp_ping: true
+#   force_dhcp: true
+#   detection_time: 60
 
 sensor: !include_dir_merge_list sensors/
 group: !include_dir_merge_named groups/

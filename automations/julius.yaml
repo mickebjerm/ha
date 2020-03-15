@@ -1,0 +1,28 @@
+- id: turn-on-julius-light
+  alias: '[Lights] Turn on light Julius'
+  initial_state: true
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      id: julius_oscar_switch
+      event: 1002
+  action:
+    - service: homeassistant.turn_on
+      data:
+        entity_id: group.julius_lights
+
+
+- id: turn-off-julius-light
+  alias: '[Lights] Turn off light Julius'
+  initial_state: true
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      id: julius_oscar_switch
+      event: 2002
+  action:
+    - service: homeassistant.turn_off
+      data:
+        entity_id: group.julius_lights

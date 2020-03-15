@@ -13,6 +13,8 @@ window_lights:
     - switch.allrum
     - switch.light_2
     - light.sovrum_tak
+    - light.oscar_fonster
+    - light.julius_fonster
 
 teenage_lights:
   name: Fönsterlampor tonåringar
@@ -21,11 +23,19 @@ teenage_lights:
     - switch.julius
     - switch.elias
     - switch.allrum
+    - light.oscar_fonster
+    - light.julius_fonster
 
 kids_lights:
   name: Fönsterlampor barn
   entities:
     - switch.ellen
+
+julius_lights:
+  name: Fönsterlampor Julius/Oscar
+  entities:
+    - light.oscar_fonster
+    - light.julius_fonster
 
 other_lights:
   name: Fönsterlampor övriga
