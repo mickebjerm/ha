@@ -25,10 +25,6 @@ cards:
       toggle: true
       name: Julius
       icon: mdi:lightbulb
-    - entity: switch.julius
-      icon: mdi:lightbulb
-      name: Julius & Oscar
-      state_color: yellow
   - title: Nedervåningen
     type: entities
     entities:
@@ -40,6 +36,10 @@ cards:
       state_color: yellow
     - entity: switch.william
       icon: mdi:lightbulb
+      state_color: yellow
+    - entity: switch.julius
+      icon: mdi:lightbulb
+      name: William bord
       state_color: yellow
     - entity: switch.sovrum
       name: Sovrum fönster

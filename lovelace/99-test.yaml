@@ -70,6 +70,10 @@ cards:
         name: Lufttryck
       - type: section
         label: William
+      - entity: switch.julius
+        icon: mdi:lamp
+        name: Bord
+        state_color: yellow
       - entity: switch.william
         name: Fönster
         icon: mdi:lamp
