@@ -38,9 +38,12 @@
   action:
     - service: deconz.configure
       data:
-        entity:
-          - light.oscar_fonster
-          - light.julius_fonster
+        entity_id: light.oscar_fonster
+        field: "/state"
+        data: {"bri_inc":254, "transitiontime":50}
+    - service: deconz.configure
+      data:
+        entity_id: light.julius_fonster
         field: "/state"
         data: {"bri_inc":254, "transitiontime":50}
 
@@ -56,9 +59,12 @@
   action:
     - service: deconz.configure
       data:
-        entity:
-          - light.oscar_fonster
-          - light.julius_fonster
+        entity_id: light.oscar_fonster
+        field: "/state"
+        data: {"bri_inc":-254, "transitiontime":50}
+    - service: deconz.configure
+      data:
+        entity_id: light.julius_fonster
         field: "/state"
         data: {"bri_inc":-254, "transitiontime":50}
 
@@ -79,8 +85,11 @@
   action:
     - service: deconz.configure
       data:
-        entity:
-          - light.oscar_fonster
-          - light.julius_fonster
+        entity_id: light.oscar_fonster
+        field: "/state"
+        data: {"bri_inc":0}
+    - service: deconz.configure
+      data:
+        entity_id: light.julius_fonster
         field: "/state"
         data: {"bri_inc":0}
