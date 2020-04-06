@@ -59,6 +59,8 @@ cards:
       name: Ellen
     - entity: sensor.temperature_18
       name: William
+    - entity: sensor.temperature_38
+      name: Badrum
     - entity: sensor.temperature_21
       name: Dusch/bastu
     - entity: sensor.temperature_6
@@ -85,6 +87,10 @@ cards:
       name: William
     - entity: sensor.pressure_20
       name: William
+    - entity: sensor.humidity_39
+      name: Badrum
+    - entity: sensor.pressure_40
+      name: Badrum
     - entity: sensor.humidity_22
       name: Dusch/bastu
     - entity: sensor.pressure_23
