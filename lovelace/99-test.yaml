@@ -6,6 +6,10 @@ cards:
     entities:
       - type: section
         label: Allrum
+      - entity: binary_sensor.openclose_41
+        name: Dörr
+        icon: mdi:door
+        state_color: yellow
       - entity: switch.allrum
         icon: mdi:lamp
         name: Fönster
@@ -16,6 +20,10 @@ cards:
         name: Luftfuktighet
       - type: section
         label: Elias
+      - entity: binary_sensor.openclose_42
+        name: Dörr
+        icon: mdi:door
+        state_color: yellow
       - entity: switch.elias
         icon: mdi:lamp
         name: Fönster
@@ -117,6 +125,14 @@ cards:
       - entity: sensor.aeon_labs_zw075_smart_switch_gen5_power_2
         name: Datacentret 
         icon: mdi:server-network
+      - type: section
+        label: Badrum
+      - entity: sensor.temperature_38
+        name: Temperatur
+      - entity: sensor.humidity_39
+        name: Luftfuktighet
+      - entity: sensor.pressure_40
+        name: Lufttryck
       - type: section
         label: Tvättstugan
       - entity: switch.light_2
