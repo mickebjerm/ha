@@ -5,6 +5,8 @@ group:
       - binary_sensor.openclose_27
       - binary_sensor.openclose_28
       - binary_sensor.openclose_24
+      - binary_sensor.openclose_41
+      - binary_sensor.openclose_42
       - binary_sensor.window_door_sensor
 
 
@@ -35,6 +37,28 @@ alert:
     name: Huvudentren är öppen
     done_message: Huvudentren är stängd
     entity_id: binary_sensor.openclose_24
+    state: 'on'
+    repeat: 20
+    can_acknowledge: true
+    skip_first: true
+    notifiers:
+      - mobile_app_micke_iphone
+
+  livingroom_upstair_door:
+    name: Allrummet är öppet
+    done_message: Allrummet är stängt
+    entity_id: binary_sensor.openclose_41
+    state: 'on'
+    repeat: 20
+    can_acknowledge: true
+    skip_first: true
+    notifiers:
+      - mobile_app_micke_iphone
+
+  elias_balcony_door:
+    name: Elias balkong är öppen
+    done_message: Elias balkong är stängt
+    entity_id: binary_sensor.openclose_42
     state: 'on'
     repeat: 20
     can_acknowledge: true
