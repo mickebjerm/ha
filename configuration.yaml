@@ -131,6 +131,10 @@ verisure:
   mouse: 0
   door_window: 0
 
+volvooncall:
+  username: !secret volvo_username
+  password: !secret volvo_password 
+
 #device_tracker: !include device_tracker.yaml
 
 
