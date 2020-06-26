@@ -1,0 +1,14 @@
+push:
+  categories:
+    - name: Garage Alert
+      identifier: "garage_alert"
+      actions:
+        - identifier: "CANCEL_GARAGE_ALERT"
+          title: "Cancel Alert"
+        - identifier: "CLOSE_GARAGE"
+          title: "Close Garage"
+    - name: Huvudentren Alert
+      identifier: "mainentre_alert"
+      actions:
+        - identifier: "CANCEL_MAINENTRE_ALERT"
+          title: "Cancel Alert"
