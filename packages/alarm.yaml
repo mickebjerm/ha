@@ -79,3 +79,20 @@ alert:
     skip_first: true
     notifiers:
       - mobile_app_micke_iphone
+
+  test_alert:
+    name: entre öppen
+    done_message: Huvudentre stängd
+    entity_id: binary_sensor.openclose_27
+    state: "on"
+    repeat:
+      - 2
+    can_acknowledge: true
+    skip_first: false
+    data:
+      message: "entre is open"
+      data:
+        push:
+          category: "garage_alert"
+    notifiers:
+      - mobile_app_micke_iphone
