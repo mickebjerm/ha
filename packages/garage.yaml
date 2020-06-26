@@ -30,10 +30,5 @@ alert:
       - 60
     can_acknowledge: true
     skip_first: true
-    data:
-      message: "Garage is open"
-      data:
-        push:
-          category: "garage_alert"
     notifiers:
       - mobile_app_micke_iphone
