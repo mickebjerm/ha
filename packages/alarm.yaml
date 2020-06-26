@@ -9,14 +9,16 @@ group:
       - binary_sensor.openclose_42
       - binary_sensor.window_door_sensor
 
-
 alert:
   livingroom_door:
     name: Vardagsrum är öppet
     done_message: Vardagsrum är stängt
     entity_id: binary_sensor.openclose_27
-    state: 'on'
-    repeat: 20
+    state: "on"
+    repeat:
+      - 15
+      - 30
+      - 60
     can_acknowledge: true
     skip_first: true
     notifiers:
@@ -26,8 +28,11 @@ alert:
     name: Tvättstugan är öppen
     done_message: Tvättstugan är stängd
     entity_id: binary_sensor.openclose_28
-    state: 'on'
-    repeat: 20
+    state: "on"
+    repeat:
+      - 15
+      - 30
+      - 60
     can_acknowledge: true
     skip_first: true
     notifiers:
@@ -37,8 +42,11 @@ alert:
     name: Huvudentren är öppen
     done_message: Huvudentren är stängd
     entity_id: binary_sensor.openclose_24
-    state: 'on'
-    repeat: 20
+    state: "on"
+    repeat:
+      - 15
+      - 30
+      - 60
     can_acknowledge: true
     skip_first: true
     notifiers:
@@ -48,8 +56,11 @@ alert:
     name: Allrummet är öppet
     done_message: Allrummet är stängt
     entity_id: binary_sensor.openclose_41
-    state: 'on'
-    repeat: 20
+    state: "on"
+    repeat:
+      - 15
+      - 30
+      - 60
     can_acknowledge: true
     skip_first: true
     notifiers:
@@ -59,8 +70,11 @@ alert:
     name: Elias balkong är öppen
     done_message: Elias balkong är stängt
     entity_id: binary_sensor.openclose_42
-    state: 'on'
-    repeat: 20
+    state: "on"
+    repeat:
+      - 15
+      - 30
+      - 60
     can_acknowledge: true
     skip_first: true
     notifiers:

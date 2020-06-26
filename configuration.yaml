@@ -5,7 +5,7 @@ homeassistant:
   elevation: 0
   unit_system: metric
   time_zone: !secret time_zone
-  
+
   # Customization file
   customize: !include_dir_merge_named customize/
   customize_glob: !include_dir_merge_named customize_glob/
@@ -16,7 +16,7 @@ homeassistant:
 
 # Enables the frontend
 frontend:
-   themes:  !include_dir_merge_named themes/
+  themes: !include_dir_merge_named themes/
 
 # Enables configuration UI
 config:
@@ -68,7 +68,7 @@ map:
 sun:
 
 # IOS
-ios:
+ios: !include ios.yaml
 
 # Apple_tv
 apple_tv: !include apple_tv.yaml
@@ -77,7 +77,6 @@ apple_tv: !include apple_tv.yaml
 tts:
   - platform: google_translate
     service_name: google_say
-
 
 # Cloud
 cloud:
@@ -110,14 +109,13 @@ logger:
 #      - media_player
 
 influxdb:
-  host: !secret influx_host 
+  host: !secret influx_host
   port: !secret influx_port
   database: !secret influx_db
   username: !secret influx_user
   password: !secret influx_pass
   max_retries: 3
   default_measurement: state
-
 
 # Verisure
 verisure:
@@ -133,10 +131,9 @@ verisure:
 
 volvooncall:
   username: !secret volvo_username
-  password: !secret volvo_password 
+  password: !secret volvo_password
 
 #device_tracker: !include device_tracker.yaml
-
 
 # mikrotik:
 # - name: Mikrotik
@@ -156,15 +153,14 @@ input_number: !include input/number.yaml
 script: !include_dir_merge_list scripts/
 #panel_iframe: !include panel_iframe.yaml
 
-
 #speedtestdotnet:
 #  server_id: 21028
 #  scan_interval:
 #    hours: 8
 
 shell_command:
-  lovelace_gen: 'python /config/commands/lovelace-gen.py > /config/lovelace-gen.log'
-  firewall_kids_stop: 'sh /config/commands/firewall-rule.sh firewall enable 12'
-  firewall_kids_start: 'sh /config/commands/firewall-rule.sh firewall disable 12'
-  firewall_stop: 'sh /config/commands/firewall-rule.sh firewall enable 13'
-  firewall_start: 'sh /config/commands/firewall-rule.sh firewall disable 13'
+  lovelace_gen: "python /config/commands/lovelace-gen.py > /config/lovelace-gen.log"
+  firewall_kids_stop: "sh /config/commands/firewall-rule.sh firewall enable 12"
+  firewall_kids_start: "sh /config/commands/firewall-rule.sh firewall disable 12"
+  firewall_stop: "sh /config/commands/firewall-rule.sh firewall enable 13"
+  firewall_start: "sh /config/commands/firewall-rule.sh firewall disable 13"

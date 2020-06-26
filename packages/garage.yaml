@@ -1,4 +1,4 @@
-cover: 
+cover:
   - platform: template
     covers:
       garagedoor:
@@ -8,25 +8,32 @@ cover:
         open_cover:
           - condition: state
             entity_id: binary_sensor.garageporten
-            state: 'off'
+            state: "off"
           - service: homeassistant.turn_on
             entity_id: switch.qubino_goap_zmnhnd1_flush_1d_relay_switch
         close_cover:
           - condition: state
             entity_id: binary_sensor.garageporten
-            state: 'on'
+            state: "on"
           - service: homeassistant.turn_on
             entity_id: switch.qubino_goap_zmnhnd1_flush_1d_relay_switch
-
 
 alert:
   garage_door:
     name: Garage is open
     done_message: Garage is closed
     entity_id: binary_sensor.garageporten
-    state: 'on'
-    repeat: 30
+    state: "on"
+    repeat:
+      - 15
+      - 30
+      - 60
     can_acknowledge: true
     skip_first: true
+    data:
+      message: "Garage is open"
+      data:
+        push:
+          category: "garage_alert"
     notifiers:
       - mobile_app_micke_iphone
