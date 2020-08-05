@@ -1,80 +1,80 @@
-- id: turn-on-julius-light
-  alias: "[Lights] Turn on light Julius"
+- id: turn-on-william-light
+  alias: "[Lights] Turn on light william"
   initial_state: true
   trigger:
     platform: event
     event_type: deconz_event
     event_data:
-      id: julius_switch
+      id: william_switch
       event: 1002
   action:
     - service: homeassistant.turn_on
       data:
-        entity_id: light.julius_fonster
+        entity_id: light.dimmable_light_9
 
-- id: turn-off-julius-light
-  alias: "[Lights] Turn off light Julius"
+- id: turn-off-william-light
+  alias: "[Lights] Turn off light william"
   initial_state: true
   trigger:
     platform: event
     event_type: deconz_event
     event_data:
-      id: julius_switch
+      id: william_switch
       event: 2002
   action:
     - service: homeassistant.turn_off
       data:
-        entity_id: light.julius_fonster
+        entity_id: light.dimmable_light_9
 
-- id: increase-julius-light
-  alias: "[Lights] Increase brightness light Julius"
+- id: increase-william-light
+  alias: "[Lights] Increase brightness light william"
   initial_state: "on"
   trigger:
     platform: event
     event_type: deconz_event
     event_data:
-      id: julius_switch
+      id: william_switch
       event: 1001
   action:
     - service: deconz.configure
       data:
-        entity: light.julius_fonster
+        entity: light.dimmable_light_9
         field: "/state"
         data: { "bri_inc": 254, "transitiontime": 50 }
 
-- id: decrease-julius-light
-  alias: "[Lights] Decrease brightness light Julius"
+- id: decrease-william-light
+  alias: "[Lights] Decrease brightness light william"
   initial_state: "on"
   trigger:
     platform: event
     event_type: deconz_event
     event_data:
-      id: julius_switch
+      id: william_switch
       event: 2001
   action:
     - service: deconz.configure
       data:
-        entity: light.julius_fonster
+        entity: light.dimmable_light_9
         field: "/state"
         data: { "bri_inc": -254, "transitiontime": 50 }
 
-- id: stop-brightness-julius-light
-  alias: "[Lights] Stop brightness light Julius"
+- id: stop-brightness-william-light
+  alias: "[Lights] Stop brightness light william"
   initial_state: "on"
   trigger:
     - platform: event
       event_type: deconz_event
       event_data:
-        id: julius_switch
+        id: william_switch
         event: 1003
     - platform: event
       event_type: deconz_event
       event_data:
-        id: julius_switch
+        id: william_switch
         event: 2003
   action:
     - service: deconz.configure
       data:
-        entity: light.julius_fonster
+        entity: light.dimmable_light_9
         field: "/state"
         data: { "bri_inc": 0 }
