@@ -5,7 +5,7 @@
     platform: event
     event_type: deconz_event
     event_data:
-      id: switch.tradfri_switch
+      id: tradfri_switch
       event: 1002
   action:
     - service: media_player.media_play
@@ -19,7 +19,7 @@
     platform: event
     event_type: deconz_event
     event_data:
-      id: switch.tradfri_switch
+      id: tradfri_switch
       event: 2002
   action:
     - service: media_player.media_pause
