@@ -36,7 +36,7 @@ cards:
         name: Element kWh
         icon: mdi:server-network
       - entity: sensor.aeon_labs_zw075_smart_switch_gen5_power_3
-        name: Element W 
+        name: Element W
         icon: mdi:server-network
       - entity: sensor.temperature_32
         name: Temperatur
@@ -46,13 +46,13 @@ cards:
         label: Julius & Oscar
       - type: custom:slider-entity-row
         entity: light.oscar_fonster
-        input_number: 70
+        input_number: 80
         toggle: true
         name: Oscar Fönster
         icon: mdi:lamp
       - type: custom:slider-entity-row
         entity: light.julius_fonster
-        input_number: 70
+        input_number: 80
         toggle: true
         name: Julius Fönster
         icon: mdi:lamp
@@ -66,10 +66,12 @@ cards:
     entities:
       - type: section
         label: Sovrum
-      - entity: switch.sovrum
+      - type: custom:slider-entity-row
+        entity: light.dimmable_light_6
+        input_number: 80
+        toggle: true
         name: Fönster
-        icon: mdi:lamp
-        state_color: yellow
+        icon: mdi:lightbulb
       - entity: sensor.temp1
         name: Temperatur
       - entity: sensor.temp1_3
@@ -82,10 +84,12 @@ cards:
         icon: mdi:lamp
         name: Bord
         state_color: yellow
-      - entity: switch.william
+      - type: custom:slider-entity-row
+        entity: light.dimmable_light_9
+        input_number: 80
+        toggle: true
         name: Fönster
-        icon: mdi:lamp
-        state_color: yellow
+        icon: mdi:lightbulb
       - entity: sensor.temperature_18
         name: Temperatur
       - entity: sensor.humidity_19
@@ -123,7 +127,7 @@ cards:
         name: Datacentret kWh
         icon: mdi:server-network
       - entity: sensor.aeon_labs_zw075_smart_switch_gen5_power_2
-        name: Datacentret 
+        name: Datacentret
         icon: mdi:server-network
       - type: section
         label: Badrum
@@ -145,10 +149,12 @@ cards:
         state_color: yellow
       - type: section
         label: Köket
-      - entity: switch.koket
+      - type: custom:slider-entity-row
+        entity: light.kitchen_lights
+        input_number: 80
+        toggle: true
         name: Fönster
-        icon: mdi:lamp
-        state_color: yellow
+        icon: mdi:lightbulb
       - entity: sensor.aeon_labs_zw075_smart_switch_gen5_energy
         icon: mdi:dishwasher
         name: Diskmaskin kWh

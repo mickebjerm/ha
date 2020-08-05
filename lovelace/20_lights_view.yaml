@@ -34,24 +34,12 @@ cards:
         toggle: true
         name: Kök
         icon: mdi:lightbulb
-      - type: custom:slider-entity-row
-        entity: light.dimmable_light_10
-        input_number: 80
-        toggle: true
-        name: Kök
-        icon: mdi:lightbulb
-      - type: custom:slider-entity-row
-        entity: light.dimmable_light_11
-        input_number: 80
-        toggle: true
-        name: Kök
-        icon: mdi:lightbulb
       - entity: switch.hallen
         icon: mdi:lightbulb
         state_color: yellow
       - type: custom:slider-entity-row
         entity: light.dimmable_light_9
-        input_number: 70
+        input_number: 80
         toggle: true
         name: William fönster
         icon: mdi:lightbulb
