@@ -1,0 +1,5 @@
+- platform: group
+  name: Kitchen_lights
+  entities:
+    - light.dimmable_light_10
+    - light.dimmable_light_11
