@@ -29,7 +29,7 @@ cards:
     type: entities
     entities:
       - type: custom:slider-entity-row
-        entity: group.kitchen_lights
+        entity: light.kitchen_lights
         input_number: 80
         toggle: true
         name: Kök
