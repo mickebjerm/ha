@@ -1,11 +1,11 @@
 - id: turn-on-sonos
-  alias: '[Sonos] Turn on'
+  alias: "[Sonos] Turn on"
   initial_state: true
   trigger:
     platform: event
     event_type: deconz_event
     event_data:
-      id: tradfri_switch
+      id: switch.tradfri_switch
       event: 1002
   action:
     - service: media_player.media_play
@@ -13,13 +13,13 @@
         entity_id: media_player.kok
 
 - id: turn-off-sonos
-  alias: '[Sonos] Turn off'
+  alias: "[Sonos] Turn off"
   initial_state: true
   trigger:
     platform: event
     event_type: deconz_event
     event_data:
-      id: tradfri_switch
+      id: switch.tradfri_switch
       event: 2002
   action:
     - service: media_player.media_pause
