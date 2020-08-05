@@ -3,76 +3,90 @@ icon: mdi:lightbulb-on
 path: lights
 cards:
   - title: Övervåningen
-    type: entities   
+    type: entities
     entities:
-    - entity: switch.allrum
-      icon: mdi:lightbulb
-      name: Allrummet
-      state_color: yellow
-    - entity: switch.elias
-      icon: mdi:lightbulb
-      name: Elias
-      state_color: yellow
-    - type: custom:slider-entity-row
-      entity: light.oscar_fonster
-      input_number: 70
-      toggle: true
-      name: Oscar
-      icon: mdi:lightbulb
-    - type: custom:slider-entity-row
-      entity: light.julius_fonster
-      input_number: 70
-      toggle: true
-      name: Julius
-      icon: mdi:lightbulb
+      - entity: switch.allrum
+        icon: mdi:lightbulb
+        name: Allrummet
+        state_color: yellow
+      - entity: switch.elias
+        icon: mdi:lightbulb
+        name: Elias
+        state_color: yellow
+      - type: custom:slider-entity-row
+        entity: light.oscar_fonster
+        input_number: 70
+        toggle: true
+        name: Oscar
+        icon: mdi:lightbulb
+      - type: custom:slider-entity-row
+        entity: light.julius_fonster
+        input_number: 70
+        toggle: true
+        name: Julius
+        icon: mdi:lightbulb
   - title: Nedervåningen
     type: entities
     entities:
-    - entity: switch.koket
-      icon: mdi:lightbulb
-      state_color: yellow
-    - entity: switch.hallen
-      icon: mdi:lightbulb
-      state_color: yellow
-    - entity: switch.william
-      icon: mdi:lightbulb
-      state_color: yellow
-    - entity: switch.julius
-      icon: mdi:lightbulb
-      name: William bord
-      state_color: yellow
-    - entity: switch.sovrum
-      name: Sovrum fönster
-      icon: mdi:lightbulb
-      state_color: yellow
-    - type: custom:slider-entity-row
-      entity: light.sovrum_tak
-      input_number: 10
-      toggle: true
-      name: Hallen byrå
-      icon: mdi:lightbulb
-    - entity: switch.ellen
-      icon: mdi:lightbulb
-      state_color: yellow
-    - entity: switch.vardagsrum
-      icon: mdi:lightbulb
-      state_color: yellow
-    - entity: switch.light_2
-      name: Tvättstugan
-      icon: mdi:lightbulb
-      state_color: yellow
-    - entity: switch.gymmet
-      icon: mdi:lightbulb
-      state_color: yellow
+      - type: custom:slider-entity-row
+        entity: light.dimmable_light_10
+        input_number: 70
+        toggle: true
+        name: Kök
+        icon: mdi:lightbulb
+      - type: custom:slider-entity-row
+        entity: light.dimmable_light_11
+        input_number: 70
+        toggle: true
+        name: Kök
+        icon: mdi:lightbulb
+      - entity: switch.hallen
+        icon: mdi:lightbulb
+        state_color: yellow
+      - type: custom:slider-entity-row
+        entity: light.dimmable_light_9
+        input_number: 70
+        toggle: true
+        name: William fönster
+        icon: mdi:lightbulb
+      - entity: switch.julius
+        icon: mdi:lightbulb
+        name: William bord
+        state_color: yellow
+      - type: custom:slider-entity-row
+        entity: light.dimmable_light_6
+        input_number: 70
+        toggle: true
+        name: Sovrum fönster
+        icon: mdi:lightbulb
+      - type: custom:slider-entity-row
+        entity: light.sovrum_tak
+        input_number: 10
+        toggle: true
+        name: Hallen byrå
+        icon: mdi:lightbulb
+      - entity: switch.ellen
+        icon: mdi:lightbulb
+        state_color: yellow
+      - entity: switch.vardagsrum
+        icon: mdi:lightbulb
+        state_color: yellow
+      - entity: switch.light_2
+        name: Tvättstugan
+        icon: mdi:lightbulb
+        state_color: yellow
+      - entity: switch.gymmet
+        icon: mdi:lightbulb
+        state_color: yellow
   - title: Övrigt
     type: entities
     entities:
-    - type: custom:slider-entity-row
-      entity: light.matforrad_tak
-      name: Matförrådet
-      icon: mdi:ceiling-light
-      toggle: true
-    - entity: switch.everspring_an179_in_wall_on_off_module_switch
-      name: Garage
-      icon: mdi:ceiling-light
-      state_color: yellow
+      - type: custom:slider-entity-row
+        entity: light.matforrad_tak
+        name: Matförrådet
+        icon: mdi:ceiling-light
+        toggle: true
+      - entity: switch.everspring_an179_in_wall_on_off_module_switch
+        name: Garage
+        icon: mdi:ceiling-light
+        state_color: yellow
