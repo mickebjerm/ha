@@ -15,13 +15,13 @@ cards:
         state_color: yellow
       - type: custom:slider-entity-row
         entity: light.oscar_fonster
-        input_number: 70
+        input_number: 80
         toggle: true
         name: Oscar
         icon: mdi:lightbulb
       - type: custom:slider-entity-row
         entity: light.julius_fonster
-        input_number: 70
+        input_number: 80
         toggle: true
         name: Julius
         icon: mdi:lightbulb
@@ -29,14 +29,20 @@ cards:
     type: entities
     entities:
       - type: custom:slider-entity-row
+        entity: group.kitchen_lights
+        input_number: 80
+        toggle: true
+        name: Kök
+        icon: mdi:lightbulb
+      - type: custom:slider-entity-row
         entity: light.dimmable_light_10
-        input_number: 70
+        input_number: 80
         toggle: true
         name: Kök
         icon: mdi:lightbulb
       - type: custom:slider-entity-row
         entity: light.dimmable_light_11
-        input_number: 70
+        input_number: 80
         toggle: true
         name: Kök
         icon: mdi:lightbulb
@@ -55,7 +61,7 @@ cards:
         state_color: yellow
       - type: custom:slider-entity-row
         entity: light.dimmable_light_6
-        input_number: 70
+        input_number: 80
         toggle: true
         name: Sovrum fönster
         icon: mdi:lightbulb

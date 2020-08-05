@@ -16,6 +16,12 @@ window_lights:
     - light.oscar_fonster
     - light.julius_fonster
 
+kitchen_lights:
+  name: Kökslampor
+  entities:
+    - light.dimmable_light_10
+    - light.dimmable_light_11
+
 teenage_lights:
   name: Fönsterlampor tonåringar
   entities:
