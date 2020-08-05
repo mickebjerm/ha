@@ -2,14 +2,17 @@ window_lights:
   name: Fönsterlampor
   entities:
     - switch.koket
+    - light.kitchen_lights
     - switch.hallen
     - switch.vardagsrum
     - switch.gymmet
     - switch.william
+    - light.dimmable_light_9
     - switch.julius
     - switch.ellen
     - switch.elias
     - switch.sovrum
+    - light.dimmable_light_6
     - switch.allrum
     - switch.light_2
     - light.sovrum_tak
@@ -20,6 +23,7 @@ teenage_lights:
   name: Fönsterlampor tonåringar
   entities:
     - switch.william
+    - light.dimmable_light_9
     - switch.julius
     - switch.elias
     - switch.allrum
@@ -41,8 +45,10 @@ other_lights:
   name: Fönsterlampor övriga
   entities:
     - switch.sovrum
+    - light.dimmable_light_6
     - switch.vardagsrum
     - switch.koket
+    - light.kitchen_lights
     - switch.gymmet
     - switch.hallen
     - switch.light_2
