@@ -5,7 +5,7 @@
     platform: event
     event_type: deconz_event
     event_data:
-      id: william_switch
+      id: William_switch
       event: 1002
   action:
     - service: homeassistant.turn_on
@@ -19,7 +19,7 @@
     platform: event
     event_type: deconz_event
     event_data:
-      id: william_switch
+      id: William_switch
       event: 2002
   action:
     - service: homeassistant.turn_off
@@ -33,7 +33,7 @@
     platform: event
     event_type: deconz_event
     event_data:
-      id: william_switch
+      id: William_switch
       event: 1001
   action:
     - service: deconz.configure
@@ -49,7 +49,7 @@
     platform: event
     event_type: deconz_event
     event_data:
-      id: william_switch
+      id: William_switch
       event: 2001
   action:
     - service: deconz.configure
@@ -65,12 +65,12 @@
     - platform: event
       event_type: deconz_event
       event_data:
-        id: william_switch
+        id: William_switch
         event: 1003
     - platform: event
       event_type: deconz_event
       event_data:
-        id: william_switch
+        id: William_switch
         event: 2003
   action:
     - service: deconz.configure
