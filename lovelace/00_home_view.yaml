@@ -22,13 +22,13 @@ cards:
     - entity: sensor.internet_stoptime
       icon: mdi:clock-end
     - entity: input_number.internet_start_hour
-      icon: mdi:timer
+      icon: mdi:timer-outline
     - entity: input_number.internet_start_mins
-      icon: mdi:timer
+      icon: mdi:timer-outline
     - entity: input_number.internet_stop_hour
-      icon: mdi:timer-off
+      icon: mdi:timer-off-outline
     - entity: input_number.internet_stop_mins
-      icon: mdi:timer-off
+      icon: mdi:timer-off-outline
   - title: Mediaspelare
     show_header_toggle: false
     type: entities
