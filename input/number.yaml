@@ -1,6 +1,6 @@
 internet_start_hour:
   name: Start timme
-  icon: mdi:timer
+  icon: mdi:timer-outline
   initial: 07
   min: 0
   max: 23
@@ -8,7 +8,7 @@ internet_start_hour:
 
 internet_start_mins:
   name: Start minut
-  icon: mdi:timer
+  icon: mdi:timer-outline
   initial: 0
   min: 0
   max: 59
@@ -16,7 +16,7 @@ internet_start_mins:
 
 internet_stop_hour:
   name: Stop timme
-  icon: mdi:timer
+  icon: mdi:timer-outline
   initial: 21
   min: 0
   max: 23
@@ -24,7 +24,7 @@ internet_stop_hour:
 
 internet_stop_mins:
   name: Stop minut
-  icon: mdi:timer
+  icon: mdi:timer-outline
   initial: 59
   min: 0
   max: 59
@@ -32,7 +32,7 @@ internet_stop_mins:
 
 other_lights_stop_hour:
   name: Timme
-  icon: mdi:timer
+  icon: mdi:timer-outline
   initial: 23
   min: 0
   max: 23
@@ -40,7 +40,7 @@ other_lights_stop_hour:
 
 other_lights_stop_mins:
   name: Minut
-  icon: mdi:timer
+  icon: mdi:timer-outline
   initial: 55
   min: 0
   max: 59
@@ -48,7 +48,7 @@ other_lights_stop_mins:
 
 teenage_lights_stop_hour:
   name: Timme
-  icon: mdi:timer
+  icon: mdi:timer-outline
   initial: 22
   min: 0
   max: 23
@@ -56,7 +56,7 @@ teenage_lights_stop_hour:
 
 teenage_lights_stop_mins:
   name: Minut
-  icon: mdi:timer
+  icon: mdi:timer-outline
   initial: 0
   min: 0
   max: 59
@@ -64,7 +64,7 @@ teenage_lights_stop_mins:
 
 kids_lights_stop_hour:
   name: Timme
-  icon: mdi:timer
+  icon: mdi:timer-outline
   initial: 20
   min: 0
   max: 23
@@ -72,7 +72,7 @@ kids_lights_stop_hour:
 
 kids_lights_stop_mins:
   name: Minut
-  icon: mdi:timer
+  icon: mdi:timer-outline
   initial: 30
   min: 30
   max: 59
