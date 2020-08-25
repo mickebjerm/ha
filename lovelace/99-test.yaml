@@ -119,7 +119,7 @@ cards:
         input_number: 70
         toggle: true
         name: Trappen
-        icon: mdi:light-strip
+        icon: mdi:led-strip-variant
       - entity: binary_sensor.openclose_24
         name: Dörr
         icon: mdi:door
