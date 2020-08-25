@@ -89,7 +89,7 @@ cards:
         input_number: 80
         toggle: true
         name: Fönster
-        icon: mdi:lightbulb
+        icon: mdi:lamp
       - entity: sensor.temperature_18
         name: Temperatur
       - entity: sensor.humidity_19
