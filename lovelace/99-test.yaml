@@ -119,7 +119,7 @@ cards:
         input_number: 70
         toggle: true
         name: Trappen
-        icon: mdi:led-strip-variant
+        icon: mdi:led-strip
       - entity: binary_sensor.openclose_24
         name: Dörr
         icon: mdi:door
@@ -160,7 +160,7 @@ cards:
         input_number: 80
         toggle: true
         name: Fönster
-        icon: mdi:lightbulb
+        icon: mdi:lightbulb-multiple
       - entity: sensor.aeon_labs_zw075_smart_switch_gen5_energy
         icon: mdi:dishwasher
         name: Diskmaskin kWh
