@@ -33,7 +33,7 @@ cards:
         input_number: 80
         toggle: true
         name: Trappen
-        icon: mdi:led-strip
+        icon: mdi:led-strip-variant
       - type: custom:slider-entity-row
         entity: light.kitchen_lights
         input_number: 80
