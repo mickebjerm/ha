@@ -114,6 +114,12 @@ cards:
     entities:
       - type: section
         label: Hallen
+      - type: custom:slider-entity-row
+        entity: light.extended_color_light_13
+        input_number: 70
+        toggle: true
+        name: Trappen
+        icon: mdi:light-strip
       - entity: binary_sensor.openclose_24
         name: Dörr
         icon: mdi:door
