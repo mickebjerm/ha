@@ -1,0 +1,39 @@
+automation:
+  - alias: DeCONZ Addon Stopped
+    initial_state: on
+    trigger:
+      platform: state
+      entity_id:
+      - sensor.deconz
+      from: 'started'
+      to: 'stopped'
+    action:
+    - service: notify.mobile_app_micke_iphone
+      data:
+        title: 'DeCONZ addon'
+        message: 'DeCONZ addon crashed - attempting restart...'
+    - service: hassio.addon_start
+      data:
+        addon: "core_deconz" 
+        action:
+    - delay:
+        minutes: 2
+    - service: notify.mobile_app_micke_iphone
+      data_template:
+        title: 'DeCONZ addon'
+        message: >-
+          {% if is_state('sensor.deconz', 'started') %}
+          DeCONZ restarted successfully!
+          {% else %}
+          DeCONZ failed to restart!
+          {% endif %}
+
+sensor:
+  - platform: command_line
+    name: deCONZ
+    command: 'curl http://supervisor/addons/core_deconz/info -H "Authorization: Bearer $(printenv SUPERVISOR_TOKEN)" | jq ''{"state":.data.state,"newest_version":.data.version_latest,"current_version":.data.version,"available":.data.available}'''
+    value_template: '{{ value_json.state }}'
+    json_attributes:
+    - available
+    - newest_version
+    - current_version
