@@ -15,7 +15,6 @@ automation:
     - service: hassio.addon_start
       data:
         addon: "core_deconz" 
-        action:
     - delay:
         minutes: 2
     - service: notify.mobile_app_micke_iphone
