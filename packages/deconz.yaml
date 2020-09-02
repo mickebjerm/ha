@@ -30,7 +30,7 @@ automation:
 sensor:
   - platform: command_line
     name: deCONZ
-    command: 'curl http://supervisor/addons/core_deconz/info -H "Authorization: Bearer $(printenv SUPERVISOR_TOKEN)" | jq ''{"state":.data.state,"newest_version":.data.version_latest,"current_version":.data.version,"available":.data.available}'''
+    command: 'curl -s http://supervisor/addons/core_deconz/info -H "Authorization: Bearer $(printenv SUPERVISOR_TOKEN)" | jq ''{"state":.data.state,"newest_version":.data.version_latest,"current_version":.data.version,"available":.data.available}'''
     value_template: '{{ value_json.state }}'
     json_attributes:
     - available
