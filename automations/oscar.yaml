@@ -28,7 +28,7 @@
 
 - id: increase-oscar-light
   alias: "[Lights] Increase brightness light oscar"
-  initial_state: "on"
+  initial_state: true
   trigger:
     platform: event
     event_type: deconz_event
@@ -44,7 +44,7 @@
 
 - id: decrease-oscar-light
   alias: "[Lights] Decrease brightness light oscar"
-  initial_state: "on"
+  initial_state: true
   trigger:
     platform: event
     event_type: deconz_event
@@ -60,7 +60,7 @@
 
 - id: stop-brightness-oscar-light
   alias: "[Lights] Stop brightness light oscar"
-  initial_state: "on"
+  initial_state: true
   trigger:
     - platform: event
       event_type: deconz_event
