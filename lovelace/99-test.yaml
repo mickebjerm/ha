@@ -104,10 +104,12 @@ cards:
         name: Lufttryck
       - type: section
         label: Ellen
-      - entity: switch.ellen
+      - type: custom:slider-entity-row
+        entity: light.dimmable_light_9_2
+        input_number: 80
+        toggle: true
         name: Fönster
         icon: mdi:lamp
-        state_color: yellow
       - entity: sensor.temperature_11
         name: Temperatur
       - entity: sensor.humidity_13
