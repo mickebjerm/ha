@@ -6,7 +6,7 @@ cards:
     type: entities
     entities:
       - type: custom:slider-entity-row
-        entity: light.Allrum_lights
+        entity: light.allrum_lights
         input_number: 80
         toggle: true
         name: Allrummet
