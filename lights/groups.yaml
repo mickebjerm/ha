@@ -3,3 +3,10 @@
   entities:
     - light.dimmable_light_10
     - light.dimmable_light_11
+
+
+- platform: group
+  name: Allrum_lights
+  entities:
+    - light.dimmable_light_14
+    - light.dimmable_light_15
