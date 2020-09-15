@@ -65,6 +65,11 @@ cards:
         toggle: true
         name: Hallen byrå
         icon: mdi:lightbulb
+      - type: custom:slider-entity-row
+        entity: light.dimmable_light_9_2
+        input_number: 80
+        toogle: true
+        icon: mdi:lightbulb
       - entity: switch.ellen
         icon: mdi:lightbulb
         state_color: yellow
