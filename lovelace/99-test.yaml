@@ -11,9 +11,15 @@ cards:
         icon: mdi:door
         state_color: yellow
       - entity: switch.allrum
-        icon: mdi:lamp
-        name: Fönster
+        icon: mdi:palm-tree
+        name: Träd
         state_color: yellow
+      - type: custom:slider-entity-row
+        entity: light.allrum_lights
+        input_number: 80
+        toggle: true
+        name: Fönster
+        icon: mdi:lamp
       - entity: sensor.allrum_uppe_temperature
         name: Temperatur
       - entity: sensor.allrum_uppe_humidity

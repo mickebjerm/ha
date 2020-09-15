@@ -5,11 +5,15 @@ cards:
   - title: Övervåningen
     type: entities
     entities:
+      - entity: switch.allrum
+        icon: mdi:lightbulb
+        name: Allrum träd
+        state_color: yellow
       - type: custom:slider-entity-row
         entity: light.allrum_lights
         input_number: 80
         toggle: true
-        name: Allrummet
+        name: Allrum fönster
         icon: mdi:lightbulb
       - entity: switch.elias
         icon: mdi:lightbulb
