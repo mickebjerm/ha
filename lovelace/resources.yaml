@@ -6,7 +6,7 @@
   type: js
 - url: !file /local/loven/popup-card/popup-card.js?v=1.0
   type: js
-- url: !file /local/loven/slider-entity-row/slider-entity-row.js?v=1.0
+- url: !file /local/loven/slider-entity-row/slider-entity-row.js?v=1.1
   type: js
 - url: !file /local/loven/auto-entities/auto-entities.js?v=1.0
   type: js
