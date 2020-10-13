@@ -31,7 +31,8 @@ cards:
   - title: Nedervåningen
     type: entities
     entities:
-      - entity: light.extended_color_light_13
+      - type: custom:slider-entity-row
+        entity: light.extended_color_light_13
         input_number: 80
         toggle: true
         name: Trappen
