@@ -9,8 +9,7 @@ cards:
         icon: mdi:lightbulb
         name: Allrum träd
         state_color: yellow
-      - type: custom:slider-entity-row
-        entity: light.allrum_lights
+      - entity: light.allrum_lights
         input_number: 80
         toggle: true
         name: Allrum fönster
@@ -19,14 +18,12 @@ cards:
         icon: mdi:lightbulb
         name: Elias
         state_color: yellow
-      - type: custom:slider-entity-row
-        entity: light.oscar_fonster
+      - entity: light.oscar_fonster
         input_number: 80
         toggle: true
         name: Oscar
         icon: mdi:lightbulb
-      - type: custom:slider-entity-row
-        entity: light.julius_fonster
+      - entity: light.julius_fonster
         input_number: 80
         toggle: true
         name: Julius
@@ -34,14 +31,12 @@ cards:
   - title: Nedervåningen
     type: entities
     entities:
-      - type: custom:slider-entity-row
-        entity: light.extended_color_light_13
+      - entity: light.extended_color_light_13
         input_number: 80
         toggle: true
         name: Trappen
         icon: mdi:led-strip-variant
-      - type: custom:slider-entity-row
-        entity: light.kitchen_lights
+      - entity: light.kitchen_lights
         input_number: 80
         toggle: true
         name: Kök
@@ -49,8 +44,7 @@ cards:
       - entity: switch.hallen
         icon: mdi:lightbulb
         state_color: yellow
-      - type: custom:slider-entity-row
-        entity: light.dimmable_light_9
+      - entity: light.dimmable_light_9
         input_number: 80
         toggle: true
         name: William fönster
@@ -59,20 +53,17 @@ cards:
         icon: mdi:lightbulb
         name: William bord
         state_color: yellow
-      - type: custom:slider-entity-row
-        entity: light.dimmable_light_6
+      - entity: light.dimmable_light_6
         input_number: 80
         toggle: true
         name: Sovrum fönster
         icon: mdi:lightbulb
-      - type: custom:slider-entity-row
-        entity: light.sovrum_tak
+      - entity: light.sovrum_tak
         input_number: 10
         toggle: true
         name: Hallen byrå
         icon: mdi:lightbulb
-      - type: custom:slider-entity-row
-        entity: light.dimmable_light_9_2
+      - entity: light.dimmable_light_9_2
         input_number: 80
         toggle: true
         name: Ellen fönster
@@ -90,8 +81,7 @@ cards:
   - title: Övrigt
     type: entities
     entities:
-      - type: custom:slider-entity-row
-        entity: light.matforrad_tak
+      - entity: light.matforrad_tak
         name: Matförrådet
         icon: mdi:ceiling-light
         toggle: true
