@@ -1,33 +1,33 @@
 title: Lights
-icon: mdi:lightbulb-on
+icon: mdi:lamp-on
 path: lights
 cards:
   - title: Övervåningen
     type: entities
     entities:
       - entity: switch.allrum
-        icon: mdi:lightbulb
+        icon: mdi:lamp
         name: Allrum träd
         state_color: yellow
       - entity: light.allrum_lights
         input_number: 80
         toggle: true
         name: Allrum fönster
-        icon: mdi:lightbulb
+        icon: mdi:lamp
       - entity: switch.elias
-        icon: mdi:lightbulb
+        icon: mdi:lamp
         name: Elias
         state_color: yellow
       - entity: light.oscar_fonster
         input_number: 80
         toggle: true
         name: Oscar
-        icon: mdi:lightbulb
+        icon: mdi:lamp
       - entity: light.julius_fonster
         input_number: 80
         toggle: true
         name: Julius
-        icon: mdi:lightbulb
+        icon: mdi:lamp
   - title: Nedervåningen
     type: entities
     entities:
@@ -41,9 +41,9 @@ cards:
         input_number: 80
         toggle: true
         name: Kök
-        icon: mdi:lightbulb
+        icon: mdi:lamp
       - entity: switch.hallen
-        icon: mdi:lightbulb
+        icon: mdi:lamp
         state_color: yellow
       - entity: light.dimmable_light_9
         input_number: 80
@@ -58,26 +58,26 @@ cards:
         input_number: 80
         toggle: true
         name: Sovrum fönster
-        icon: mdi:lightbulb
+        icon: mdi:lamp
       - entity: light.sovrum_tak
         input_number: 10
         toggle: true
         name: Hallen byrå
-        icon: mdi:lightbulb
+        icon: mdi:floor-lamp-variant
       - entity: light.dimmable_light_9_2
         input_number: 80
         toggle: true
         name: Ellen fönster
-        icon: mdi:lightbulb
+        icon: mdi:lamp
       - entity: switch.vardagsrum
-        icon: mdi:lightbulb
+        icon: mdi:lamp
         state_color: yellow
       - entity: switch.light_2
         name: Tvättstugan
-        icon: mdi:lightbulb
+        icon: mdi:lamp
         state_color: yellow
       - entity: switch.gymmet
-        icon: mdi:lightbulb
+        icon: mdi:lamp
         state_color: yellow
   - title: Övrigt
     type: entities
