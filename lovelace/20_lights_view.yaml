@@ -49,9 +49,9 @@ cards:
         input_number: 80
         toggle: true
         name: William fönster
-        icon: mdi:lightbulb
+        icon: mdi:lamp
       - entity: switch.julius
-        icon: mdi:lightbulb
+        icon: mdi:floor-lamp-variant
         name: William bord
         state_color: yellow
       - entity: light.dimmable_light_6
