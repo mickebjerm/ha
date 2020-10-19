@@ -6,7 +6,7 @@ cards:
     type: entities
     entities:
       - entity: switch.allrum
-        icon: mdi:lamp
+        icon: mdi:palm-tree
         name: Allrum träd
         state_color: yellow
       - entity: light.allrum_lights
