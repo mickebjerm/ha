@@ -27,7 +27,7 @@ cards:
       name: Baksidan
   - title: Övervåningen
     type: entities
-    show_header_toggle: false 
+    show_header_toggle: false
     entities:
     - entity: sensor.elias_temperature
       name: Elias
@@ -37,7 +37,7 @@ cards:
       name: Julius & Oscar
   - title: Övervåningen LF
     type: entities
-    show_header_toggle: false 
+    show_header_toggle: false
     entities:
     - entity: sensor.elias_humidity
       name: Elias
@@ -71,8 +71,6 @@ cards:
     entities:
     - entity: sensor.kok_humidity
       name: Köket
-    - entity: sensor.vardagsrum_temperature
-      name: Vardagsrum
     - entity: sensor.vardagsrum_humidity
       name: Vardagsrum
     - entity: sensor.temp1_3

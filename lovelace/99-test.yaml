@@ -49,23 +49,25 @@ cards:
       - entity: sensor.humidity_33
         name: Luftfuktighet
       - type: section
-        label: Julius & Oscar
-      - type: custom:slider-entity-row
-        entity: light.oscar_fonster
-        input_number: 80
-        toggle: true
-        name: Oscar Fönster
-        icon: mdi:lamp
+        label: Julius
       - type: custom:slider-entity-row
         entity: light.julius_fonster
         input_number: 80
         toggle: true
-        name: Julius Fönster
+        name: Fönster
         icon: mdi:lamp
       - entity: sensor.julius_temperature
         name: Temperatur
       - entity: sensor.julius_humidity
         name: Luftfuktighet
+      - type: section
+        label: Oscar
+      - type: custom:slider-entity-row
+        entity: light.oscar_fonster
+        input_number: 80
+        toggle: true
+        name: Fönster
+        icon: mdi:lamp
   - type: entities
     title: Nedervåningen sovrum
     show_header_toggle: true
@@ -252,19 +254,11 @@ cards:
     entities:
       - type: section
         label: Badrum nere
-      - entity: sensor.temperature_21
+      - entity: sensor.temperature_38
         name: Temperatur
-      - entity: sensor.humidity_22
+      - entity: sensor.humidity_39
         name: Luftfuktighet
-      - entity: sensor.pressure_23
-        name: Lufttryck
-      - type: section
-        label: Badrum uppe
-      - entity: sensor.temperature_21
-        name: Temperatur
-      - entity: sensor.humidity_22
-        name: Luftfuktighet
-      - entity: sensor.pressure_23
+      - entity: sensor.pressure_40
         name: Lufttryck
       - type: section
         label: Bastu
