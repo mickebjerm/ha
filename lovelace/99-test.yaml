@@ -139,6 +139,9 @@ cards:
         name: Bordslampa
         icon: mdi:floor-lamp-variant
         toggle: true
+      - entity: switch.hallen
+        icon: mdi:string-lights
+        state_color: yellow
       - entity: sensor.aeon_labs_zw075_smart_switch_gen5_energy_2
         name: Datacentret kWh
         icon: mdi:server-network
