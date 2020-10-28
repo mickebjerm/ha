@@ -161,7 +161,7 @@ cards:
         state_color: yellow
       - entity: binary_sensor.openclose_28
         name: Altandörr
-        icon: mdi:glassdoor
+        icon: mdi:door
         state_color: yellow
       - type: section
         label: Köket
@@ -189,7 +189,7 @@ cards:
         state_color: yellow
       - entity: binary_sensor.openclose_27
         name: Altandörr
-        icon: mdi:glassdoor
+        icon: mdi:door
         state_color: yellow
       - entity: sensor.vardagsrum_temperature
         name: Temperatur
