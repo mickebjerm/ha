@@ -43,7 +43,7 @@ cards:
         name: Kök
         icon: mdi:lamp
       - entity: switch.hallen
-        icon: mdi:lamp
+        icon: mdi:string-lights
         state_color: yellow
       - entity: light.dimmable_light_9
         input_number: 80
@@ -74,7 +74,7 @@ cards:
         state_color: yellow
       - entity: switch.light_2
         name: Tvättstugan
-        icon: mdi:lamp
+        icon: mdi:string-lights
         state_color: yellow
       - entity: switch.gymmet
         icon: mdi:lamp

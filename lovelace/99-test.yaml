@@ -160,7 +160,7 @@ cards:
         label: Tvättstugan
       - entity: switch.light_2
         name: Fönster
-        icon: mdi:lamp
+        icon: mdi:string-lights
         state_color: yellow
       - entity: binary_sensor.openclose_28
         name: Altandörr
