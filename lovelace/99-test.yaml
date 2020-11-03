@@ -60,7 +60,7 @@ cards:
         name: Temperatur
       - entity: sensor.julius_humidity
         name: Luftfuktighet
-      - entity: climate.oscar
+      - entity: climate.julius
         name: Element
       - type: section
         label: Oscar
@@ -70,6 +70,8 @@ cards:
         toggle: true
         name: Fönster
         icon: mdi:lamp
+      - entity: climate.julius
+        name: Element
   - type: entities
     title: Nedervåningen sovrum
     show_header_toggle: true
