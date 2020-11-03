@@ -60,6 +60,8 @@ cards:
         name: Temperatur
       - entity: sensor.julius_humidity
         name: Luftfuktighet
+      - entity: climate.oscar
+        name: Element
       - type: section
         label: Oscar
       - type: custom:slider-entity-row
