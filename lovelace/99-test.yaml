@@ -70,7 +70,7 @@ cards:
         toggle: true
         name: Fönster
         icon: mdi:lamp
-      - entity: climate.julius
+      - entity: climate.oscar
         name: Element
   - type: entities
     title: Nedervåningen sovrum
