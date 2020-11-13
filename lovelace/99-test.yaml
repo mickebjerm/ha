@@ -84,6 +84,12 @@ cards:
         toggle: true
         name: Fönster
         icon: mdi:lamp
+      - type: custom:slider-entity-row
+        entity: light.dimmable_light_16
+        input_number: 80
+        toggle: true
+        name: Bord
+        icon: mdi:floor-lamp-variant
       - entity: sensor.temp1
         name: Temperatur
       - entity: sensor.temp1_3

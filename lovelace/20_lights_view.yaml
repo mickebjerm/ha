@@ -59,6 +59,11 @@ cards:
         toggle: true
         name: Sovrum fönster
         icon: mdi:lamp
+      - entity: light.dimmable_light_16
+        icon: mdi:floor-lamp-variant
+        name: Sovrum bord
+        input_number: 80
+        toggle: true
       - entity: light.sovrum_tak
         input_number: 10
         toggle: true
