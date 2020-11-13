@@ -28,9 +28,9 @@ teenage_lights:
     - light.dimmable_light_9
     - switch.julius
     - switch.elias
-    - switch.allrum
     - light.oscar_fonster
     - light.julius_fonster
+    - light.allrum_lights
 
 kids_lights:
   name: Fönsterlampor barn
@@ -52,11 +52,12 @@ other_lights:
     - switch.vardagsrum
     - switch.koket
     - light.kitchen_lights
-    - light.allrum_lights
+    - switch.allrum
     - switch.gymmet
     - switch.hallen
     - switch.light_2
     - light.sovrum_tak
+    - light.dimmable_light_16
 
 other_not_window_lights:
   name: Lampor övriga
