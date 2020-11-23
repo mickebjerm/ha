@@ -12,5 +12,5 @@
   type: js
 - url: !file /local/custom-lovelace/monster-card/monster-card.js?v=0.2.3
   type: js
-- url: /local/kalkih-media-player/mini-media-player-bundle.js?v=1.5.2
+- url: /local/kalkih-media-player/mini-media-player-bundle.js?v=1.11.0
   type: module
