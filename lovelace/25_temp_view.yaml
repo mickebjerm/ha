@@ -51,8 +51,6 @@ cards:
     entities:
     - entity: sensor.kok_temperature
       name: Köket
-    - entity: sensor.vardagsrum_temperature
-      name: Vardagsrum
     - entity: sensor.temperature_46
       name: Vardagsrum
     - entity: sensor.temp1

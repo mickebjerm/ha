@@ -210,6 +210,8 @@ cards:
         name: Luftfuktighet
       - entity: sensor.pressure_48
         name: Lufttryck
+      - entity: sensor.vardagsrum_temperature
+        name: Temperatur Vinställ
   - type: entities
     title: Garage/Gym
     show_header_toggle: true
