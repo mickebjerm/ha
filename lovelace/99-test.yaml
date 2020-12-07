@@ -204,10 +204,12 @@ cards:
         name: Altandörr
         icon: mdi:door
         state_color: yellow
-      - entity: sensor.vardagsrum_temperature
+      - entity: sensor.temperature_46
         name: Temperatur
-      - entity: sensor.vardagsrum_humidity
+      - entity: sensor.humidity_47
         name: Luftfuktighet
+      - entity: sensor.pressure_48
+        name: Lufttryck
   - type: entities
     title: Garage/Gym
     show_header_toggle: true

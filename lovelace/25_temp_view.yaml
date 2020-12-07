@@ -53,6 +53,8 @@ cards:
       name: Köket
     - entity: sensor.vardagsrum_temperature
       name: Vardagsrum
+    - entity: sensor.temperature_46
+      name: Vardagsrum
     - entity: sensor.temp1
       name: Sovrum
     - entity: sensor.temperature_11
@@ -72,6 +74,10 @@ cards:
     - entity: sensor.kok_humidity
       name: Köket
     - entity: sensor.vardagsrum_humidity
+      name: Vardagsrum
+    - entity: sensor.humidity_47
+      name: Vardagsrum
+    - entity: sensor.pressure_48
       name: Vardagsrum
     - entity: sensor.temp1_3
       name: Sovrum
