@@ -138,7 +138,7 @@ cards:
     entities:
       - type: section
         label: Hallen
-      - entity: sensor.heiman_technology_co_ltd_smart_smoke_sensor_hs1sa_z_smoke
+      - entity: binary_sensor.heiman_technology_co_ltd_smart_smoke_sensor_hs1sa_z_sensor
         name: Brandvarnare
         icon: mdi:smoke-detector
       - type: custom:slider-entity-row
