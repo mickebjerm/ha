@@ -138,6 +138,8 @@ cards:
     entities:
       - type: section
         label: Hallen
+      - entity: sensor.heiman_technology_co_ltd_smart_smoke_sensor_hs1sa_z_smoke
+        name: Brandvarnare
       - type: custom:slider-entity-row
         entity: light.extended_color_light_13
         input_number: 70
