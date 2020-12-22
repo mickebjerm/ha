@@ -79,3 +79,17 @@ alert:
     skip_first: true
     notifiers:
       - mobile_app_micke_iphone
+
+  smoke_hallway_downstairs:
+    name: Rökutveckling hallen nere
+    done_message: Ingen rökutveckling hallen nere
+    entity_id: sensor.heiman_technology_co_ltd_smart_smoke_sensor_hs1sa_z_smoke
+    state: "2"
+    repeat:
+      - 15
+      - 30
+      - 60
+    can_acknowledge: true
+    skip_first: true
+    notifiers:
+      - mobile_app_micke_iphone
