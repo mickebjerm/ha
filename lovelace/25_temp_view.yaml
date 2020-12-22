@@ -33,8 +33,10 @@ cards:
       name: Elias
     - entity: sensor.allrum_uppe_temperature
       name: Allrum
-    - entity: sensor.julius_temperature
-      name: Julius & Oscar
+    - entity: sensor.temperature_49
+      name: Julius
+    - entity: sensor.temperature_52
+      name: Oscar
   - title: Övervåningen LF
     type: entities
     show_header_toggle: false
@@ -43,8 +45,10 @@ cards:
       name: Elias
     - entity: sensor.allrum_uppe_humidity
       name: Allrum
-    - entity: sensor.julius_humidity
-      name: Julius & Oscar
+    - entity: sensor.humidity_50
+      name: Julius
+    - entity: sensor.humidity_53
+      name: Oscar
   - title: Nedervåningen
     type: entities
     show_header_toggle: false

@@ -56,9 +56,9 @@ cards:
         toggle: true
         name: Fönster
         icon: mdi:lamp
-      - entity: sensor.julius_temperature
+      - entity: sensor.temperature_52
         name: Temperatur
-      - entity: sensor.julius_humidity
+      - entity: sensor.humidity_53
         name: Luftfuktighet
       - entity: climate.julius
         name: Element
@@ -70,6 +70,9 @@ cards:
         toggle: true
         name: Fönster
         icon: mdi:lamp
+      - entity: sensor.temperature_49
+        name: Temperatur
+      - entity: sensor.humidi
       - entity: climate.oscar
         name: Element
   - type: entities
