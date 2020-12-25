@@ -5,13 +5,9 @@
     - platform: time
       at: "06:40"
   condition:
-    - condition: time
-      weekday:
-        - mon
-        - tue
-        - wed
-        - thu
-        - fri
+    condition: state
+    entity_id: 'binary_sensor.workday_sensor'
+    state: 'on'
   action:
     - service: homeassistant.turn_on
       entity_id: group.window_lights
