@@ -155,7 +155,7 @@ binary_sensor:
   - platform: workday
     country: SE
     workdays: [mon, tue, wed, thu, fri]
-    excludes: [sat, sun]
+    excludes: [sat, sun, holiday]
 
 sensor: !include_dir_merge_list sensors/
 group: !include_dir_merge_named groups/
