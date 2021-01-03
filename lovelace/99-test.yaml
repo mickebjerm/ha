@@ -30,10 +30,12 @@ cards:
         name: Dörr
         icon: mdi:door
         state_color: yellow
-      - entity: switch.elias
-        icon: mdi:lamp
+      - type: custom:slider-entity-row
+        entity: light.dimmable_light_17
+        input_number: 80
+        toggle: true
         name: Fönster
-        state_color: yellow
+        icon: mdi:lamp
       - entity: switch.aeon_labs_zw075_smart_switch_gen5_switch_3
         icon: mdi:radiator
         name: Element
@@ -203,10 +205,11 @@ cards:
         name: Luftfuktighet
       - type: section
         label: Vardagsrum
-      - entity: switch.vardagsrum
+      - entity: light.livingroom_lights
+        input_number: 80
+        toggle: true
         name: Fönster
         icon: mdi:lamp
-        state_color: yellow
       - entity: binary_sensor.openclose_27
         name: Altandörr
         icon: mdi:door

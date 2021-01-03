@@ -14,10 +14,11 @@ cards:
         toggle: true
         name: Allrum fönster
         icon: mdi:lamp
-      - entity: switch.elias
-        icon: mdi:lamp
+      - entity: light.dimmable_light_17
+        input_number: 80
+        toggle: true
         name: Elias
-        state_color: yellow
+        icon: mdi:lamp
       - entity: light.oscar_fonster
         input_number: 80
         toggle: true
@@ -79,9 +80,6 @@ cards:
         toggle: true
         name: Vardagsrum
         icon: mdi:lamp
-      - entity: switch.vardagsrum
-        icon: mdi:lamp
-        state_color: yellow
       - entity: switch.light_2
         name: Tvättstugan
         icon: mdi:string-lights

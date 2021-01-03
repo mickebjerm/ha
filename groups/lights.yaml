@@ -25,6 +25,7 @@ window_lights:
     - light.color_light_19
     - light.color_light_20
     - light.color_temperature_light_21
+    - light.dimmable_light_17
 
 teenage_lights:
   name: Fönsterlampor tonåringar
@@ -33,6 +34,7 @@ teenage_lights:
     - light.dimmable_light_9
     - switch.julius
     - switch.elias
+    - light.dimmable_light_17
     - light.oscar_fonster
     - light.julius_fonster
     - light.allrum_lights
