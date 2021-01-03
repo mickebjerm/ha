@@ -10,3 +10,11 @@
   entities:
     - light.dimmable_light_14
     - light.dimmable_light_15
+
+- platform: group
+  name: Livingroom_lights
+  entities:
+    - light.color_light_18
+    - light.color_light_19
+    - light.color_light_20
+    - light.color_temperature_light_21

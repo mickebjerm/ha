@@ -21,6 +21,10 @@ window_lights:
     - light.dimmable_light_9_2
     - light.allrum_lights
     - light.dimmable_light_16
+    - light.color_light_18
+    - light.color_light_19
+    - light.color_light_20
+    - light.color_temperature_light_21
 
 teenage_lights:
   name: Fönsterlampor tonåringar
@@ -59,6 +63,10 @@ other_lights:
     - switch.light_2
     - light.sovrum_tak
     - light.dimmable_light_16
+    - light.color_light_18
+    - light.color_light_19
+    - light.color_light_20
+    - light.color_temperature_light_21
 
 other_not_window_lights:
   name: Lampor övriga

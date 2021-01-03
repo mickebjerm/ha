@@ -74,6 +74,11 @@ cards:
         toggle: true
         name: Ellen fönster
         icon: mdi:lamp
+      - entity: light.livingroom_lights
+        input_number: 80
+        toggle: true
+        name: Vardagsrum
+        icon: mdi:lamp
       - entity: switch.vardagsrum
         icon: mdi:lamp
         state_color: yellow
