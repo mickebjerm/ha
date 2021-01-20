@@ -19,6 +19,10 @@
   trigger:
     platform: template
     value_template: '{{ states.sensor.goodmorning_lights.state == states.sensor.time.state }}'
+  condition:
+    condition: state
+    entity_id: 'binary_sensor.workday_sensor'
+    state: 'on'
   action:
     - service: homeassistant.turn_on
       entity_id: group.window_lights
