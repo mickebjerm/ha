@@ -74,6 +74,22 @@ kids_lights_stop_mins:
   name: Minut
   icon: mdi:timer-outline
   initial: 30
-  min: 30
+  min: 0
+  max: 59
+  step: 1
+
+goodmorning_light_start_hour:
+  name: Timme
+  icon: mdi:timer-outline
+  initial: 7
+  min: 0
+  max: 23
+  step: 1
+
+goodmorning_light_start_mins:
+  name: Minut
+  icon: mdi:timer-outline
+  initial: 10
+  min: 0
   max: 59
   step: 1

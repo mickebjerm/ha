@@ -1,16 +1,28 @@
+# - id: goodmorning-on
+#   alias: "[Lights] Goodmorning - on"
+#   initial_state: true
+#   trigger:
+#     - platform: time
+#       at: "06:40"
+#   condition:
+#     condition: state
+#     entity_id: 'binary_sensor.workday_sensor'
+#     state: 'on'
+#   action:
+#     - service: homeassistant.turn_on
+#       entity_id: group.window_lights
+
+
 - id: goodmorning-on
   alias: "[Lights] Goodmorning - on"
   initial_state: true
   trigger:
-    - platform: time
-      at: "06:40"
-  condition:
-    condition: state
-    entity_id: 'binary_sensor.workday_sensor'
-    state: 'on'
+    platform: template
+    value_template: '{{ states.sensor.goodmorning_lights.state == states.sensor.time.state }}'
   action:
     - service: homeassistant.turn_on
       entity_id: group.window_lights
+
 
 
 - id: goodmorning-off
@@ -18,7 +30,7 @@
   initial_state: true
   trigger:
     - platform: state
-      entity_id: device_tracker.iphone_3
+      entity_id: device_tracker.micke_iphone
       to: 'not_home'
   condition:
     - condition: time

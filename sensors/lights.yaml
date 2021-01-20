@@ -26,3 +26,12 @@
         {% if states.input_number.kids_lights_stop_mins.state|round(0)|string|length == 1 %} {% set time3 = time3|string + '0' %} {% endif %}
         {% set time3 = time3|string + states.input_number.kids_lights_stop_mins.state|round(0)|string %}
         {{ time3 }}
+
+    goodmorning_lights:
+      friendly_name: 'Lampor godmorgon'
+      value_template: >-
+        {% if states.input_number.goodmorning_light_start_hour.state|round(0)|string|length == 1 %} {% set time3 = 0 %} {% endif %}
+        {% set time3 = time3|string + states.input_number.goodmorning_light_start_hour.state|round(0)|string + ':' %}
+        {% if states.input_number.goodmorning_light_start_mins.state|round(0)|string|length == 1 %} {% set time3 = time3|string + '0' %} {% endif %}
+        {% set time3 = time3|string + states.input_number.goodmorning_light_start_mins.state|round(0)|string %}
+        {{ time3 }}
