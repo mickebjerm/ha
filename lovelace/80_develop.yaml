@@ -40,6 +40,14 @@ cards:
         icon: mdi:refresh
         action_name: "Run"
         service_data: {}
+  - title: Lampor Godmorgon
+    type: entities
+    show_header_toggle: false
+    entities:
+    - entity: sensor.goodmorning_lights
+      name: Tid för morgonbelysning
+    - entity: input_number.goodmorning_light_start_hour
+    - entity: input_number.goodmorning_light_start_mins
   - title: Lampor tonåringar
     type: entities
     show_header_toggle: false
