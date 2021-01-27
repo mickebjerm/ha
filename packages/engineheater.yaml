@@ -105,10 +105,6 @@ input_boolean:
     name: Only active on workdays
     initial: true
 
-  eh_skipnext:
-    name: Skip next
-    initial: false
-
   eh_enabled:
     name: 'Engine heater automations'
     initial: true
@@ -138,19 +134,13 @@ automation:
       condition: and
       conditions:
         - condition: state
-          entity_id: input_boolean.eh_skipnext
-          state: 'off'
-        - condition: state
           entity_id: input_boolean.eh_enabled
           state: 'on'
-        - condition: state
-          entity_id: person.linus
-          state: home
         - condition: or
           conditions:
             - condition: state
               entity_id: input_boolean.workdays_only
-              state: 'off'
+              state: 'on'
             - condition: and
               conditions:
                 - condition: state
@@ -175,8 +165,6 @@ automation:
       - service: homeassistant.turn_off
         entity_id:
           - switch.qubino_goap_zmnhadx_flush_1_relay_switch_2
-      - service: input_boolean.turn_off
-        entity_id: input_boolean.eh_skipnext
 
   - alias: "Engine heater - precheck activate"
     trigger:
@@ -192,9 +180,9 @@ automation:
               state: 'on'
             - condition: state
               entity_id: input_boolean.workdays_only
-              state: 'off'
+              state: 'on'
             - condition: state
-              entity_id: automation.engine_heater_activate
+              entity_id: binary_sensor.workday_sensor
               state: 'on'
         - condition: and
           conditions:
@@ -202,7 +190,7 @@ automation:
               entity_id: input_boolean.eh_enabled
               state: 'on'
             - condition: state
-              entity_id: binary_sensor.eh_workday_tomorrow
+              entity_id: binary_sensor.workday_sensor
               state: 'on'
             - condition: state
               entity_id: input_boolean.workdays_only
