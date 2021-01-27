@@ -36,9 +36,9 @@ sensor:
         friendly_name: 'Temperature forecast'
         value_template: >-
           {% if states.sensor.time.state > states.sensor.heater_departuretime.state and states.sensor.time.state > '00:00' %}
-          {% set forecast = states.weather.smhi_home.attributes.forecast[1].templow %}
+          {% set forecast = states.weather.smhi_sundsvall.attributes.forecast[1].templow %}
           {% else %}
-          {% set forecast = states.weather.smhi_home.attributes.temperature %}
+          {% set forecast = states.weather.smhi_sundsvall.attributes.temperature %}
           {% endif %}
           {{ forecast }}
       heater_activationtime:
