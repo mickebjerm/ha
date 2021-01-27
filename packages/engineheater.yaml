@@ -103,7 +103,7 @@ input_number:
 input_boolean:
   workdays_only:
     name: Only active on workdays
-    #initial: true
+    initial: true
 
   eh_skipnext:
     name: Skip next
@@ -111,6 +111,7 @@ input_boolean:
 
   eh_enabled:
     name: 'Engine heater automations'
+    initial: true
 
 group:
   engine_heater:
@@ -132,7 +133,7 @@ automation:
   - alias: "Engine heater - activate"
     trigger:
       platform: template
-      value_template: '{{ (states.sensor.time.state >= states.sensor.heater_activationtime.state) and (states.sensor.time.state <= states.sensor.heater_departuretime.state) and (states.switch.switch_engine_heater.state == "off") }}'
+      value_template: '{{ (states.sensor.time.state >= states.sensor.heater_activationtime.state) and (states.sensor.time.state <= states.sensor.heater_departuretime.state) and (states.switch.qubino_goap_zmnhadx_flush_1_relay_switch_2.state == "off") }}'
     condition:
       condition: and
       conditions:
@@ -153,10 +154,7 @@ automation:
             - condition: and
               conditions:
                 - condition: state
-                  entity_id: binary_sensor.eh_workday
-                  state: 'on'
-                - condition: state
-                  entity_id: input_boolean.workdays_only
+                  entity_id: binary_sensor.workday_sensor
                   state: 'on'
     action:
       - service: homeassistant.turn_on
@@ -234,9 +232,9 @@ automation:
           entity_id: input_boolean.eh_enabled
           state: 'on'
         - condition: template
-          value_template: '{{ states.sensor.power_40.state|int < 100 }}'
+          value_template: '{{ states.states.sensor.qubino_goap_zmnhadx_flush_1_relay_power_2.state.state|int < 100 }}'
     action:
       - service: notify.mobile_app_micke_iphone
         data:
           title: "Engine heater"
-          message: "You forgot to connect the cable ({{ states.sensor.power_40.state }}W)"
+          message: "You forgot to connect the cable ({{ states.states.sensor.qubino_goap_zmnhadx_flush_1_relay_power_2.state.state }}W)"
