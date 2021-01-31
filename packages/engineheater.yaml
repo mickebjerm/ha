@@ -136,16 +136,12 @@ automation:
         - condition: state
           entity_id: input_boolean.eh_enabled
           state: 'on'
-        - condition: or
-          conditions:
-            - condition: state
-              entity_id: input_boolean.workdays_only
-              state: 'on'
-            - condition: and
-              conditions:
-                - condition: state
-                  entity_id: binary_sensor.workday_sensor
-                  state: 'on'
+        - condition: state
+          entity_id: input_boolean.workdays_only
+          state: 'on'
+        - condition: state
+          entity_id: binary_sensor.workday_sensor
+          state: 'on'
     action:
       - service: homeassistant.turn_on
         entity_id:
