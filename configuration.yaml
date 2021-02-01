@@ -132,10 +132,10 @@ volvooncall:
   username: !secret volvo_username
   password: !secret volvo_password
 
-climate:
-  - platform: adax
-    account_id: !secret adax_account_id
-    password: !secret adax_password
+# climate:
+#   - platform: adax
+#     account_id: !secret adax_account_id
+#     password: !secret adax_password
 
 #device_tracker: !include device_tracker.yaml
 
